@@ -1,0 +1,16 @@
+.contact {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-page-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+.form-container {
+  max-width: 800px;
+}

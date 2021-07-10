@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: center;
+
+  background-color: transparent;
+  background: none;
+  position: fixed;
+  width: 100vw;
+  margin-top: 30px;
+  z-index: 100;
+  overflow: hidden;
+}
+.nav-links * {
+  padding-right: 10px;
+  padding-left: 7px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 600px) {
+
+  .nav-links * {
+    font-size: 1.3rem;
+  }
+}

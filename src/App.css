@@ -1,0 +1,9 @@
+.sections {
+  overflow: auto;
+  height: 100vh;
+}
+
+.project-section-container {
+  display: flex;
+  justify-content: center;
+}

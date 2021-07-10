@@ -1,0 +1,148 @@
+.section {
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.section-container {
+  min-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
+  color: #000;
+  align-items: center;
+  flex: 1;
+  z-index: 1;
+  text-align: center;
+}
+
+.section-description {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 25px;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+}
+.resume-button {
+  margin-top: 60px !important;
+  background-color: #f500574f !important;
+  color: #000000 !important;
+  padding: 10px 20px !important;
+  font-weight: 800 !important;
+  font-size: 18px !important;
+  border-radius: 15px !important;
+  
+  animation: Milan 5s infinite;
+  font-family: 'Caveat', cursive;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-description {
+    justify-content: space-around;
+    width: 60%;
+  }
+}
+.github {
+  padding: 15px;
+  color: #000 !important;
+  padding-left: 0px;
+}
+.github:hover {
+  color: #f0f6fc !important;
+}
+.linkedIn {
+  padding: 15px;
+  transition: color 2s ease;
+  color: #000 !important;
+}
+.Instagram{
+  padding: 15px;
+  color: #000 !important;
+  padding-left: 0px;
+}
+.Instagram:hover{
+  color: #f0f6fc !important;
+  padding-left: 0px;
+}
+
+.linkedIn:hover {
+  color: #0a66c2 !important;
+}
+.secion-lower {
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  width: 70%;
+  padding-top: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me {
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 19px;
+    padding-top: 0px;
+  }
+}
+
+.resume-button {
+  margin-top: 30px !important;
+  background-color: #f500574f !important;
+  color: #000000 !important;
+  padding: 10px 20px !important;
+  font-weight: 800 !important;
+  font-size: 18px !important;
+  border-radius: 15px !important;
+  
+  animation: Milan 5s infinite;
+  font-family: 'Caveat', cursive;
+  text-transform: uppercase;
+}
+@keyframes Milan{
+  0% {
+        transform: scale(0.90);
+  }
+50%{
+transform: scale(1);
+}
+  100% {
+        transform: scale(0.90);
+  }
+}
+a {
+  text-decoration: none;
+}
+.section-lower {
+  display: flex;
+  color: #393c41;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
