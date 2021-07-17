@@ -63,6 +63,15 @@
 .github:hover {
   color: #f0f6fc !important;
 }
+.twitter {
+  padding: 15px;
+  color: #000 !important;
+  padding-left: 0px;
+}
+.twitter:hover {
+  color: #0353e7 !important;
+  cursor:pointer  !important;
+}
 .linkedIn {
   padding: 15px;
   transition: color 2s ease;

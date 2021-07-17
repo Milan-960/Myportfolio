@@ -3,6 +3,7 @@ import "./Section.css";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from "@material-ui/icons/Twitter";
 import Form from "./Form";
 import { Button } from "@material-ui/core";
 
@@ -14,6 +15,7 @@ function Section({
   linkedinLink,
   githubLink,
   instagramLink,
+  twitterLink,
   showForm,
   aboutMe,
   showAboutMe,
@@ -59,6 +61,17 @@ function Section({
                 </a>
               )}
               {showIcon && (
+                <a rel="noopener noreferrer"
+                 target="_blank"
+                  href={twitterLink}
+                >
+                  <TwitterIcon 
+                  style={{ fontSize: "35px" }} 
+                  className="twitter" 
+                  />
+                </a>
+              )}
+              {showIcon && (
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
@@ -70,6 +83,7 @@ function Section({
                   />
                 </a>
               )}
+              
             </div>
           </div>
           {showAboutMe && <div className="about-me">{aboutMe}</div>}

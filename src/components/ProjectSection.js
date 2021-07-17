@@ -7,14 +7,24 @@ function ProjectSection() {
     <div className="project-section">
       <Project
         projectLink={
-          "https://expense-apps.netlify.app/"
+          "https://goals-list.netlify.app/"
         }
+        projectImg={"/todo.png"}
+        title={"To-Do-Goal-List"}
+        description={
+          "I have created a LO-DO-LIST where you can enter and delete your goals for tommorow to stay fouced ♥ "
+        }
+        skillsUsed={["ReactJS", "HTML,CSS,Javascript"]}
+      />
+
+      <Project
+        projectLink={"https://expense-apps.netlify.app/"}
         projectImg={"/ss.png"}
         title={"Expenses-Tracker "}
         description={
           "An Application where you can add your expenses. After adding an expense there is a filter whitch counts your total expenses of the month. "
         }
-        skillsUsed={["ReactJS","HTML,CSS,Javascript"]}
+        skillsUsed={["ReactJS", "HTML,CSS,Javascript"]}
       />
       <Project
         projectLink={"https://tic-tac-toem.netlify.app/"}

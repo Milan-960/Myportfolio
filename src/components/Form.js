@@ -34,15 +34,15 @@ function Form() {
           <input type="text" name="name" />
         </div>
         <div class="user-box">
-          <label>email</label>
+          <label>Email</label>
           <input type="text" name="email" required="" />
         </div>
         <div class="user-box">
-          <label>contact_number</label>
+          <label>Contact-Number</label>
           <input type="contact_number" name="contact_number" required="" />
         </div>
         <div class="user-box">
-          <label>message</label>
+          <label>Message</label>
           <input type="message" name="message" required="" />
         </div>
         <button class="btn">SUBMIT</button>

@@ -13,6 +13,7 @@ function HomePage() {
         linkedinLink={"https://www.linkedin.com/in/milan-sachani-9090"}
         githubLink={"https://github.com/Milan-960"}
         instagramLink={"https://www.instagram.com/milan_00269/"}
+        twitterLink={"https://twitter.com/MilanSachani"}
         showAboutMe={true}
         aboutMe={
           "I am working as a Junior front-end developer.I like to explore new trends and learn new technologies.Feel free to reach out to me for consulting, Volunteering or just for some interesting discussion."
