@@ -5,25 +5,31 @@ import "./ProjectSection.css";
 function ProjectSection() {
   return (
     <div className="project-section">
-        <Project
+      <Project
         projectLink={"https://milanofood.netlify.app/"}
         projectImg={"/food.png"}
         title={"FoodApp"}
-        description={"MilanosFood website will come soon I am working on it."}
+        description={
+          "MilanosFood website will come soon I am working on this project."
+        }
         skillsUsed={["ReactJS", "Firebase", "HTML,CSS,Javascript"]}
       />
-           <Project
+      <Project
         projectLink={"https://moviesdata.netlify.app/"}
         projectImg={"/movieapp.png"}
         title={"Fetched Data movie app"}
-        description={"In this app I have created a Movie App where you can add your movie list and can featch data from the database"}
+        description={
+          "In this app I have created a Movie App where you can add your movie list and can featch data from the database"
+        }
         skillsUsed={["ReactJS", "API", "Firebase", "HTML,CSS,Javascript"]}
       />
       <Project
         projectLink={"https://gym-m.netlify.app/"}
         projectImg={"/gym.png"}
         title={"M-GYM"}
-        description={"So far I am developing Gym website. I have created a login page where users can register themselves. After registering, you can access other pages to find out about offers on fitness blogs and gyms.This website has not been completed but is currently in the works."}
+        description={
+          "So far I am developing Gym website. I have created a login page where users can register themselves. After registering, you can access other pages to find out about offers on fitness blogs and gyms.This website has not been completed but is currently in the works."
+        }
         skillsUsed={["ReactJS", "Firebase", "HTML,CSS,Javascript"]}
       />
       <Project
