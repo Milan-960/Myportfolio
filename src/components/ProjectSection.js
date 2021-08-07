@@ -24,15 +24,6 @@ function ProjectSection() {
         skillsUsed={["ReactJS", "API", "Firebase", "HTML,CSS,Javascript"]}
       />
       <Project
-        projectLink={"https://gym-m.netlify.app/"}
-        projectImg={"/gym.png"}
-        title={"M-GYM"}
-        description={
-          "So far I am developing Gym website. I have created a login page where users can register themselves. After registering, you can access other pages to find out about offers on fitness blogs and gyms.This website has not been completed but is currently in the works."
-        }
-        skillsUsed={["ReactJS", "Firebase", "HTML,CSS,Javascript"]}
-      />
-      <Project
         projectLink={"https://goals-list.netlify.app/"}
         projectImg={"/todo.png"}
         title={"To-Do-Goal-List"}
@@ -50,6 +41,15 @@ function ProjectSection() {
         }
         skillsUsed={["ReactJS", "HTML,CSS,Javascript"]}
       />
+        <Project
+          projectLink={"https://gym-m.netlify.app/"}
+          projectImg={"/gym.png"}
+          title={"M-GYM"}
+          description={
+            "So far I am developing Gym website. I have created a login page where users can register themselves. After registering, you can access other pages to find out about offers on fitness blogs and gyms.This website has not been completed but is currently in the works."
+          }
+          skillsUsed={["ReactJS", "Firebase", "HTML,CSS,Javascript"]}
+        />
       <Project
         projectLink={"https://tic-tac-toem.netlify.app/"}
         projectImg={"/tic.png"}
