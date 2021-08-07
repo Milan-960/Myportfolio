@@ -16,7 +16,7 @@ const skills = [
   },
   {
   name: "ReactJs",
-  level: "70%",
+  level: "65%",
   },
   {
     name: "PHP & MySQL",
