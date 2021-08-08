@@ -20,7 +20,7 @@ function HomePage() {
         }
         showButton={true}
         buttonLink={
-          "https://1drv.ms/b/s!AmeHcpczgJBOqh8IqIFYzyWmzYbV"
+          "https://1drv.ms/b/s!AmeHcpczgJBOqiC6jJg-abc8wXqV?e=hGPBgq"
         }
         showLower={false}
         lowerText={"Scroll through some of my projects below"}
