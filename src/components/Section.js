@@ -4,8 +4,9 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
-import Form from "./Form";
 import { Button } from "@material-ui/core";
+import Pdf from "../Document/Milan-CV.pdf";
+
 
 function Section({
   title,
@@ -16,7 +17,6 @@ function Section({
   githubLink,
   instagramLink,
   twitterLink,
-  showForm,
   aboutMe,
   showAboutMe,
   showButton,
@@ -88,8 +88,8 @@ function Section({
           </div>
           {showAboutMe && <div className="about-me">{aboutMe}</div>}
           {showButton && (
-            <a rel="noopener noreferrer" target="_blank" href={buttonLink}>
-              <Button variant="contained" className="resume-button">
+            <a rel="noopener noreferrer" target="_blank" href={Pdf}>
+              <Button variant="contained" className="resume-button" >
                 View My CV
               </Button>
             </a>

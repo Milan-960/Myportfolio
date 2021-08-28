@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "../components/Section";
 import "./Homepage.css";
-
+import Pdf from "../Document/Milan-CV.pdf";
 
 function HomePage() {
   return (
@@ -20,11 +20,10 @@ function HomePage() {
           "I am working as a Junior front-end developer.I like to explore new trends and learn new technologies.Feel free to reach out to me for consulting, Volunteering or just for some interesting discussion."
         }
         showButton={true}
-        
+
         buttonLink={
-          "https://1drv.ms/b/s!AmeHcpczgJBOqiC6jJg-abc8wXqV?e=hGPBgq"
+          <a href = {Pdf}></a>
         }
-       
         showLower={false}
         lowerText={"Scroll through some of my projects below"}
       />
