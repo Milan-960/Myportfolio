@@ -3,11 +3,11 @@ import "./Barchart.css";
 
 const skills = [
   {
-    name: "HTML",
+    name: "HTML5",
     level: "90%",
   },
   {
-    name: "CSS",
+    name: "CSS3/SCSS",
     level: "90%",
   },
   {
