@@ -12,7 +12,7 @@ function ProjectSection() {
         description={
           "MilanosFood website will come soon I am working on this project."
         }
-        skillsUsed={["ReactJS", "Firebase", "HTML,CSS,Javascript"]}
+        skillsUsed={["ReactJS", "Firebase", "HTML5,CSS3,Javascript"]}
       />
       <Project
         projectLink={"https://moviesdata.netlify.app/"}
@@ -21,7 +21,7 @@ function ProjectSection() {
         description={
           "In this app I have created a Movie App where you can add your movie list and can featch data from the database"
         }
-        skillsUsed={["ReactJS", "API", "Firebase", "HTML,CSS,Javascript"]}
+        skillsUsed={["ReactJS", "API", "Firebase", "HTML5,CSS3,Javascript"]}
       />
       <Project
         projectLink={"https://goals-list.netlify.app/"}
