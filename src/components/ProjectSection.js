@@ -8,9 +8,9 @@ function ProjectSection() {
       <Project
         projectLink={"https://milanofood.netlify.app/"}
         projectImg={"/food.png"}
-        title={"FoodApp"}
+        title={"FoodApps"}
         description={
-          "MilanosFood website will come soon I am working on this project."
+          "In this project I have used Firebase as a backend from where the admin will be able to see the orders."
         }
         skillsUsed={["ReactJS", "Firebase", "HTML5,CSS3,Javascript"]}
       />
