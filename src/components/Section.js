@@ -5,8 +5,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { Button } from "@material-ui/core";
-import Pdf from "../Document/Milan-CV.pdf";
-
+import Pdf from "../Document/MilanCV.pdf";
 
 function Section({
   title,
@@ -50,24 +49,15 @@ function Section({
                 </a>
               )}
               {showIcon && (
-                <a rel="noopener noreferrer"
-                 target="_blank"
-                  href={githubLink}
-                >
-                  <GitHubIcon 
-                  style={{ fontSize: "35px" }} 
-                  className="github" 
-                  />
+                <a rel="noopener noreferrer" target="_blank" href={githubLink}>
+                  <GitHubIcon style={{ fontSize: "35px" }} className="github" />
                 </a>
               )}
               {showIcon && (
-                <a rel="noopener noreferrer"
-                 target="_blank"
-                  href={twitterLink}
-                >
-                  <TwitterIcon 
-                  style={{ fontSize: "35px" }} 
-                  className="twitter" 
+                <a rel="noopener noreferrer" target="_blank" href={twitterLink}>
+                  <TwitterIcon
+                    style={{ fontSize: "35px" }}
+                    className="twitter"
                   />
                 </a>
               )}
@@ -83,13 +73,12 @@ function Section({
                   />
                 </a>
               )}
-              
             </div>
           </div>
           {showAboutMe && <div className="about-me">{aboutMe}</div>}
           {showButton && (
-            <a rel="noopener noreferrer" target="_blank" href={Pdf}>
-              <Button variant="contained" className="resume-button" >
+            <a rel="noopener noreferrer" href={Pdf}>
+              <Button variant="contained" className="resume-button">
                 View My CV
               </Button>
             </a>
