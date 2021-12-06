@@ -69,7 +69,7 @@ function Section({
                 >
                   <InstagramIcon
                     style={{ fontSize: "35px" }}
-                    className="Instagram"
+                    className="Instagrams"
                   />
                 </a>
               )}

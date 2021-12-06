@@ -43,9 +43,9 @@
   font-weight: 800 !important;
   font-size: 18px !important;
   border-radius: 15px !important;
-  
+
   animation: Milan 5s infinite;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   text-transform: uppercase;
 }
 
@@ -70,19 +70,19 @@
 }
 .twitter:hover {
   color: #0353e7 !important;
-  cursor:pointer  !important;
+  cursor: pointer !important;
 }
 .linkedIn {
   padding: 15px;
   transition: color 2s ease;
   color: #000 !important;
 }
-.Instagram{
+.Instagrams {
   padding: 15px;
   color: #000 !important;
   padding-left: 0px;
 }
-.Instagram:hover{
+.Instagrams:hover {
   color: #f0f6fc !important;
   padding-left: 0px;
 }
@@ -130,20 +130,20 @@
   font-weight: 800 !important;
   font-size: 18px !important;
   border-radius: 15px !important;
-  
+
   animation: Milan 5s infinite;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   text-transform: uppercase;
 }
-@keyframes Milan{
+@keyframes Milan {
   0% {
-        transform: scale(0.90);
+    transform: scale(0.9);
   }
-50%{
-transform: scale(1);
-}
+  50% {
+    transform: scale(1);
+  }
   100% {
-        transform: scale(0.90);
+    transform: scale(0.9);
   }
 }
 a {

@@ -13,7 +13,7 @@ function HomePage() {
         showIcon={true}
         linkedinLink={"https://www.linkedin.com/in/milan-sachani-9090"}
         githubLink={"https://github.com/Milan-960"}
-        instagramLink={"https://www.instagram.com/milan_00269/"}
+        instagramLink={"https://www.instagram.com/milan_00269"}
         twitterLink={"https://twitter.com/MilanSachani"}
         showAboutMe={true}
         aboutMe={
