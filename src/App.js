@@ -17,15 +17,47 @@ function App() {
       <div className="App">
         <Header />
         <Helmet>
-          <title> Milan Sachani</title>
-          <meta name="title" content="Milan Sachani" />
+          <title>Milan Sachani</title>
           <meta
             name="description"
-            content="MS | Front End Developer | ReactJs - Hire Professional Freelancer &amp; ReactJs Developer. Building animations and interactive experiences, hi-end solutions, website maintenance &amp; security"
+            content="MS | Front End Developer | ReactJs - Hire Professional Freelancer & ReactJs Developer. Building animations and interactive experiences, hi-end solutions, website maintenance & security"
           />
-          <meta property="og:title" content="Milan Sachani" />
+
+          {/* <!-- Google / Search Engine Tags --> */}
+          <meta itemprop="name" content="Milan Sachani" />
+          <meta
+            itemprop="description"
+            content="MS | Front End Developer | ReactJs - Hire Professional Freelancer & ReactJs Developer. Building animations and interactive experiences, hi-end solutions, website maintenance & security"
+          />
+          <meta
+            itemprop="image"
+            content="https://i.pinimg.com/1200x/93/cb/a6/93cba608cbd38deb81023c9f0407d9ff.jpg"
+          />
+
+          {/* <!-- Facebook Meta Tags --> */}
+          <meta property="og:url" content="https://milansportfolio.com" />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://milansportfolio.com/" />
+          <meta property="og:title" content="Milan Sachani" />
+          <meta
+            property="og:description"
+            content="MS | Front End Developer | ReactJs - Hire Professional Freelancer & ReactJs Developer. Building animations and interactive experiences, hi-end solutions, website maintenance & security"
+          />
+          <meta
+            property="og:image"
+            content="https://i.pinimg.com/1200x/93/cb/a6/93cba608cbd38deb81023c9f0407d9ff.jpg"
+          />
+
+          {/* <!-- Twitter Meta Tags --> */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Milan Sachani" />
+          <meta
+            name="twitter:description"
+            content="MS | Front End Developer | ReactJs - Hire Professional Freelancer & ReactJs Developer. Building animations and interactive experiences, hi-end solutions, website maintenance & security"
+          />
+          <meta
+            name="twitter:image"
+            content="https://i.pinimg.com/1200x/93/cb/a6/93cba608cbd38deb81023c9f0407d9ff.jpg"
+          />
         </Helmet>
       </div>
       <Switch>

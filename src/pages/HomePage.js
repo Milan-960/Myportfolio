@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "../components/Section";
 import "./Homepage.css";
-import Pdf from "../Document/MilanCV.pdf";
+import Pdf from "../Document/Milan-CV.pdf";
 
 function HomePage() {
   return (

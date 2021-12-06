@@ -5,7 +5,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { Button } from "@material-ui/core";
-import Pdf from "../Document/MilanCV.pdf";
+import Pdf from "../Document/Milan-CV.pdf";
 
 function Section({
   title,
