@@ -16,11 +16,11 @@ const Footer = () => {
     <div className={s.footer}>
       <div className={s.container}>
         <div className={s.copyright}>
-          <h3>Designed and Developed by Milan Sachani</h3>
+          <h3>Designed and Developed by Milan Sachani 💪</h3>
         </div>
 
         <div className={s.copyright}>
-          <h3>Copyright © {year} MS</h3>
+          <h3>Copyright © {year} MS 😎</h3>
         </div>
 
         <div className={s.body}>

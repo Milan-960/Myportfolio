@@ -16,11 +16,11 @@ const IntroSection = () => {
 
           <div className={s.description}>
             <p>
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️ I am working as a Junior front-end
-              developer.I like to explore new trends and learn new
-              technologies.Feel free to reach out to me for consulting,
-              Volunteering or just for some interesting discussion.
+              I fell in love with programming and I think...🤷‍♂️ I have at least
+              learnt something. I am working as a Junior front-end developer.I
+              like to explore new trends and learn new technologies.Feel free to
+              reach out to me for consulting, Volunteering or just for some
+              interesting discussion.
             </p>
             <p>
               My field of Interest's are building new

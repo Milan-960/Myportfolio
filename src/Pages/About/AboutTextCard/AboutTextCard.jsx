@@ -1,30 +1,30 @@
-import s from "./AboutTextCard.module.scss";
-import { ImPointRight } from "react-icons/im";
+import ms from "./AboutTextCard.module.scss";
+import { FaRegHandPointRight } from "react-icons/fa";
 
 const AboutTextCard = () => {
   return (
-    <div className={s.card}>
+    <div className={ms.card}>
       <p style={{ textAlign: "justify" }}>
-        Hola Amigos, I am <span className={s.purple}>Milan Sachani </span>
-        from <span className={s.purple}> Warsaw, Poland.</span>
+        Hola Amigos, I am <span className={ms.purple}>Milan Sachani </span>
+        from <span className={ms.purple}> Warsaw, Poland 🇵🇱</span>
         <br />
         <br />I have done Bachelor of Science in Computer Engineering from
         <br />
-        Vistula University Warsaw, Poland.
+        Vistula University Warsaw, Poland 🇵🇱
         <br />
         <br />
         Apart from coding, some other activities that I love to do!
       </p>
 
       <ul>
-        <li className={s.aboutActivity}>
-          <ImPointRight /> Playing Games
+        <li className={ms.aboutActivity}>
+          <FaRegHandPointRight /> Travelling ✈️
         </li>
-        <li className={s.aboutActivity}>
-          <ImPointRight /> Reading
+        <li className={ms.aboutActivity}>
+          <FaRegHandPointRight /> Reading 📚
         </li>
-        <li className={s.aboutActivity}>
-          <ImPointRight /> Travelling
+        <li className={ms.aboutActivity}>
+          <FaRegHandPointRight /> Exercise 🏋🏼
         </li>
       </ul>
 
