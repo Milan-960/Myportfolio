@@ -12,7 +12,7 @@ const About = () => {
         <div className={s.about}>
           <div className={s.aboutDescription}>
             <h1 className={s.title}>
-              Know Who <b className={s.purple}>I'M</b>
+              Know Who <b className={s.purple}>I AM 😎</b>
             </h1>
             <AboutTextCard />
           </div>
@@ -28,7 +28,7 @@ const About = () => {
         <TechSkills />
 
         <h2 className={s.githubActivity}>
-          Days I <b className={s.purple}>Code</b>
+          ❤️ Days I <b className={s.purple}>Code ❤️</b>
         </h2>
         <GithubActivity />
       </div>

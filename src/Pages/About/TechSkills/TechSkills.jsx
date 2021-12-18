@@ -1,51 +1,55 @@
-import s from './TechSkills.module.scss';
+import ms from "./TechSkills.module.scss";
 import {
-  DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
   DiGit,
   DiSass,
-} from 'react-icons/di';
+  DiNpm,
+} from "react-icons/di";
 import {
+  SiJavascript,
   SiTypescript,
   SiRedux,
-  SiSocketDotIo,
-  SiAmazonaws,
-} from 'react-icons/si';
+  SiFirebase,
+  SiAdobexd,
+} from "react-icons/si";
 
 const TechSkills = () => {
   return (
-    <ul className={s.container}>
-      <li className={s.techIcon}>
-        <DiJavascript1 />
-      </li>
-      <li className={s.techIcon}>
-        <SiTypescript />
-      </li>
-      <li className={s.techIcon}>
-        <DiNodejs />
-      </li>
-      <li className={s.techIcon}>
-        <DiReact />
-      </li>
-      <li className={s.techIcon}>
-        <DiMongodb />
-      </li>
-      <li className={s.techIcon}>
+    <ul className={ms.container}>
+      <li className={ms.techIcon}>
         <DiSass />
       </li>
-      <li className={s.techIcon}>
-        <SiAmazonaws />
+      <li className={ms.techIcon}>
+        <SiJavascript />
       </li>
-      <li className={s.techIcon}>
+      <li className={ms.techIcon}>
+        <SiTypescript />
+      </li>
+      <li className={ms.techIcon}>
+        <DiReact />
+      </li>
+      <li className={ms.techIcon}>
         <SiRedux />
       </li>
-      <li className={s.techIcon}>
-        <SiSocketDotIo />
+      <li className={ms.techIcon}>
+        <DiNodejs />
       </li>
-      <li className={s.techIcon}>
+      <li className={ms.techIcon}>
+        <DiMongodb />
+      </li>
+      <li className={ms.techIcon}>
+        <SiFirebase />
+      </li>
+      <li className={ms.techIcon}>
         <DiGit />
+      </li>
+      <li className={ms.techIcon}>
+        <SiAdobexd />
+      </li>
+      <li className={ms.techIcon}>
+        <DiNpm />
       </li>
     </ul>
   );

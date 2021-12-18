@@ -30,12 +30,16 @@ const AboutTextCard = () => {
 
       <p
         style={{
-          color: "rgb(155 126 172)",
+          color: "#cd5ff8",
           textAlign: "center",
           marginTop: "1rem",
+          fontWeight: "bold",
         }}
       >
-        "Strive to build things that make a difference!"{" "}
+        "Programming is like an ocean 🌊 which will never end every day there
+        will be something new which we may don't know but we must have to learn
+        🧑‍💻,,
+        <br />" Milan Sachani ,,
       </p>
     </div>
   );
