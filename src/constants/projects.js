@@ -5,12 +5,13 @@ export const PROJECTS = [
     description:
       "A Game. where player can play with computer if He/She doesn't opponent!",
     image: {
-      src: "https://milansportfolio.com/tic.png",
-      placeholderSrc: "https://milansportfolio.com/tic.png",
+      src: "https://github.com/Milan-960/Tic-Tac-Toe-Game/raw/main/tic.png",
+      placeholderSrc:
+        "https://github.com/Milan-960/Tic-Tac-Toe-Game/raw/main/tic.png",
     },
     links: {
-      site: "https://apiko-marketplace-app-snaichuk.herokuapp.com/",
-      repo: "https://github.com/vsnaichuk/apiko-marketplace-app-snaichuk",
+      site: "https://tic-tac-toem.netlify.app/",
+      repo: "https://github.com/Milan-960/Tic-Tac-Toe-Game",
     },
     technologies: ["#HTML", "#CSS3", "Javascript"],
   },
@@ -20,48 +21,14 @@ export const PROJECTS = [
     description:
       "An Application where you can add your expenses. After adding an expense there is a filter whitch counts your total expenses of the month.",
     image: {
-      src: "https://milansportfolio.com/ss.png",
-      placeholderSrc: "https://milansportfolio.com/ss.png",
+      src: "https://github.com/Milan-960/Expense-App/raw/main/ss.png",
+      placeholderSrc:
+        "https://github.com/Milan-960/Expense-App/raw/main/ss.png",
     },
     links: {
       site: "https://expense-apps.netlify.app/",
-      repo: "https://github.com/",
+      repo: "https://github.com/milan-960",
     },
-    technologies: [
-      "#react",
-      "#nodejs",
-      "#express",
-      "#mongodb",
-      "#react-query",
-      "#react-transition-group",
-      "#mongoose",
-      "#jwt",
-      "#aws",
-    ],
-  },
-  {
-    id: "3",
-    title: "To-Do-Goal-List",
-    description:
-      "I have created a LO-DO-LIST where you can enter and delete your goals for tommorow to stay fouced ♥",
-    image: {
-      src: "https://milansportfolio.com/todo.png",
-      placeholderSrc:
-        "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzIDIiPjwvc3ZnPg==",
-    },
-    links: {
-      site: "https://expo.dev/@v_snaichuk/online-shop-app",
-      repo: "https://github.com/vsnaichuk/RN-shop",
-    },
-    technologies: [
-      "#react-native",
-      "expo",
-      "#redux",
-      "#redux-toolkit",
-      "#react-navigation",
-      "#nodejs",
-      "#express",
-      "#mongodb",
-    ],
+    technologies: ["#react", "#firebase"],
   },
 ];
