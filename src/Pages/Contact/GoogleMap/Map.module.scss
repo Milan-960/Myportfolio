@@ -1,0 +1,20 @@
+.map {
+  width: 50%;
+  height: 94vh;
+  position: absolute;
+  bottom: 0rem;
+}
+
+@media (max-width: 800px) {
+  .map {
+    height: 35vh;
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .map {
+    height: 25vh;
+    width: 100%;
+  }
+}

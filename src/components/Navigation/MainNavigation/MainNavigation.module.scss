@@ -1,0 +1,22 @@
+.navigationDrawerNav {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.desktop {
+  display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+  }
+}

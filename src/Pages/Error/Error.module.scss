@@ -1,0 +1,35 @@
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+
+  h1 {
+    padding: 15px;
+    font-size: 30px;
+  }
+}
+
+.btn {
+  font-size: 35px;
+  color: blueviolet;
+  border: 1px solid blueviolet;
+  border-radius: 10px;
+}
+.img {
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(19, 37, 63);
+}
+
+@media (max-width: 800px) {
+  .img {
+    width: 100%;
+  }
+}

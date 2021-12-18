@@ -1,0 +1,74 @@
+@import '../../../styles/keyframes';
+
+.content {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 9rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--theme-color);
+  text-align: left;
+}
+
+.header {
+}
+
+.title {
+  padding-left: .2rem;
+  font-size: 2.4rem;
+}
+
+.wave {
+  animation-name: wave;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  word-spacing: .3rem;
+}
+
+.mainName {
+  color: var(--txt-sec-darcker);
+  text-transform: uppercase;
+
+}
+
+.homeMainIcon {
+  display: flex !important;
+  width: 37%;
+  min-height: 25rem;
+  margin-top: 2rem;
+  padding: 0 15px;
+
+  & > img {
+    min-width: 230px;
+    height: auto;
+  }
+}
+
+.typewriterWrapper {
+  font-size: 2.2em;
+  color: #be6adf;
+  font-weight: 600;
+}
+.typewriterCursor {
+  font-size: 2.4em;
+  color: #b562d6;
+}
+
+
+@media (max-width: 925px) {
+  .content {
+    padding: 9rem 3rem 1rem;
+    flex-wrap: wrap;
+  }
+  .homeMainIcon {
+    justify-content: center;
+    width: 60%;
+  }
+}
