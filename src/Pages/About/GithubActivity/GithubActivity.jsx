@@ -1,4 +1,4 @@
-import s from "./GithubActivity.module.scss";
+import ms from "./GithubActivity.module.scss";
 import GitHubCalendar from "react-github-calendar";
 
 const GithubActivity = () => {
@@ -12,7 +12,7 @@ const GithubActivity = () => {
     grade0: "#ecd9fc",
   };
   return (
-    <div className={s.container}>
+    <div className={ms.container}>
       <GitHubCalendar
         username="Milan-960"
         blockSize={15}
