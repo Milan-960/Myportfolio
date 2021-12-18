@@ -36,7 +36,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://www.facebook.com/Snaychuk"
+                href="https://www.linkedin.com/in/milan-sachani-9090"
                 target="_blank"
                 rel="noreferrer"
               >
