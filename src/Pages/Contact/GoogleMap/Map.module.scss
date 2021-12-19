@@ -2,7 +2,7 @@
   width: 50%;
   height: 94vh;
   position: absolute;
-  bottom: 0rem;
+  bottom: 0px !important;
 }
 .contact {
   font-size: 50px;
@@ -11,7 +11,7 @@
 
 @media (max-width: 800px) {
   .map {
-    height: 32vh;
+    height: 28vh;
     width: 100%;
   }
 }
