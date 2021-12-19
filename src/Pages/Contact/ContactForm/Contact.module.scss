@@ -135,14 +135,14 @@
 
 .loginbox {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 75%;
   width: 500px;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(101, 103, 224, 0.6);
   border-radius: 10px;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
   h2 {
     border-radius: 10px;
@@ -171,8 +171,12 @@
       box-shadow: 0 0 5px #b0cfe0;
       border: 1px solid #b0cfe0;
     }
+    label {
+      color: #ad75d2;
+      font-size: 15px;
+      padding-block: 5px;
+    }
   }
-
   .userbox-split {
     width: 49%;
   }
@@ -183,6 +187,7 @@
 
   input {
     &.align-left {
+      color: pink;
       float: left;
     }
 
