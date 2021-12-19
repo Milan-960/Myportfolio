@@ -8,9 +8,10 @@ import GoogleMap from "./GoogleMap/Map";
 const Contact = () => {
   return (
     <div>
-      <BaseLayout />
-      <Form />
-      <GoogleMap />
+      <BaseLayout>
+        <Form />
+        <GoogleMap />
+      </BaseLayout>
     </div>
   );
 };
