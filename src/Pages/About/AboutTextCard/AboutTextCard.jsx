@@ -36,10 +36,11 @@ const AboutTextCard = () => {
           fontWeight: "bold",
         }}
       >
-        "Programming is like an ocean 🌊 which will never end every day there
+        "" Programming is like an ocean 🌊 which will never end every day there
         will be something new which we may don't know but we must have to learn
-        🧑‍💻,,
-        <br />" Milan Sachani ,,
+        🧑‍💻""
+        <br />
+        "" Milan Sachani ""
       </p>
     </div>
   );

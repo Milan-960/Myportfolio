@@ -1,9 +1,15 @@
-.main {
-  position: relative;
-  font-size: 20px;
-  text-align: end;
-  bottom: -6rem;
-  left: -7rem;
+.details {
   color: var(--txt-secondary);
-  font-weight: bold;
+  text-align: center;
+  position: relative;
+  bottom: -5rem;
+}
+
+.h1 {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.p {
+  padding: 10px;
 }

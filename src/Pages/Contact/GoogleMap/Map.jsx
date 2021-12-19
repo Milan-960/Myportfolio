@@ -1,34 +1,54 @@
-import React, { Component } from "react";
-import GoogleMapReact from "google-map-react";
+// import React, { Component } from "react";
+// import GoogleMapReact from "google-map-react";
 
 import m from "./Map.module.scss";
 
-// const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import React, { Component } from "react";
+import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
 
-class SimpleMap extends Component {
-  static defaultProps = {
-    center: {
-      lat: 59.95,
-      lng: 30.33,
-    },
-    zoom: 11,
+export class MapContainer extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      cords: [{ lat: 52.2297, lng: 21.0122 }],
+    };
+  }
+
+  showMarkers = () => {
+    return this.state.cords.map((store, index) => {
+      return (
+        <Marker
+          key={index}
+          id={index}
+          position={{
+            lat: store.lat,
+            lng: store.lng,
+          }}
+          onClick={() => console.log("Clicked")}
+        />
+      );
+    });
   };
 
   render() {
     return (
-      // Important! Always set the container height explicitly
       <div className={m.map}>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyCPyLjCDAIMAxjT4JpzKRCuIoYc0_AD1Xo" }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
+        <Map
+          google={this.props.google}
+          zoom={11}
+          initialCenter={{
+            lat: 52.2297,
+            lng: 21.0122,
+          }}
         >
-          {/* <Marker onClick={this.onMarkerClick} name={"Poland"} /> */}
-          {/* <AnyReactComponent lat={52.2297} lng={21.0122} text="My Marker" /> */}
-        </GoogleMapReact>
+          {this.showMarkers()}
+        </Map>
       </div>
     );
   }
 }
 
-export default SimpleMap;
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyCPyLjCDAIMAxjT4JpzKRCuIoYc0_AD1Xo",
+})(MapContainer);

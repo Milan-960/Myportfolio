@@ -37,6 +37,9 @@ const TechSkills = () => {
         <DiNodejs />
       </li>
       <li className={ms.techIcon}>
+        <DiNpm />
+      </li>
+      <li className={ms.techIcon}>
         <DiMongodb />
       </li>
       <li className={ms.techIcon}>
@@ -47,9 +50,6 @@ const TechSkills = () => {
       </li>
       <li className={ms.techIcon}>
         <SiAdobexd />
-      </li>
-      <li className={ms.techIcon}>
-        <DiNpm />
       </li>
     </ul>
   );
