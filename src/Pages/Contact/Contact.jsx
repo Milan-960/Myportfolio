@@ -9,9 +9,9 @@ import Information from "./Information/Information";
 const Contact = () => {
   return (
     <div>
-      <BaseLayout />
       <Form />
       <GoogleMap />
+      <BaseLayout />
     </div>
   );
 };
