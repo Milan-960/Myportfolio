@@ -1,6 +1,3 @@
-// import React, { Component } from "react";
-// import GoogleMapReact from "google-map-react";
-
 import m from "./Map.module.scss";
 
 import React, { Component } from "react";
