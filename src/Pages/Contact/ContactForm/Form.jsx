@@ -136,7 +136,7 @@ class DemoForm extends React.Component {
     return (
       <div className={m.loginbox}>
         <form className={m.contactform} onSubmit={this.handleSubmit}>
-          <h2>Contact </h2>
+          <h2>Contact Me</h2>
           <div className={m.userbox}>
             <label for="name">Name:</label>
             <input
