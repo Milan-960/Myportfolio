@@ -13,7 +13,7 @@ const About = lazy(() => import("../Pages/About/About"));
 const Projects = lazy(() => import("../Pages/Projects/Projects"));
 const Resume = lazy(() => import("../Pages/Resume/Resume"));
 const Contact = lazy(() => import("../Pages/Contact/Contact"));
-const Blog = lazy(() => import("../Pages/Blog/Blog"));
+// const Blog = lazy(() => import("../Pages/Blog/Blog"));
 
 const Error = lazy(() => import("../Pages/Error/Error"));
 
@@ -42,7 +42,7 @@ const BaseRoutes = () => {
         <Route path={routes.RESUME} component={Resume} />
         <Route path={routes.CONTACT} component={Contact} />
         <Route path={routes.BLOGS} component={BlogPost} />
-        <Route path={routes.BLOG} component={Blog} />
+        {/* <Route path={routes.BLOG} component={Blog} /> */}
         <Route path="*" component={Error} />
       </Switch>
       {background && (
