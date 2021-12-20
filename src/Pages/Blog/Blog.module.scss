@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: -11rem;
+}
+
+.article {
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  color: var(--txt);
+  background-color: var(--bg);
+  padding: 5px 17px;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.but {
+  text-align: center;
+}
+
+h4 {
+  font-size: 22px;
+  padding: 10px;
+  color: var(--txt-secondary);
+}
+
+@media (max-width: 800px) {
+  .main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}

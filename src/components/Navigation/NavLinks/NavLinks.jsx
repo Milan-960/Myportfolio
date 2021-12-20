@@ -8,6 +8,7 @@ import {
   FcTouchscreenSmartphone,
   FcAbout,
 } from "react-icons/fc";
+import { FcComments } from "react-icons/fc";
 
 import { routes } from "../../../routes/BaseRoutes";
 
@@ -51,6 +52,13 @@ const NavLinks = () => {
         <NavLink to={routes.CONTACT} activeClassName={s.active}>
           <FcContacts />
           Contact
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink to={routes.BLOG} activeClassName={s.active}>
+          <FcComments />
+          Blog
         </NavLink>
       </li>
     </ul>
