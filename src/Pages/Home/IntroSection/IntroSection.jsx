@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import s from "./IntroSection.module.scss";
 
 import { FaLinkedinIn, FaStackOverflow, FaTwitter } from "react-icons/fa";
@@ -6,6 +7,8 @@ import Tilt from "react-parallax-tilt";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const IntroSection = () => {
+  const [scale, setScale] = useState(1.05);
+
   return (
     <section className={s.content}>
       <div className={s.introduction}>
@@ -41,7 +44,7 @@ const IntroSection = () => {
           </div>
         </div>
         <div>
-          <Tilt>
+          <Tilt scale={scale} transitionSpeed={2500}>
             <LazyLoadImage
               alt="avatar"
               effect="blur"
