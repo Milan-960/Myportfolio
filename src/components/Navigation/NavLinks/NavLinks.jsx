@@ -55,12 +55,12 @@ const NavLinks = () => {
         </NavLink>
       </li>
 
-      {/* <li>
+      <li>
         <NavLink to={routes.BLOG} activeClassName={s.active}>
           <FcComments />
           Blog
         </NavLink>
-      </li> */}
+      </li>
     </ul>
   );
 };
