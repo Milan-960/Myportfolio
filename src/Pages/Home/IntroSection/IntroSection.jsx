@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import s from "./IntroSection.module.scss";
+import ms from "./IntroSection.module.scss";
 
 import { FaLinkedinIn, FaStackOverflow, FaTwitter } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
@@ -7,17 +6,15 @@ import Tilt from "react-parallax-tilt";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const IntroSection = () => {
-  const [scale, setScale] = useState(1.05);
-
   return (
-    <section className={s.content}>
-      <div className={s.introduction}>
-        <div className={s.introductionText}>
-          <h1 className={s.title}>
-            LET ME <span className={s.purple}> INTRODUCE </span> MYSELF
+    <section className={ms.content}>
+      <div className={ms.introduction}>
+        <div className={ms.introductionText}>
+          <h1 className={ms.title}>
+            LET ME <span className={ms.purple}> INTRODUCE </span> MYSELF
           </h1>
 
-          <div className={s.description}>
+          <div className={ms.description}>
             <p>
               I fell in love with programming and I think...🤷‍♂️ I have at least
               learnt something. I am working as a Junior front-end developer.I
@@ -28,14 +25,14 @@ const IntroSection = () => {
             <p>
               My field of Interest's are building new
               <i>
-                <b className={s.purple}> Web Technologies and Products</b>
+                <b className={ms.purple}> Web Technologies and Products</b>
               </i>
             </p>
             <p>
-              A passionate <b className={s.purple}> Front-end Developer 🚀 </b>I
-              have an experience of building{" "}
-              <b className={s.purple}>Websites and Mobile</b> applications with
-              <b className={s.purple}>
+              A passionate <b className={ms.purple}> Front-end Developer 🚀 </b>
+              I have an experience of building{" "}
+              <b className={ms.purple}>Websites and Mobile</b> applications with
+              <b className={ms.purple}>
                 {" "}
                 HTML5, CSS3/SCSS, JavaScript, Reactjs, Nodejs,
               </b>{" "}
@@ -44,7 +41,14 @@ const IntroSection = () => {
           </div>
         </div>
         <div>
-          <Tilt scale={scale} transitionSpeed={2500}>
+          <Tilt
+            tiltMaxAngleX={35}
+            tiltMaxAngleY={35}
+            perspective={900}
+            scale={1.05}
+            transitionSpeed={2000}
+            gyroscope={true}
+          >
             <LazyLoadImage
               alt="avatar"
               effect="blur"
@@ -54,18 +58,18 @@ const IntroSection = () => {
         </div>
       </div>
 
-      <div className={s.introSocial}>
+      <div className={ms.introSocial}>
         <h1>FIND ME ON TECHSITES 🕸</h1>
         <p>
-          Feel free to <span className={s.purple}>connect </span>with me
+          Feel free to <span className={ms.purple}>connect </span>with me
         </p>
-        <ul className={s.milan}>
+        <ul className={ms.milan}>
           <li>
             <a
               href="https://github.com/milan-960"
               target="_blank"
               rel="noreferrer"
-              className={s.socialIcon}
+              className={ms.socialIcon}
             >
               <AiFillGithub />
             </a>
@@ -75,7 +79,7 @@ const IntroSection = () => {
               href="https://www.linkedin.com/in/milan-sachani-9090"
               target="_blank"
               rel="noreferrer"
-              className={s.socialIcon}
+              className={ms.socialIcon}
             >
               <FaLinkedinIn />
             </a>
@@ -85,7 +89,7 @@ const IntroSection = () => {
               href="https://stackoverflow.com/users/17144934/milan960"
               target="_blank"
               rel="noreferrer"
-              className={s.socialIcon}
+              className={ms.socialIcon}
             >
               <FaStackOverflow />
             </a>
@@ -95,7 +99,7 @@ const IntroSection = () => {
               href="https://twitter.com/MilanSachani"
               target="_blank"
               rel="noreferrer"
-              className={s.socialIcon}
+              className={ms.socialIcon}
             >
               <FaTwitter />
             </a>
