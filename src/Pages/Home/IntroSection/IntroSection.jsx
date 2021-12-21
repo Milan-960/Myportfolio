@@ -40,14 +40,15 @@ const IntroSection = () => {
             </p>
           </div>
         </div>
-
-        <Tilt trackOnWindow={true}>
-          <LazyLoadImage
-            alt="avatar"
-            effect="blur"
-            src="https://i.pinimg.com/1200x/93/cb/a6/93cba608cbd38deb81023c9f0407d9ff.jpg"
-          />
-        </Tilt>
+        <div>
+          <Tilt>
+            <LazyLoadImage
+              alt="avatar"
+              effect="blur"
+              src="https://i.pinimg.com/1200x/93/cb/a6/93cba608cbd38deb81023c9f0407d9ff.jpg"
+            />
+          </Tilt>
+        </div>
       </div>
 
       <div className={s.introSocial}>
