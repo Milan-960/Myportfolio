@@ -17,27 +17,28 @@ const IntroSection = () => {
           <div className={ms.description}>
             <p>
               I fell in love with programming, and I believe...😎 At the very
-              least, I've learned something. As a Jr. Front-End Developer, I
-              work on a variety of projects. I enjoy researching new trends and
-              learning about new technologies. Feel free to contact me if you
-              need consulting, volunteer work, or just want to talk about
-              something interesting.
+              least, I've learned something. As a{" "}
+              <b className={ms.purple}> Jr. Front-End Developer, </b> I work on
+              a variety of projects. I enjoy researching new trends and learning
+              about new technologies. Feel free to contact me if you need
+              consulting, volunteer work, or just want to talk about something
+              interesting.
             </p>
             <p>
-              My field of Interest's are building new
+              My areas of interest include the development of new
               <i>
                 <b className={ms.purple}> Web Technologies and Products</b>
               </i>
             </p>
             <p>
-              A passionate <b className={ms.purple}> Front-end Developer 🚀 </b>
-              I have an experience of building{" "}
-              <b className={ms.purple}>Websites and Mobile</b> applications with
+              A dedicated <b className={ms.purple}> Front-end Developer 🚀 </b>
+              I've worked with{" "}
               <b className={ms.purple}>
                 {" "}
                 HTML5, CSS3/SCSS, JavaScript, Reactjs, Nodejs,
               </b>{" "}
-              and some other cool 😎 libraries.
+              and a few other cool 😎 libraries to create{" "}
+              <b className={ms.purple}>websites and mobile applications.</b>
             </p>
           </div>
         </div>
