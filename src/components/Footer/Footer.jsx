@@ -1,4 +1,4 @@
-import s from "./Footer.module.scss";
+import ms from "./Footer.module.scss";
 import { AiFillGithub } from "react-icons/ai";
 import {
   FaLinkedinIn,
@@ -13,18 +13,18 @@ const Footer = () => {
   let year = date.getFullYear();
 
   return (
-    <div className={s.footer}>
-      <div className={s.container}>
-        <div className={s.copyright}>
+    <div className={ms.footer}>
+      <div className={ms.container}>
+        <div className={ms.copyright}>
           <h3>Designed and Developed by Milan Sachani 💪</h3>
         </div>
 
-        <div className={s.copyright}>
+        <div className={ms.copyright}>
           <h3>Copyright © {year} MS 😎</h3>
         </div>
 
-        <div className={s.body}>
-          <ul className={s.socialIcons}>
+        <div className={ms.body}>
+          <ul className={ms.socialIcons}>
             <li>
               <a
                 href="https://github.com/milan-960"
@@ -57,7 +57,7 @@ const Footer = () => {
                 href="https://twitter.com/MilanSachani"
                 target="_blank"
                 rel="noreferrer"
-                className={s.socialIcon}
+                className={ms.socialIcon}
               >
                 <FaTwitter />
               </a>
