@@ -7,7 +7,7 @@ export const LIGHT_THEME_PARTICLES = {
     },
   },
   color: {
-    value: '#623686',
+    value: "#623686",
   },
   opacity: {
     value: 1,
@@ -32,7 +32,7 @@ export const LIGHT_THEME_PARTICLES = {
   line_linked: {
     enable_auto: true,
     distance: 50,
-    color: '#623686',
+    color: "#623686",
     opacity: 1,
     width: 1,
     condensed_mode: {
@@ -44,10 +44,10 @@ export const LIGHT_THEME_PARTICLES = {
   move: {
     enable: true,
     speed: 1,
-    direction: 'none',
+    direction: "none",
     random: false,
     straight: false,
-    out_mode: 'out',
+    out_mode: "out",
     bounce: false,
     attract: {
       enable: false,
@@ -70,7 +70,7 @@ export const DARK_THEME_PARTICLES = {
     opacity: 0.03,
   },
   move: {
-    direction: 'right',
+    direction: "right",
     speed: 0.05,
   },
   size: {

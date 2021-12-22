@@ -1,7 +1,7 @@
-import s from "./Backdrop.module.scss";
+import ms from "./Backdrop.module.scss";
 
 const Backdrop = ({ onClick }) => {
-  return <div className={s.backdrop} onClick={onClick} />;
+  return <div className={ms.backdrop} onClick={onClick} />;
 };
 
 export default Backdrop;

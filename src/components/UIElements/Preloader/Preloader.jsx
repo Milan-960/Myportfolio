@@ -1,9 +1,7 @@
-import s from './Preloader.module.scss';
+import ms from "./Preloader.module.scss";
 
 const Preloader = () => {
-  return (
-    <div className={s.preloader} />
-  );
+  return <div className={ms.preloader} />;
 };
 
 export default Preloader;

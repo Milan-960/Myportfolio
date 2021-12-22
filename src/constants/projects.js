@@ -1,9 +1,25 @@
 export const PROJECTS = [
   {
     id: "1",
+    title: "Quote-App",
+    description:
+      "Basically, This app is about Quotes, I have created this app for adding some Quotes as well as some of your interesting thoughts. 😉",
+    image: {
+      src: "https://github.com/Milan-960/Quote-App/raw/main/SS/home.png",
+      placeholderSrc:
+        "https://github.com/Milan-960/Quote-App/raw/main/SS/home.png",
+    },
+    links: {
+      site: "https://dayquotes.netlify.app/quotes",
+      repo: "https://github.com/Milan-960/Quote-App",
+    },
+    technologies: ["#react", "#firebase", "NPM", "#CSS3", "Javascript"],
+  },
+  {
+    id: "1",
     title: "Tic-Tac-Toe-Game",
     description:
-      "A Game. where player can play with computer if He/She doesn't opponent!",
+      "A Game. where player can play with computer if He/She doesn't have any opponent!",
     image: {
       src: "https://github.com/Milan-960/Tic-Tac-Toe-Game/raw/main/tic.png",
       placeholderSrc:

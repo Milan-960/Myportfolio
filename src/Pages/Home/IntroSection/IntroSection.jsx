@@ -16,11 +16,12 @@ const IntroSection = () => {
 
           <div className={ms.description}>
             <p>
-              I fell in love with programming and I think...🤷‍♂️ I have at least
-              learnt something. I am working as a Junior front-end developer.I
-              like to explore new trends and learn new technologies.Feel free to
-              reach out to me for consulting, Volunteering or just for some
-              interesting discussion.
+              I fell in love with programming, and I believe...😎 At the very
+              least, I've learned something. As a Jr. Front-End Developer, I
+              work on a variety of projects. I enjoy researching new trends and
+              learning about new technologies. Feel free to contact me if you
+              need consulting, volunteer work, or just want to talk about
+              something interesting.
             </p>
             <p>
               My field of Interest's are building new

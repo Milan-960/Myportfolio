@@ -1,17 +1,13 @@
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
 
-const AppTypewriter = ({
-  strings,
-  wrapperClassName,
-  cursorClassName,
-}) => {
+const AppTypewriter = ({ strings, wrapperClassName, cursorClassName }) => {
   return (
     <Typewriter
       options={{
         strings,
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 30,
         wrapperClassName,
         cursorClassName,
       }}

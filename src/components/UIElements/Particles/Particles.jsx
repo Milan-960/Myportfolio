@@ -1,16 +1,11 @@
-import ReactParticles from 'react-particles-js';
-import {
-  DARK_THEME_PARTICLES,
-  LIGHT_THEME_PARTICLES,
-} from './particleType';
-import { useThemeContext } from '../../../hooks/themeHook/themeHook';
+import ReactParticles from "react-particles-js";
+import { DARK_THEME_PARTICLES, LIGHT_THEME_PARTICLES } from "./particleType";
+import { useThemeContext } from "../../../hooks/themeHook/themeHook";
 
 const Particles = () => {
   const { dark } = useThemeContext();
 
-  const particles = dark
-    ? DARK_THEME_PARTICLES
-    : LIGHT_THEME_PARTICLES;
+  const particles = dark ? DARK_THEME_PARTICLES : LIGHT_THEME_PARTICLES;
 
   return (
     <ReactParticles
@@ -20,7 +15,7 @@ const Particles = () => {
           events: {
             onclick: {
               enable: true,
-              mode: 'push',
+              mode: "push",
             },
           },
           modes: {

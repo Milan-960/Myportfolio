@@ -1,7 +1,7 @@
-import s from './SectionBG.module.scss';
+import ms from "./SectionBG.module.scss";
 
 const SectionBG = ({ children }) => {
-  return <div className={s.sectionBG}>{children}</div>;
+  return <div className={ms.sectionBG}>{children}</div>;
 };
 
 export default SectionBG;

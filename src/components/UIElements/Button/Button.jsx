@@ -1,8 +1,8 @@
-import cx from 'classnames';
-import s from './Button.module.scss';
+import cx from "classnames";
+import ms from "./Button.module.scss";
 
 const Button = ({
-  type = 'button',
+  type = "button",
   onClick,
   disabled,
   className,
@@ -16,7 +16,7 @@ const Button = ({
     return (
       <a
         style={style}
-        className={cx(s.btn, s[className], addClass)}
+        className={cx(ms.btn, ms[className], addClass)}
         href={href}
         target={target}
       >
@@ -28,7 +28,7 @@ const Button = ({
   return (
     <button
       style={style}
-      className={cx(s.btn, s[className], addClass)}
+      className={cx(ms.btn, ms[className], addClass)}
       type={type}
       onClick={onClick}
       disabled={disabled}
