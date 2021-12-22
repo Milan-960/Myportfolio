@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import ms from "./Error.module.scss";
 
 export default function Error() {
+  setTimeout(function () {
+    window.location = "/";
+  }, 2000);
+
   return (
     <div className={ms.text}>
       <h1>😜 Error 404 | Page Not Found 😜</h1>
