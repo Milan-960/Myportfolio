@@ -1,4 +1,4 @@
-import s from "./BaseLayout.module.scss";
+import ms from "./BaseLayout.module.scss";
 import Header from "../../components/Header/Header";
 import Particles from "../../components/UIElements/Particles/Particles";
 import Footer from "../../components/Footer/Footer";
@@ -6,14 +6,14 @@ import MainNavigation from "../../components/Navigation/MainNavigation/MainNavig
 
 const BaseLayout = ({ children }) => {
   return (
-    <div className={s.layout}>
+    <div className={ms.layout}>
       <Particles />
 
       <Header>
         <MainNavigation />
       </Header>
 
-      <div className={s.container}>{children}</div>
+      <div className={ms.container}>{children}</div>
 
       <Footer />
     </div>
