@@ -44,11 +44,11 @@ const IntroSection = () => {
         </div>
         <div>
           <Tilt
-            tiltMaxAngleX={35}
-            tiltMaxAngleY={35}
-            perspective={900}
+            tiltMaxAngleX={9}
+            tiltMaxAngleY={9}
+            perspective={1000}
             scale={1.05}
-            transitionSpeed={2000}
+            transitionSpeed={2500}
             gyroscope={true}
           >
             <LazyLoadImage

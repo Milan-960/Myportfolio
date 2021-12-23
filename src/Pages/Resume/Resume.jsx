@@ -10,10 +10,8 @@ import Button from "../../components/UIElements/Button/Button";
 import resumeLink from "./Milan-CV.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-// const resumeLink = "./Milan-CV.pdf";
-// "https://raw.githubusercontent.com/vsnaichuk/vsnaichuk/master/CV.pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Resume = () => {
   const pdfWrapper = useRef(null);
