@@ -16,7 +16,7 @@ export const PROJECTS = [
     technologies: ["#react", "#firebase", "NPM", "#CSS3", "Javascript"],
   },
   {
-    id: "1",
+    id: "2",
     title: "Tic-Tac-Toe-Game",
     description:
       "A Game. where player can play with computer if He/She doesn't have any opponent!",
@@ -32,7 +32,7 @@ export const PROJECTS = [
     technologies: ["#HTML", "#CSS3", "Javascript"],
   },
   {
-    id: "2",
+    id: "3",
     title: "Expenses-Tracker",
     description:
       "An Application where you can add your expenses. After adding an expense there is a filter whitch counts your total expenses of the month.",
