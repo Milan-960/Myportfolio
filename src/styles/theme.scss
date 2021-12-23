@@ -2,12 +2,26 @@
   --txt: #000;
   --txt-secondary: #cd5ff8;
   --txt-sec-darker: #cd5ff8;
-  --bg-layout-home: linear-gradient(307deg, transparent 0%, transparent 57%, #ffffff 57%, #f8f8f8 100%), linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+  --bg-layout-home: linear-gradient(
+      307deg,
+      transparent 0%,
+      transparent 57%,
+      #ffffff 57%,
+      #f8f8f8 100%
+    ),
+    linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
   --bg-home-section-main: none;
-  --bg-layout-base: linear-gradient(307deg, transparent 0%, transparent 57%, #ffffff 57%, #f8f8f8 100%), linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+  --bg-layout-base: linear-gradient(
+      307deg,
+      transparent 0%,
+      transparent 57%,
+      #ffffff 57%,
+      #f8f8f8 100%
+    ),
+    linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
   --bg-primary: #fafafa;
   --bg: #623686;
-  --bg-active: rgba(109,32,197,.84);
+  --bg-active: rgba(109, 32, 197, 0.84);
   --bg-header: transparent;
   --bg-footer: transparent;
   --backdrop: rgba(0, 0, 0, 0.75);
@@ -32,12 +46,17 @@
   --txt-secondary: #cd5ff8;
   --txt-sec-darcker: #cd5ff8;
   --bg-layout-home: linear-gradient(to left, RGB(27 20 41), RGB(20 15 35));
-  --bg-home-section-main: linear-gradient(to bottom left, rgba(17, 16, 16, 0.678), rgba(12, 10, 22, 0.863)), url(../assets/home-bg.jpg);
-  --bg-layout-base: #100D19;
+  --bg-home-section-main: linear-gradient(
+      to bottom left,
+      rgba(17, 16, 16, 0.678),
+      rgba(12, 10, 22, 0.863)
+    ),
+    url(../assets/home-bg.jpg);
+  --bg-layout-base: #100d19;
   --bg-primary: #181a27;
   --bg: #623686;
-  --bg-active: rgba(109,32,197,.84);
-  --bg-header: rgba(33,32,56,0.84);
+  --bg-active: rgba(109, 32, 197, 0.84);
+  --bg-header: rgba(33, 32, 56, 0.84);
   --bg-footer: #0a0416;
   --backdrop: rgba(0, 0, 0, 0.75);
   --nav-active: #c95bf5;
@@ -46,8 +65,8 @@
   --social-icon: #700c86;
   --social-shadow: #801f95;
   --preloader: #0c0513;
-  --bg-modal: #100D19;
-  --modal-border: 1px solid rgba(0,0,0,.125);
+  --bg-modal: #100d19;
+  --modal-border: 1px solid rgba(0, 0, 0, 0.125);
   --modal-close: #623686;
   --modal-close-icon: #fff;
   --drawer-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);

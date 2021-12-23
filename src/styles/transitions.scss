@@ -22,14 +22,15 @@
 
 //modal-slide-in-bottom
 .modal-enter {
-  transform: translateY(160px);
+  transform: translateY(150px);
   opacity: 0;
+  transition: all 300ms;
 }
 
 .modal-enter-active {
   transform: translateY(0);
   opacity: 1;
-  transition: all 200ms;
+  transition: all 300ms;
 }
 
 .modal-exit {
@@ -38,7 +39,7 @@
 }
 
 .modal-exit-active {
-  transform: translateY(160px);
+  transform: translateY(150px);
   opacity: 0;
-  transition: all 200ms;
+  transition: all 300ms;
 }

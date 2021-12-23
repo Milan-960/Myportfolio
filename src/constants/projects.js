@@ -1,6 +1,6 @@
 export const PROJECTS = [
   {
-    id: "1",
+    id: "Quote-App",
     title: "Quote-App",
     description:
       "Basically, This app is about Quotes, I have created this app for adding some Quotes as well as some of your interesting thoughts. 😉",
@@ -16,7 +16,7 @@ export const PROJECTS = [
     technologies: ["#react", "#firebase", "NPM", "#CSS3", "Javascript"],
   },
   {
-    id: "2",
+    id: "Tic-Tac-Toe-Game",
     title: "Tic-Tac-Toe-Game",
     description:
       "A Game. where player can play with computer if He/She doesn't have any opponent!",
@@ -32,7 +32,7 @@ export const PROJECTS = [
     technologies: ["#HTML", "#CSS3", "Javascript"],
   },
   {
-    id: "3",
+    id: "Expenses-Tracker",
     title: "Expenses-Tracker",
     description:
       "An Application where you can add your expenses. After adding an expense there is a filter whitch counts your total expenses of the month.",
