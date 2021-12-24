@@ -12,6 +12,7 @@ import {
   SiTypescript,
   SiRedux,
   SiFirebase,
+  SiPostgresql,
   SiAdobexd,
 } from "react-icons/si";
 
@@ -44,6 +45,9 @@ const TechSkills = () => {
       </li>
       <li className={ms.techIcon}>
         <SiFirebase />
+      </li>
+      <li className={ms.techIcon}>
+        <SiPostgresql />
       </li>
       <li className={ms.techIcon}>
         <DiGit />
