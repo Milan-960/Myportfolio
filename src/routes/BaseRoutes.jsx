@@ -8,6 +8,7 @@ import ModalProjectCard from "../Pages/Projects/ModalProjectCard/ModalProjectCar
 // import BlogPost from "../Pages/Blog/Post/Post";
 
 //pages are in hear
+
 const Home = lazy(() => import("../Pages/Home/Home"));
 const About = lazy(() => import("../Pages/About/About"));
 const Projects = lazy(() => import("../Pages/Projects/Projects"));

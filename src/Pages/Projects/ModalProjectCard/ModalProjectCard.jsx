@@ -1,4 +1,4 @@
-import s from "./ModalProjectCard.module.scss";
+import ms from "./ModalProjectCard.module.scss";
 import { BiLinkExternal } from "react-icons/all";
 import Modal from "../../../components/Modal/Modal";
 import Button from "../../../components/UIElements/Button/Button";
@@ -21,27 +21,27 @@ const ModalProjectCard = () => {
 
   return (
     <Modal show={isVisible} onClose={toggleModal}>
-      <div className={s.cardWrapper}>
+      <div className={ms.cardWrapper}>
         <LazyLoadImage
           alt="project-img"
           src={image.src}
           effect="blur"
           width="100%"
-          wrapperClassName={s.image}
+          wrapperClassName={ms.image}
           placeholderSrc={image.placeholderSrc}
         />
 
-        <div className={s.cardBody}>
-          <h3 className={s.title}>{title}</h3>
+        <div className={ms.cardBody}>
+          <h3 className={ms.title}>{title}</h3>
 
-          <div className={s.technologies}>
+          <div className={ms.technologies}>
             {technologies.map((tech) => (
               <span>{tech}</span>
             ))}
           </div>
         </div>
 
-        <div className={s.cardFooter}>
+        <div className={ms.cardFooter}>
           <Button
             style={{ width: "12rem" }}
             className="primary"
