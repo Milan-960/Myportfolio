@@ -48,11 +48,11 @@ export default function SinglePost() {
                 title={singlePost.title}
               />
             )}
-            <p>
+            <p className={ms.author}>
               <b className={ms.purple}>Author</b> Milan Sachani 😎
             </p>
 
-            <div className="block__content">
+            <div className={ms.content}>
               <BlockContent
                 blocks={singlePost.body}
                 projectId="pfmait3t"

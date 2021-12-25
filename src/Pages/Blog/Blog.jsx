@@ -36,13 +36,15 @@ export default function Blog() {
           <div className={ms.main}>
             {posts.map((post) => (
               <article key={post.slug.current} className={ms.article}>
-                <div>
-                  <img
-                    src={post.mainImage.asset.url}
-                    alt={post.title}
-                    width="200px"
-                    height="190px"
-                  />
+                <div className={ms.logo}>
+                  <Link to={`/blog/${post.slug.current}`}>
+                    <img
+                      src={post.mainImage.asset.url}
+                      alt={post.title}
+                      width="200px"
+                      height="190px"
+                    />
+                  </Link>
                 </div>
 
                 <h4>{post.title}</h4>

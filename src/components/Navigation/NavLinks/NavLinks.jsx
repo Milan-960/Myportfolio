@@ -9,7 +9,7 @@ import {
   FcAbout,
 } from "react-icons/fc";
 
-// import { FcComments } from "react-icons/fc";
+import { FcComments } from "react-icons/fc";
 
 import { routes } from "../../../routes/BaseRoutes";
 
@@ -56,12 +56,12 @@ const NavLinks = () => {
         </NavLink>
       </li>
 
-      {/* <li>
-        <NavLink to={routes.BLOG} activeClassName={s.active}>
+      <li>
+        <NavLink to={routes.BLOG} activeClassName={ms.active}>
           <FcComments />
           Blog
         </NavLink>
-      </li> */}
+      </li>
     </ul>
   );
 };

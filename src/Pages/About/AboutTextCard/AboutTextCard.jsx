@@ -4,7 +4,7 @@ import { FaRegHandPointRight } from "react-icons/fa";
 const AboutTextCard = () => {
   return (
     <div className={ms.card}>
-      <p style={{ textAlign: "justify" }}>
+      <p>
         Hola Amigos, I am <span className={ms.purple}>Milan Sachani </span>
         from <span className={ms.purple}> Warsaw, Poland 🇵🇱</span>
         <br />
