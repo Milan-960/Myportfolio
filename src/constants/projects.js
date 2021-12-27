@@ -1,5 +1,20 @@
 export const PROJECTS = [
   {
+    id: "realtime-chat-app",
+    title: "chat-app 💬",
+    description:
+      "This app has been created with the firebase version 9.6.1 which is very latest version of firebase. where I have used firebase config APIS and have implemented in reactjs to make a REALTIME-CHAT-APP.",
+    image: {
+      src: "./RealTimeChatApp/login.png",
+      placeholderSrc: "./RealTimeChatApp/user.png",
+    },
+    links: {
+      site: "https://realtime-chat-app-sage.vercel.app",
+      repo: "https://github.com/Milan-960/Realtime-ChatApp",
+    },
+    technologies: ["#react", "#firebase", "#moment", "NPM", "#CSS3"],
+  },
+  {
     id: "quote-app",
     title: "Quote-App",
     description:
