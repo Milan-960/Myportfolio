@@ -5,8 +5,9 @@ export const PROJECTS = [
     description:
       "This app has been created with the firebase version 9.6.1 which is very latest version of firebase. where I have used firebase config APIS and have implemented in reactjs to make a REALTIME-CHAT-APP.",
     image: {
-      src: "./RealTimeChatApp/login.png",
-      placeholderSrc: "./RealTimeChatApp/user.png",
+      src: "https://raw.githubusercontent.com/Milan-960/Myportfolio/master/src/constants/RealTimeChatApp/user.png?token=AS43DXJBPCWRF5RFJ3RUNF3BZGJ4M",
+      placeholderSrc:
+        "https://raw.githubusercontent.com/Milan-960/Myportfolio/master/src/constants/RealTimeChatApp/user.png?token=AS43DXJBPCWRF5RFJ3RUNF3BZGJ4M",
     },
     links: {
       site: "https://realtime-chat-app-sage.vercel.app",
@@ -16,7 +17,7 @@ export const PROJECTS = [
   },
   {
     id: "quote-app",
-    title: "Quote-App",
+    title: "Quote-App 💭",
     description:
       "Basically, This app is about Quotes, I have created this app for adding some Quotes as well as some of your interesting thoughts. 😉",
     image: {
@@ -32,7 +33,7 @@ export const PROJECTS = [
   },
   {
     id: "tic-tac-toe-game",
-    title: "Tic-Tac-Toe-Game",
+    title: "Tic-Tac-Toe-Game 🎮",
     description:
       "A Game. where player can play with computer if He/She doesn't have any opponent!",
     image: {
@@ -48,7 +49,7 @@ export const PROJECTS = [
   },
   {
     id: "expenses-tracker",
-    title: "Expenses-Tracker",
+    title: "Expenses-Tracker 💰",
     description:
       "An Application where you can add your expenses. After adding an expense there is a filter whitch counts your total expenses of the month.",
     image: {
