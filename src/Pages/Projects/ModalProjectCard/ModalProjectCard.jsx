@@ -1,11 +1,14 @@
-import ms from "./ModalProjectCard.module.scss";
-import { BiLinkExternal } from "react-icons/all";
-import Modal from "../../../components/Modal/Modal";
-import Button from "../../../components/UIElements/Button/Button";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import { BiLinkExternal } from "react-icons/all";
+
+import ms from "./ModalProjectCard.module.scss";
+
+import Modal from "../../../components/Modal/Modal";
+import Button from "../../../components/UIElements/Button/Button";
 import { useModal } from "../../../hooks/modalHook";
 import { PROJECTS } from "../../../constants/projects";
+
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ModalProjectCard = () => {

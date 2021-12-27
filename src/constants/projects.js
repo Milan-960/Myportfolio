@@ -5,9 +5,9 @@ export const PROJECTS = [
     description:
       "This app has been created with the firebase version 9.6.1 which is very latest version of firebase. where I have used firebase config APIS and have implemented in reactjs to make a REALTIME-CHAT-APP.",
     image: {
-      src: "https://raw.githubusercontent.com/Milan-960/Myportfolio/master/src/constants/RealTimeChatApp/login.png?token=AS43DXPBQ37FTJVAPQ7SDADBZGKG2",
+      src: "https://i.pinimg.com/originals/40/91/96/40919621f44c58623c4245c997d61656.png",
       placeholderSrc:
-        "https://raw.githubusercontent.com/Milan-960/Myportfolio/master/src/constants/RealTimeChatApp/login.png?token=AS43DXPBQ37FTJVAPQ7SDADBZGKG2",
+        "https://i.pinimg.com/originals/40/91/96/40919621f44c58623c4245c997d61656.png",
     },
     links: {
       site: "https://realtime-chat-app-sage.vercel.app",
