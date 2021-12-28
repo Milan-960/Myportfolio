@@ -3,7 +3,7 @@ export const PROJECTS = [
     id: "realtime-chat-app",
     title: "chat-app 💬",
     description:
-      "This app has been created with the firebase version 9.6.1 which is very latest version of firebase. where I have used firebase config APIS and have implemented in reactjs to make a REALTIME-CHAT-APP.",
+      "This app has been created with firebase version 9.6.1 which is the very latest version of firebase. where I have used firebase config APIS and have implemented in reactjs to make a REALTIME-CHAT-APP.",
     image: {
       src: "https://i.pinimg.com/originals/40/91/96/40919621f44c58623c4245c997d61656.png",
       placeholderSrc:
@@ -13,7 +13,7 @@ export const PROJECTS = [
       site: "https://realtime-chat-app-sage.vercel.app",
       repo: "https://github.com/Milan-960/Realtime-ChatApp",
     },
-    technologies: ["#react", "#firebase", "#moment", "NPM", "#CSS3"],
+    technologies: ["#react", "#firebase", "#moment", "#NPM", "#CSS3"],
   },
   {
     id: "quote-app",
@@ -29,7 +29,7 @@ export const PROJECTS = [
       site: "https://dayquotes.netlify.app/quotes",
       repo: "https://github.com/Milan-960/Quote-App",
     },
-    technologies: ["#react", "#firebase", "NPM", "#CSS3", "Javascript"],
+    technologies: ["#react", "#firebase", "#NPM", "#CSS3", "#Javascript"],
   },
   {
     id: "tic-tac-toe-game",
@@ -45,7 +45,7 @@ export const PROJECTS = [
       site: "https://tic-tac-toem.netlify.app/",
       repo: "https://github.com/Milan-960/Tic-Tac-Toe-Game",
     },
-    technologies: ["#HTML", "#CSS3", "Javascript"],
+    technologies: ["#HTML5", "#CSS3", "#Javascript"],
   },
   {
     id: "expenses-tracker",
