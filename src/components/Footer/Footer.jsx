@@ -16,7 +16,7 @@ const Footer = () => {
     <div className={ms.footer}>
       <div className={ms.container}>
         <div className={ms.copyright}>
-          <h3>Designed and Developed by Milan Sachani 💪</h3>
+          <h3>Developed by Milan Sachani 💪</h3>
         </div>
 
         <div className={ms.copyright}>
