@@ -48,22 +48,6 @@ export const PROJECTS = [
     technologies: ["#react", "#firebase", "#NPM", "#CSS3", "#Javascript"],
   },
   {
-    id: "tic-tac-toe-game",
-    title: "Tic-Tac-Toe-Game 🎮",
-    description:
-      "A Game. where player can play with computer if He/She doesn't have any opponent!",
-    image: {
-      src: "https://github.com/Milan-960/Tic-Tac-Toe-Game/raw/main/tic.png",
-      placeholderSrc:
-        "https://github.com/Milan-960/Tic-Tac-Toe-Game/raw/main/tic.png",
-    },
-    links: {
-      site: "https://tic-tac-toem.netlify.app/",
-      repo: "https://github.com/Milan-960/Tic-Tac-Toe-Game",
-    },
-    technologies: ["#HTML5", "#CSS3", "#Javascript"],
-  },
-  {
     id: "expenses-tracker",
     title: "Expenses-Tracker 💰",
     description:
@@ -78,5 +62,21 @@ export const PROJECTS = [
       repo: "https://github.com/milan-960",
     },
     technologies: ["#react", "#firebase"],
+  },
+  {
+    id: "tic-tac-toe-game",
+    title: "Tic-Tac-Toe-Game 🎮",
+    description:
+      "A Game. where player can play with computer if He/She doesn't have any opponent!",
+    image: {
+      src: "https://github.com/Milan-960/Tic-Tac-Toe-Game/raw/main/tic.png",
+      placeholderSrc:
+        "https://github.com/Milan-960/Tic-Tac-Toe-Game/raw/main/tic.png",
+    },
+    links: {
+      site: "https://tic-tac-toem.netlify.app/",
+      repo: "https://github.com/Milan-960/Tic-Tac-Toe-Game",
+    },
+    technologies: ["#HTML5", "#CSS3", "#Javascript"],
   },
 ];
