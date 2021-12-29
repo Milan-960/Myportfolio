@@ -1,5 +1,21 @@
 export const PROJECTS = [
   {
+    id: "weather-app",
+    title: "weather-app",
+    description:
+      "This is a weather app that was built using weather APIs and is a PWA web app. I also have used AXIOS for implementing APIS.",
+    image: {
+      src: "https://i.pinimg.com/474x/61/a6/72/61a672be219f12d0ca8e266032ea09d7.jpg",
+      placeholderSrc:
+        "https://i.pinimg.com/474x/61/a6/72/61a672be219f12d0ca8e266032ea09d7.jpg",
+    },
+    links: {
+      site: "https://live-weather-app-pwa.netlify.app/",
+      repo: "https://github.com/Milan-960/weather-app/",
+    },
+    technologies: ["#react", "#axios", "#NPM", "#CSS3"],
+  },
+  {
     id: "realtime-chat-app",
     title: "chat-app 💬",
     description:
