@@ -1,7 +1,7 @@
 export const PROJECTS = [
   {
     id: "weather-app",
-    title: "weather-app",
+    title: "weather-app ☃️",
     description:
       "This is a weather app that was built using weather APIs and is a PWA web app. I also have used AXIOS for implementing APIS.",
     image: {
