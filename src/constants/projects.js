@@ -1,5 +1,29 @@
 export const PROJECTS = [
   {
+    id: "Memories-app",
+    title: "Memories-app",
+    description:
+      "This is a memory app that was built using nodejs, expressjs and mongodb APIs and is a PWA web app. I also have used AXIOS for implementing APIS.",
+    image: {
+      src: "https://i.pinimg.com/474x/ff/19/eb/ff19eb3c45e4840344c20b62825359e3.jpg",
+      placeholderSrc:
+        "https://i.pinimg.com/474x/ff/19/eb/ff19eb3c45e4840344c20b62825359e3.jpg",
+    },
+    links: {
+      site: "https://mern-memory.vercel.app/",
+      repo: "https://github.com/Milan-960/MERN-memory/",
+    },
+    technologies: [
+      "#reactjs",
+      "#nodejs",
+      "#expressjs",
+      "#axios",
+      "#mongodb",
+      "#nodemon",
+      "#npm",
+    ],
+  },
+  {
     id: "weather-app",
     title: "weather-app ☃️",
     description:
