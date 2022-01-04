@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contact.css";
 import Form from "../components/Form";
-import Section from "../components/Section";
 
 function Contact() {
   return (

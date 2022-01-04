@@ -1,7 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import "./Form.css";
-import { Button } from "@material-ui/core";
 
 function sendEmail(e) {
   e.preventDefault();
