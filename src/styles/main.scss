@@ -131,6 +131,6 @@ fieldset {
 .lazy-load-image-background.blur.lazy-load-image-loaded > img {
   opacity: 1;
   transition: opacity 0.3s;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }

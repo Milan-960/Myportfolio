@@ -13,7 +13,7 @@
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#000",
-  "theme_color": "#181a27",
+  "theme_color": "#623686",
   "description": "A simple Portfolio App, implementing a lot of PWA",
-  "lang": "en-US"
+  "lang": "en-UK"
 }
