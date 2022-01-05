@@ -1,3 +1,7 @@
+import dotenv from "dotenv";
+
+dotenv.config();
+
 // This optional code is used to register a service worker.
 const isLocalhost = Boolean(
   window.location.hostname === "https://milansachani.dev/" ||
