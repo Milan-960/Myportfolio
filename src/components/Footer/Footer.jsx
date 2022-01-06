@@ -16,11 +16,15 @@ const Footer = () => {
     <div className={ms.footer}>
       <div className={ms.container}>
         <div className={ms.copyright}>
-          <h3>Developed by Milan Sachani 💪</h3>
+          <section>
+            <h3>Developed by Milan Sachani 💪</h3>
+          </section>
         </div>
 
         <div className={ms.copyright}>
-          <h3>Copyright © {year} MS 😎</h3>
+          <section>
+            <h3>Copyright © {year} MS 😎</h3>
+          </section>
         </div>
 
         <div className={ms.body}>
