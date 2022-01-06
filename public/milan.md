@@ -27,6 +27,7 @@
     />
 
     <!-- Schema.org for Google+ -->
+
     <meta itemprop="name" content="Milan Sachani" />
     <meta
       itemprop="description"
