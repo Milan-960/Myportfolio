@@ -95,13 +95,13 @@ export const PROJECTS = [
     image: {
       src: "https://raw.githubusercontent.com/Milan-960/Recipe-List-App/main/public/img/RECIPES_LIST.png",
       placeholderSrc:
-        "https://github.com/Milan-960/Tic-Tac-Toe-Game/raw/main/tic.png",
+        "https://raw.githubusercontent.com/Milan-960/Recipe-List-App/main/public/img/RECIPES_LIST.png",
     },
     links: {
       site: "https://recipe-list-app.netlify.app/",
       repo: "https://github.com/Milan-960/Recipe-list-app",
     },
-    technologies: ["#HTML5", "#CSS3", "#Javascript"],
+    technologies: ["#Reactjs", "#Javascript", "#CSS3"],
   },
   {
     id: "tic-tac-toe-game",
