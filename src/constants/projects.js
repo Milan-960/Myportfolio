@@ -88,6 +88,22 @@ export const PROJECTS = [
     technologies: ["#react", "#firebase"],
   },
   {
+    id: "React-recipe-list",
+    title: "React-recipe-list",
+    description:
+      "This is a react recipe list app that allows you to add your own recipes and use as a reminder. Take a look at the link provided below.😉",
+    image: {
+      src: "https://raw.githubusercontent.com/Milan-960/Recipe-List-App/main/public/img/RECIPES_LIST.png",
+      placeholderSrc:
+        "https://github.com/Milan-960/Tic-Tac-Toe-Game/raw/main/tic.png",
+    },
+    links: {
+      site: "https://recipe-list-app.netlify.app/",
+      repo: "https://github.com/Milan-960/Recipe-list-app",
+    },
+    technologies: ["#HTML5", "#CSS3", "#Javascript"],
+  },
+  {
     id: "tic-tac-toe-game",
     title: "Tic-Tac-Toe-Game 🎮",
     description:
