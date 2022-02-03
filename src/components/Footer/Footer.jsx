@@ -78,7 +78,7 @@ const Footer = () => {
 
             <li>
               <a
-                href="skype:live:.cid.ef3cf8e97343e877?chat"
+                href="skype:live:milan.sachani.ms_1"
                 target="_blank"
                 rel="noreferrer"
               >
