@@ -37,7 +37,7 @@
     "workbox-strategies": "^5.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "serve": "serve -s build",
     "test": "react-scripts test",
