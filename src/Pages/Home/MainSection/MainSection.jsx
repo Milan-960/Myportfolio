@@ -36,7 +36,7 @@ const MainSection = () => {
           <img
             align="right"
             src="https://api.daily.dev/devcards/c4f077510dac4feb951df9312724d6ab.png?r=6sv"
-            width="350"
+            width="360"
             alt="Milan Sachani's Dev Card"
           />
         </a>
