@@ -39,10 +39,10 @@
 
 .homeMainIcon {
   display: flex !important;
-  width: 37%;
   min-height: 25rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
   padding: 0 15px;
+  z-index: 1;
 
   & > img {
     min-width: 230px;
@@ -67,6 +67,5 @@
   }
   .homeMainIcon {
     justify-content: center;
-    width: 60%;
   }
 }

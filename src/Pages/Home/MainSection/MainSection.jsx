@@ -1,7 +1,7 @@
 import ms from "./MainSection.module.scss";
-import homeMainIcon from "../../../assets/home-main.svg";
+// import homeMainIcon from "../../../assets/home-main.svg";
 import Typewriter from "../../../components/UIElements/Typewriter/Typewriter";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MainSection = () => {
   return (
@@ -25,12 +25,22 @@ const MainSection = () => {
         </div>
       </div>
 
-      <LazyLoadImage
-        alt="home-img"
-        effect="blur"
-        src={homeMainIcon}
-        wrapperClassName={ms.homeMainIcon}
-      />
+      {/* <LazyLoadImage
+      // alt="home-img"
+      // effect="blur"
+      // src={homeMainIcon}
+      // wrapperClassName={ms.homeMainIcon}
+      /> */}
+      <div className={ms.homeMainIcon}>
+        <a href="https://app.daily.dev/Milan960">
+          <img
+            align="right"
+            src="https://api.daily.dev/devcards/c4f077510dac4feb951df9312724d6ab.png?r=6sv"
+            width="350"
+            alt="Milan Sachani's Dev Card"
+          />
+        </a>
+      </div>
     </section>
   );
 };

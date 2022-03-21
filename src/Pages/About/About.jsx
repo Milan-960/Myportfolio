@@ -1,9 +1,12 @@
 import ms from "./About.module.scss";
 import BaseLayout from "../../layouts/BaseLayout/BaseLayout";
-import aboutPromoImg from "../../assets/about-promo.svg";
+// import aboutPromoImg from "../../assets/about-promo.svg";
 import AboutTextCard from "./AboutTextCard/AboutTextCard";
 import TechSkills from "./TechSkills/TechSkills";
 import GithubActivity from "./GithubActivity/GithubActivity";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+import homeMainIcon from "../../assets/home-main.svg";
 
 const About = () => {
   return (
@@ -17,9 +20,15 @@ const About = () => {
             <AboutTextCard />
           </div>
 
-          <div className={ms.aboutImg}>
+          <LazyLoadImage
+            alt="home-img"
+            effect="blur"
+            src={homeMainIcon}
+            wrapperClassName={ms.aboutImg}
+          />
+          {/* <div className={ms.aboutImg}>
             <img src={aboutPromoImg} alt="about" />
-          </div>
+          </div> */}
         </div>
 
         <h2 className={ms.skills}>
