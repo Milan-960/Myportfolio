@@ -12,7 +12,7 @@ import ModalProjectCard from "../Pages/Projects/ModalProjectCard/ModalProjectCar
 const Home = lazy(() => import("../Pages/Home/Home"));
 const About = lazy(() => import("../Pages/About/About"));
 const Projects = lazy(() => import("../Pages/Projects/Projects"));
-const Resume = lazy(() => import("../Pages/Resume/Resume"));
+// const Resume = lazy(() => import("../Pages/Resume/Resume"));
 const Contact = lazy(() => import("../Pages/Contact/Contact"));
 // const Blog = lazy(() => import("../Pages/Blog/Blog"));
 
@@ -23,7 +23,7 @@ export const routes = {
   ABOUT: "/about",
   PROJECTS: "/projects",
   PROJECT: "/project/:id",
-  RESUME: "/resume",
+  // RESUME: "/resume",
   CONTACT: "/contact",
   // BLOGS: "/blog/:slug",
   // BLOG: "/blog",
@@ -40,7 +40,7 @@ const BaseRoutes = () => {
         <Route path={routes.ABOUT} component={About} />
         <Route path={routes.PROJECTS} component={Projects} />
         <Route path={routes.PROJECT} component={ModalProjectCard} />
-        <Route path={routes.RESUME} component={Resume} />
+        {/* <Route path={routes.RESUME} component={Resume} /> */}
         <Route path={routes.CONTACT} component={Contact} />
         {/* <Route path={routes.BLOGS} component={BlogPost} />
         <Route path={routes.BLOG} component={Blog} /> */}

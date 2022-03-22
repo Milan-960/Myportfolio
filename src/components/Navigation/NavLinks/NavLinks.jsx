@@ -42,12 +42,12 @@ const NavLinks = () => {
         </NavLink>
       </li>
 
-      <li>
+      {/* <li>
         <NavLink to={routes.RESUME} activeClassName={ms.active}>
           <FcDocument />
           Resume
         </NavLink>
-      </li>
+      </li> */}
 
       <li>
         <NavLink to={routes.CONTACT} activeClassName={ms.active}>
