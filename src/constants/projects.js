@@ -1,5 +1,20 @@
 export const PROJECTS = [
   {
+    id: "stone-papers-scissor",
+    title: "stone-papers-scissors",
+    description:
+      "Stone Paper Scissors game built with React.js and framer motion and it is a PWA 🔥 I alos have used confetti and winning voice.",
+    image: {
+      src: "./assets/start_img.png",
+      placeholderSrc: "/public/dev.png",
+    },
+    links: {
+      site: "https://stone-papers-scissors.netlify.app/",
+      repo: "https://github.com/Milan-960/Stone-paper-scissors/",
+    },
+    technologies: ["#reactjs", "#pwa", "#framer motion"],
+  },
+  {
     id: "Memories-app",
     title: "Memories-app",
     description:
