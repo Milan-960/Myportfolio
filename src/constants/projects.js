@@ -5,7 +5,7 @@ export const PROJECTS = [
     description:
       "Stone Paper Scissors game built with React.js and framer motion and it is a PWA 🔥 I alos have used confetti and winning voice.",
     image: {
-      src: "./assets/start_img.png",
+      src: "https://raw.githubusercontent.com/Milan-960/Myportfolio/master/src/constants/assets/start_img.png?token=GHSAT0AAAAAABTFM7BCSXRRKXYIGM6MASTGYSUMDFA",
       placeholderSrc: "/public/dev.png",
     },
     links: {
