@@ -1,6 +1,6 @@
 .content {
   position: relative;
-  padding: 3rem 0rem;
+  padding: 1rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,9 +60,8 @@
 .milan {
   position: relative;
   display: flex;
-  justify-content: center;
   justify-content: space-evenly;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-inline-start: 0;
   list-style: none;
 }
@@ -91,4 +90,9 @@
 .socialIcon:hover {
   transform: scale(1.1);
   box-shadow: 0 0 15px var(--social-shadow);
+}
+
+.counter {
+  margin: 0 auto;
+  padding-top: 1.3rem;
 }
