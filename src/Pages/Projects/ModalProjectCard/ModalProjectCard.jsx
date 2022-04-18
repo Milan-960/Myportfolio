@@ -27,8 +27,8 @@ const ModalProjectCard = () => {
       <div className={ms.cardWrapper}>
         <LazyLoadImage
           alt="project-img"
-          src={image.src}
           effect="blur"
+          src={image.src}
           width="100%"
           wrapperClassName={ms.image}
           placeholderSrc={image.placeholderSrc}
