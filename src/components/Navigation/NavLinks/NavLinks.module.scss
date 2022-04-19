@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .img {
   display: none;
 }
@@ -15,10 +16,16 @@
   padding: 0.2rem 1.5rem;
 }
 
+.active {
+  color: var(--nav-active);
+  font-size: 1.7rem !important;
+  transition: all 0.38s ease-out 0s !important;
+  font-weight: 600;
+}
+
 .navBar a {
   font-size: 1.2rem;
-  color: var(--txt);
-  text-decoration: none;
+  text-decoration: none !important;
   transition: all 0.35s ease-out 0s;
   &:after {
     content: "";

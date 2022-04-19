@@ -4,7 +4,7 @@ import ms from "./NavLinks.module.scss";
 import {
   FcHome,
   FcContacts,
-  FcDocument,
+  // FcDocument,
   FcTouchscreenSmartphone,
   FcAbout,
 } from "react-icons/fc";
@@ -22,7 +22,7 @@ const NavLinks = () => {
         alt=""
       />
       <li>
-        <NavLink to={routes.HOME} activeClassName={ms.active} exact>
+        <NavLink to={routes.HOME} activeClassName={ms.activehome} exact>
           <FcHome />
           Home
         </NavLink>
