@@ -13,8 +13,9 @@
 }
 
 body {
+  cursor: none;
   margin: 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
