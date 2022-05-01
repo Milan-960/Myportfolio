@@ -4,7 +4,7 @@ import { ThemeProvider } from "./hooks/themeHook/themeContext";
 import reportWebVitals from "./reportWebVitals";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
-import AnimatedPointer from "./components/Animation/CursorAnimation";
+import AnimatedPointer from "./components/Animation/CursorAnimation.tsx";
 
 const Root = () => {
   return (
