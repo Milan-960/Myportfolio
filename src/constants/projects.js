@@ -1,5 +1,28 @@
 export const PROJECTS = [
   {
+    id: "The-cryptoverse",
+    title: "The-cryptoverses",
+    description:
+      "This is a cryptoverse App that was built using CryptAPIs and is a PWA web app. It show very updated data of all the cryptocurrencies. 🔥 🔥",
+    image: {
+      src: "https://raw.githubusercontent.com/Milan-960/The-Cryptoverse-App/master/SS/home1.png",
+      placeholderSrc:
+        "https://raw.githubusercontent.com/Milan-960/The-Cryptoverse-App/master/SS/home1.png",
+    },
+    links: {
+      site: "https://thecrypoverse.netlify.app/",
+      repo: "https://github.com/Milan-960/The-Cryptoverse-App.git",
+    },
+    technologies: [
+      "#reactjs",
+      "#pwa",
+      "#motion",
+      "#axios",
+      "#rapidAPI",
+      "#chartJS",
+    ],
+  },
+  {
     id: "stone-papers-scissor",
     title: "stone-papers-scissors",
     description:
