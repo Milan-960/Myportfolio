@@ -4,6 +4,7 @@ import { FaLinkedinIn, FaStackOverflow, FaTwitter } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import Tilt from "react-parallax-tilt";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import milanimg from "../../../assets/milan.jpeg";
 
 const IntroSection = () => {
   return (
@@ -53,11 +54,7 @@ const IntroSection = () => {
               transitionSpeed={2500}
               gyroscope={true}
             >
-              <LazyLoadImage
-                alt="avatar"
-                effect="blur"
-                src="https://i.pinimg.com/1200x/93/cb/a6/93cba608cbd38deb81023c9f0407d9ff.jpg"
-              />
+              <LazyLoadImage alt="avatar" effect="blur" src={milanimg} />
             </Tilt>
           </div>
         </div>
@@ -110,7 +107,7 @@ const IntroSection = () => {
             </li>
           </ul>
         </div>
-        <div>
+        {/* <div>
           <table className={ms.counter}>
             <tr>
               <td>You are visitor</td>
@@ -122,7 +119,7 @@ const IntroSection = () => {
               </td>
             </tr>
           </table>
-        </div>
+        </div> */}
       </section>
     </div>
   );
