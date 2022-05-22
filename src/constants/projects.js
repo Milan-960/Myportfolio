@@ -143,6 +143,22 @@ export const PROJECTS = [
     technologies: ["#Reactjs", "#Javascript", "#CSS3"],
   },
   {
+    id: "RoboHash 🤖",
+    title: "RoboHash 🤖",
+    description:
+      "This is a react robofriend app where I have used calls based component and have use it's lifecycle mathod. 😉",
+    image: {
+      src: "https://raw.githubusercontent.com/Milan-960/RoboHash/master/robohome.png",
+      placeholderSrc:
+        "https://raw.githubusercontent.com/Milan-960/RoboHash/master/robohome.png",
+    },
+    links: {
+      site: "https://milan-960.github.io/RoboHash",
+      repo: "https://github.com/Milan-960/RoboHash",
+    },
+    technologies: ["#HTML5", "#CSS3", "#Javascript"],
+  },
+  {
     id: "tic-tac-toe-game",
     title: "Tic-Tac-Toe-Game 🎮",
     description:
