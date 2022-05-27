@@ -5,6 +5,7 @@ import {
   FcHome,
   FcContacts,
   // FcDocument,
+  FcComments,
   FcTouchscreenSmartphone,
   FcAbout,
 } from "react-icons/fc";
@@ -62,6 +63,13 @@ const NavLinks = () => {
           Blog
         </NavLink>
       </li> */}
+
+      <li>
+        <a href="https://blog.milansachani.dev" target="_blank">
+          <FcComments />
+          Blogs
+        </a>
+      </li>
     </ul>
   );
 };
