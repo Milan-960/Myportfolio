@@ -57,19 +57,19 @@ const NavLinks = () => {
         </NavLink>
       </li>
 
-      {/* <li>
-        <NavLink to={routes.BLOG} activeClassName={ms.active}>
-          <FcComments />
-          Blog
-        </NavLink>
-      </li> */}
-
       <li>
         <a href="https://blog.milansachani.dev" target="_blank">
           <FcComments />
           Blogs
         </a>
       </li>
+
+      {/* <li>
+        <NavLink to={routes.BLOG} activeClassName={ms.active}>
+          <FcComments />
+          Blog
+        </NavLink>
+      </li> */}
     </ul>
   );
 };
