@@ -71,12 +71,12 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.REACTUSERNAME }}/myportfolio:latest
+          tags: ${{ secrets.REACTUSERNAME }}/milan960:latest
 
       - name: Run the image in a container
         uses: addnab/docker-run-action@v3
         with:
-          image: ${{ secrets.REACTUSERNAME }}/myportfolio:latest
+          image: ${{ secrets.REACTUSERNAME }}/milan960:latest
           run: |
             echo "runing the docker image"
 
