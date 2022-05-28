@@ -76,7 +76,7 @@ jobs:
       - name: Run the image in a container
         uses: addnab/docker-run-action@v3
         with:
-          image: ${{ secrets.REACTUSERNAME }}/milan960:latest
+          image: ${{ secrets.REACTUSERNAME }}/myportfolio:latest
           run: |
             echo "runing the docker image"
 
