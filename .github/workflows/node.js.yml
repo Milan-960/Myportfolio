@@ -1,6 +1,6 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 
-name: Node.js CI
+name: Node.js CI-CD
 
 # Controls when the action will run.
 on:
@@ -71,12 +71,12 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.REACTUSERNAME }}/milan960:latest
+          tags: ${{ secrets.REACTUSERNAME }}/myportfolio:latest
 
       - name: Run the image in a container
         uses: addnab/docker-run-action@v3
         with:
-          image: ${{ secrets.REACTUSERNAME }}/milan960:latest
+          image: ${{ secrets.REACTUSERNAME }}/myportfolio:latest
           run: |
             echo "runing the docker image"
 
