@@ -85,7 +85,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-       - name: Install dependencies
+      - name: Install dependencies
         run: |
           npm cache --force clean && npm install --force node-sass
 
