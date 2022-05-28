@@ -80,6 +80,9 @@ jobs:
           run: |
             echo "runing the docker image"
 
+       - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
+
   push_to_vercel:
     runs-on: ubuntu-latest
     steps:
