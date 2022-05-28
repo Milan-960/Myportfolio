@@ -59,7 +59,7 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
-          username: milan960
+          username: ${{ secrets.REACTUSERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push
@@ -67,7 +67,7 @@ jobs:
         with:
           file: ./Dockerfile
           push: true
-          tags: milan960/myportfolio:latest
+          tags: ${{ secrets.REACTUSERNAME }}/myportfolio:latest
 
       - name: Build and push Docker images
          uses: docker/build-push-action@v3.0.0
@@ -75,7 +75,7 @@ jobs:
       - name: Run the image in a container
         uses: addnab/docker-run-action@v3
         with:
-          image: milan960/myportfolio:latest
+          image: ${{ secrets.REACTUSERNAME }}/myportfolio:latest
           run: |
             echo "runing the docker image"
 
