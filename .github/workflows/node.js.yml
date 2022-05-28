@@ -35,7 +35,7 @@ jobs:
       # install applicaion dependencies
       - name: Install dependencies
         run: |
-          npm install
+          npm cache --force clean && npm install --force node-sass
 
       # build and test the apps
       - name: build
