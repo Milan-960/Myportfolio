@@ -1,5 +1,22 @@
 export const PROJECTS = [
   {
+    id: "The-Traveller-Test Smart pension",
+    title: "The-Traveller-Test Smart pension",
+    description:
+      "This is a reactjs and nodejs-based traveler application. It's for making a wishlist for your future travels in which city you want to visit. You can create a wishlist and see if you've already been to the place.🔥 🔥",
+    image: {
+      src: "https://raw.githubusercontent.com/Milan-960/traveller-test/master/img/home.png",
+      placeholderSrc:
+        "https://raw.githubusercontent.com/Milan-960/traveller-test/master/img/home.png",
+    },
+    links: {
+      site: "https://traveller-test.netlify.app",
+      repo: "https://github.com/Milan-960/traveller-test",
+    },
+    technologies: ["#reactjs", "#framer-motion", "#graphql", "#typescript"],
+  },
+
+  {
     id: "The-cryptoverse",
     title: "The-cryptoverses",
     description:
