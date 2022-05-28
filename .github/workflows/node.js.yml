@@ -80,6 +80,13 @@ jobs:
        - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
 
+      - name: Run the image in a container
+        uses: addnab/docker-run-action@v3
+        with:
+          image: ${{ secrets.REACTUSERNAME }}/milan960:latest
+          run: |
+            echo "runing the docker image"
+
   push_to_vercel:
     runs-on: ubuntu-latest
     steps:
