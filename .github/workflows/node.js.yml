@@ -87,12 +87,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm cache --force clean && npm install --force node-sass
-
-      # build and test the apps
-      - name: build
-        run: |
-          npm run build
+          npm install
 
       - uses: amondnet/vercel-action@v20
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'

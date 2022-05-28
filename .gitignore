@@ -5,6 +5,8 @@ node_modules
 /.pnp
 .pnp.js
 
+**/node_modules
+**/npm-debug.log
 /npm-debug.log
 
 # testing
