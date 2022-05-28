@@ -65,6 +65,10 @@ jobs:
           username: ${{ secrets.REACTUSERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v1
+
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
@@ -76,7 +80,7 @@ jobs:
       - name: Run the image in a container
         uses: addnab/docker-run-action@v3
         with:
-          image: ${{ secrets.REACTUSERNAME }}/myportfolio:latest
+          image: ${{ secrets.REACTUSERNAME }}/milan960:latest
           run: |
             echo "runing the docker image"
 
@@ -84,10 +88,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: Install dependencies
-        run: |
-          npm install
 
       - uses: amondnet/vercel-action@v20
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
