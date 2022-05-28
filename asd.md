@@ -65,10 +65,6 @@ jobs:
           username: ${{ secrets.REACTUSERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Set up Docker Buildx
-        id: buildx
-        uses: docker/setup-buildx-action@v1
-
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
@@ -77,10 +73,13 @@ jobs:
           push: true
           tags: ${{ secrets.REACTUSERNAME }}/myportfolio:latest
 
+      - name: Build and push Docker images
+         uses: docker/build-push-action@v3.0.0
+
       - name: Run the image in a container
         uses: addnab/docker-run-action@v3
         with:
-          image: ${{ secrets.REACTUSERNAME }}/milan960:latest
+          image: ${{ secrets.REACTUSERNAME }}/myportfolio:latest
           run: |
             echo "runing the docker image"
 
