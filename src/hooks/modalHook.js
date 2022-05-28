@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const useModal = (initialVisible = false) => {
   const [isVisible, updateVisible] = useState(initialVisible);
@@ -6,6 +6,10 @@ export const useModal = (initialVisible = false) => {
   const toggleModal = () => {
     updateVisible((pre) => !pre);
   };
+
+  useEffect(() => {
+    toggleModal();
+  }, []);
 
   return { isVisible, toggleModal };
 };

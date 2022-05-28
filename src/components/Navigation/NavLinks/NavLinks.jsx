@@ -58,7 +58,11 @@ const NavLinks = () => {
       </li>
 
       <li>
-        <a href="https://blog.milansachani.dev" target="_blank">
+        <a
+          href="https://blog.milansachani.dev"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FcComments />
           Blogs
         </a>
