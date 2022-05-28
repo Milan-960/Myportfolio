@@ -85,6 +85,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: |
+          npm install
+
       - uses: amondnet/vercel-action@v20
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         with:
