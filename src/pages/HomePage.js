@@ -9,7 +9,7 @@ function HomePage() {
       <Section
         backgroundImg={"/3417081.jpg"}
         title={"Milan Sachani"}
-        description={"Junior Front-end Developer"}
+        description={"Front-end Developer"}
         showIcon={true}
         linkedinLink={"https://www.linkedin.com/in/milan-sachani-9090"}
         githubLink={"https://github.com/Milan-960"}
@@ -17,7 +17,7 @@ function HomePage() {
         twitterLink={"https://twitter.com/MilanSachani"}
         showAboutMe={true}
         aboutMe={
-          "I am working as a Junior front-end developer.I like to explore new trends and learn new technologies.Feel free to reach out to me for consulting, Volunteering or just for some interesting discussion."
+          "I am working as a front-end developer.I like to explore new trends and learn new technologies.Feel free to reach out to me for consulting, Volunteering or just for some interesting discussion."
         }
         showButton={true}
         buttonLink={<a href={Pdf}>CV</a>}
