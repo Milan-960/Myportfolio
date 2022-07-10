@@ -29,7 +29,7 @@ function App() {
         expires={9999}
         overlay
       >
-        This website uses cookies to enhance the user experience 🍪
+        This website uses cookies to enhance the user experience!! 🍪
       </CookieConsent>
     </BrowserRouter>
   );
