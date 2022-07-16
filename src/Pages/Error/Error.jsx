@@ -10,6 +10,7 @@ export default function Error() {
   // }, 2000);
 
   return (
+    <>
     <React.Fragment>
     <MatrixParallax color="#00AA00" backgroundColor="rgba(0,0,0,1)">
     <div className={ms.text}>
@@ -25,5 +26,6 @@ export default function Error() {
     </div>
     </MatrixParallax>
   </React.Fragment>
+    </>
   );
 }
