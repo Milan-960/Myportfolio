@@ -1,5 +1,22 @@
 export const PROJECTS = [
   {
+    id: "The Fitness App",
+    title: "The Fitness App",
+    description:
+      "This is a Fitness App that was built using Rapid API and is a PWA web app. It shows different exercises for gym freak as well as videos of each and every exercise with full details of the exercises with great explanation 💪🏋️‍♀️",
+    image: {
+      src: "https://raw.githubusercontent.com/Milan-960/Fitness-app/master/SS/home.png",
+      placeholderSrc:
+        "https://raw.githubusercontent.com/Milan-960/Fitness-app/master/SS/home.png",
+    },
+    links: {
+      site: "https://milan-fitness-app.vercel.app/",
+      repo: "https://github.com/Milan-960/Fitness-app.git",
+    },
+    technologies: ["#reactjs", "#rapidAPI", "#MUI"],
+  },
+
+  {
     id: "The-Traveller-Test-Smart-pension",
     title: "The-Traveller-Test-Smart-pension",
     description:
