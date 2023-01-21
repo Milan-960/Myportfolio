@@ -18,13 +18,13 @@
 
 .active {
   color: var(--nav-active);
-  font-size: 1.7rem !important;
+  font-size: 20px !important;
   transition: all 0.38s ease-out 0s !important;
   font-weight: 600;
 }
 
 .navBar a {
-  font-size: 1.2rem;
+  font-size: 20px;
   text-decoration: none !important;
   transition: all 0.35s ease-out 0s;
   &:after {
