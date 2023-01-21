@@ -2477,6 +2477,11 @@
   resolved "https://registry.npmjs.org/@types/tapable/-/tapable-1.0.2.tgz"
   integrity sha512-42zEJkBpNfMEAvWR5WlwtTH22oDzcMjFsL9gDGExwF8X8WvAiw7Vwop7hPw03QT8TKfec83LwbHj6SvpqM4ELQ==
 
+"@types/tinycolor2@^1.4.3":
+  version "1.4.3"
+  resolved "https://registry.npmjs.org/@types/tinycolor2/-/tinycolor2-1.4.3.tgz"
+  integrity sha512-Kf1w9NE5HEgGxCRyIcRXR/ZYtDv0V8FVPtYHwLxl0O+maGX0erE77pQlD0gpP+/KByMZ87mOA79SjifhSB3PjQ==
+
 "@types/uglify-js@*":
   version "3.13.0"
   resolved "https://registry.npmjs.org/@types/uglify-js/-/uglify-js-3.13.0.tgz"
@@ -5567,10 +5572,10 @@ data-urls@^2.0.0:
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
 
-date-fns@^2.14.0:
-  version "2.22.1"
-  resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.22.1.tgz"
-  integrity sha512-yUFPQjrxEmIsMqlHhAhmxkuH769baF21Kk+nZwZGyrMoyLA+LugaQtC0+Tqf9CBUUULWwUJt6Q5ySI3LJDDCGg==
+date-fns@^2.29.3:
+  version "2.29.3"
+  resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.29.3.tgz"
+  integrity sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==
 
 debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.8, debug@^2.6.9, debug@2.6.9:
   version "2.6.9"
@@ -13767,6 +13772,15 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-activity-calendar@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.npmjs.org/react-activity-calendar/-/react-activity-calendar-1.7.0.tgz"
+  integrity sha512-iyUNhnYYM2zuSI5KUD4xjTbWH4wBFYFm7M1FwZ1J+g8jK7o48730n9v7OemcP++PouH9f4G/oVSGF4Nk3BBcnQ==
+  dependencies:
+    "@types/tinycolor2" "^1.4.3"
+    date-fns "^2.29.3"
+    tinycolor2 "^1.4.0"
+
 react-animated-cursor@^2.4.0:
   version "2.4.0"
   resolved "https://registry.npmjs.org/react-animated-cursor/-/react-animated-cursor-2.4.0.tgz"
@@ -13876,13 +13890,12 @@ react-error-overlay@^6.0.9:
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.9.tgz"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
 
-react-github-calendar@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/react-github-calendar/-/react-github-calendar-2.0.2.tgz"
-  integrity sha512-SkW4qWRGvNxzsAeukdbrIRWyEHSwkbnr+YdfHaXg/jE6KOHmZL0lxTty1kY0l62f9naeVHsmNxeLCPC748Fmtw==
+react-github-calendar@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.npmjs.org/react-github-calendar/-/react-github-calendar-3.4.0.tgz"
+  integrity sha512-3HiUjZAivwcDhNdL3Nwz5MNSUolOwsIuyrBnq6fYfJJE7l0CONHKX9N0lJ/4wpJWZBBYMHOmvFM10sNCRPpYaQ==
   dependencies:
-    date-fns "^2.14.0"
-    tinycolor2 "^1.4.0"
+    react-activity-calendar "^1.7.0"
 
 react-icons@^4.2.0:
   version "4.2.0"
@@ -16208,9 +16221,9 @@ tiny-warning@^1.0.0, tiny-warning@^1.0.2:
   integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
 
 tinycolor2@^1.4.0:
-  version "1.4.2"
-  resolved "https://registry.npmjs.org/tinycolor2/-/tinycolor2-1.4.2.tgz"
-  integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
+  version "1.5.2"
+  resolved "https://registry.npmjs.org/tinycolor2/-/tinycolor2-1.5.2.tgz"
+  integrity sha512-h80m9GPFGbcLzZByXlNSEhp1gf8Dy+VX/2JCGUZsWLo7lV1mnE/XlxGYgRBoMLJh1lIDXP0EMC4RPTjlRaV+Bg==
 
 tmp@^0.0.33:
   version "0.0.33"
