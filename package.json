@@ -52,8 +52,8 @@
     "@babel/helper-module-transforms": "7.19.6"
   },
   "scripts": {
-    "start": "CI=false react-app-rewired start",
-    "build": "CI=false react-app-rewired build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-app-rewired test",
     "serve": "serve -s build",
     "eject": "react-scripts eject"
