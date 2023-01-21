@@ -24,7 +24,6 @@
     "react-matrix-parallax": "^2.1.5",
     "react-media": "^1.10.0",
     "react-parallax-tilt": "^1.5.22",
-    "react-particles-js": "^3.4.1",
     "react-pdf": "^5.3.2",
     "react-reveal": "^1.2.2",
     "react-router": "^6.7.0",
@@ -32,6 +31,7 @@
     "react-scripts": "4.0.3",
     "react-tilty": "^2.0.3",
     "react-transition-group": "^4.4.2",
+    "react-tsparticles": "^2.8.0",
     "sass": "^1.51.0",
     "scrollreveal": "^4.0.9",
     "typewriter-effect": "^2.17.0",
@@ -41,6 +41,14 @@
     "workbox-precaching": "^5.1.4",
     "workbox-routing": "^5.1.4",
     "workbox-strategies": "^5.1.4"
+  },
+  "overrides": {
+    "@babel/core": "7.19.6",
+    "@babel/generator": "7.19.6",
+    "@babel/compat-data": "7.19.4",
+    "@babel/helper-compilation-targets": "7.19.3",
+    "@babel/helper-create-class-features-plugin": "7.19.0",
+    "@babel/helper-module-transforms": "7.19.6"
   },
   "scripts": {
     "start": "react-scripts start --openssl-legacy-provider",
@@ -55,16 +63,12 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "tsparticles": "^2.8.0"
   }
 }

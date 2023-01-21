@@ -10,7 +10,7 @@ export const LIGHT_THEME_PARTICLES = {
     value: "#623686",
   },
   opacity: {
-    value: 1,
+    value: 2,
     random: true,
     anim: {
       enable: true,
