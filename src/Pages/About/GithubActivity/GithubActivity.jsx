@@ -14,7 +14,7 @@ const GithubActivity = () => {
   return (
     <div className={ms.container}>
       <GitHubCalendar
-        username="Milan-960"
+        username="milan-960"
         year={new Date().getFullYear()}
         blockSize={15}
         blockMargin={5}
