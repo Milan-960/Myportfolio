@@ -20,7 +20,7 @@ const IntroSection = () => {
               <p>
                 I fell in love with programming, and I believe...😎 At the very
                 least, I've learned something. As a{" "}
-                <b className={ms.purple}> Front-End Developer, </b> I work on a
+                <b className={ms.purple}> Software Engineer </b> I work on a
                 variety of projects. I enjoy researching new trends and learning
                 about new technologies. Feel free to contact me if you need
                 consulting, volunteer work, or just want to talk about something
@@ -29,19 +29,19 @@ const IntroSection = () => {
               <p>
                 My areas of interest include the development of new
                 <i>
-                  <b className={ms.purple}> Web Technologies and Products</b>
+                  <b className={ms.purple}> Web Apps and Products </b>
                 </i>
+                based on the business recruitment
               </p>
               <p>
-                A dedicated{" "}
-                <b className={ms.purple}> Front-end Developer 🚀 </b>
+                A dedicated <b className={ms.purple}> Software Engineer 🚀 </b>
                 I've worked with{" "}
                 <b className={ms.purple}>
                   {" "}
-                  HTML5, CSS3/SCSS, JavaScript, Reactjs, Redux, Nodejs,
+                  JavaScript, TypeScript, Redux, Nodejs,
                 </b>{" "}
                 and a few other cool 😎 libraries to create{" "}
-                <b className={ms.purple}>websites and mobile applications.</b>
+                <b className={ms.purple}>Products and web applications.</b>
               </p>
             </div>
           </div>
