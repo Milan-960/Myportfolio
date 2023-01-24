@@ -15,7 +15,6 @@ const IntroSection = () => {
             <h1 className={ms.title}>
               LET ME <span className={ms.purple}> INTRODUCE </span> MYSELF
             </h1>
-
             <div className={ms.description}>
               <p>
                 I fell in love with programming, and I believe...😎 At the very
