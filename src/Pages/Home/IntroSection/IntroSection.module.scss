@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   word-spacing: 0.2rem;
+  width: 90%;
 
   .title {
     font-size: 2.6rem;
@@ -103,5 +104,8 @@
       margin: 2rem !important;
       padding: 5px 5px 5px 5px !important;
     }
+  }
+  .introductionText {
+    width: 100%;
   }
 }
