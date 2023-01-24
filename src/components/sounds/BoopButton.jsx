@@ -23,9 +23,7 @@ function BoopButton() {
         }}
         onMouseEnter={play}
         onMouseLeave={stop}
-      >
-        Hover
-      </button>
+      />
     </div>
   );
 }
