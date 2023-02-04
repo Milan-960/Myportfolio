@@ -1,3 +1,5 @@
+import React from "react";
+
 import s from "./ProjectCard.module.scss";
 import { Link, useLocation } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -27,7 +29,7 @@ const ProjectCard = ({ id, image, title, description }) => {
         </Link>
 
         <div className={s.cardBody}>
-          <h3 className={s.title}>{title}</h3>
+          <h2 className={s.title}>{title}</h2>
           <p className={s.description}>{description}</p>
         </div>
       </div>

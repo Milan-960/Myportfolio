@@ -4,7 +4,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 9;
+  z-index: 999;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +16,7 @@
   z-index: 11;
   background-color: var(--bg-modal);
   border: var(--modal-border);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   opacity: 0.9;
   color: var(--txt);
 }
