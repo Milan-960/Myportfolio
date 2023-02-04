@@ -5,12 +5,18 @@
 .card {
   position: relative;
   width: 30%;
-  padding: 50px 25px;
+  padding: 10px 10px 10px 10px;
   min-width: 320px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px;
 }
 
 .cardWrapper {
-  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,15 +24,15 @@
   word-wrap: break-word;
   background-color: transparent;
   background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
+  padding: 10px;
   opacity: 0.9;
   transition: all 0.5s ease 0s;
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
   color: var(--txt);
   height: 100%;
+  z-index: 99;
   &:hover {
-    transform: scale(1.02);
+    transition: all 0.2s linear;
     overflow: hidden;
     box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
   }
@@ -38,10 +44,11 @@
 .cardBody {
   flex: 1 1 auto;
   padding: 1.25rem 0;
+  color: var(--txt);
 }
 
 .title {
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   font-size: 1.25rem;
   text-align: center;
 }
@@ -51,3 +58,47 @@
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
+.card h2 {
+  z-index: 1;
+  font-size: 11px;
+  padding: 20px;
+  color: var(--txt);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 183, 255),
+    rgb(255, 48, 255)
+  );
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  background-color: var(--card-bg);
+  inset: 5px;
+  border-radius: 15px;
+}
+
+// .card:hover:before {
+//   background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+//   animation: rotBGimg 3.5s linear infinite;
+// }

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+
 import { BiLinkExternal } from "react-icons/all";
 
 import ms from "./ModalProjectCard.module.scss";
@@ -17,8 +17,6 @@ const ModalProjectCard = () => {
     (p) => id === p.id
   );
   const { isVisible, toggleModal } = useModal();
-
-  useEffect(() => {}, [toggleModal]);
 
   return (
     <Modal show={isVisible} onClose={toggleModal}>
