@@ -6,6 +6,7 @@
     "@react-navigation/native": "^6.0.6",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^2.23.2",
+    "@tippyjs/react": "^4.2.6",
     "classnames": "^2.3.1",
     "dotenv": "^10.0.0",
     "emailjs": "^3.7.0",
