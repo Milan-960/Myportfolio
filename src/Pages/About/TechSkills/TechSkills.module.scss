@@ -4,6 +4,14 @@
   flex-wrap: wrap;
 }
 
+.techIcons {
+  font-size: 25px !important;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  background-color: var(--color-primary) !important;
+  color: var(--txt) !important;
+}
+
 .techIcon {
   font-size: 4rem;
   margin: 15px;
