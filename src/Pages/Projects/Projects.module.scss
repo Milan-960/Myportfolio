@@ -29,6 +29,16 @@
   color: var(--txt-secondary);
 }
 
+.button {
+  text-align: center;
+  color: white;
+  background-color: var(--bg);
+  padding: 5px 17px;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
 @media (max-width: 925px) {
   .content {
     padding: 9rem 3rem 1rem;
