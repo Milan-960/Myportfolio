@@ -13,7 +13,7 @@ const Projects = () => {
     setNext(next + projectPerRow);
   };
   const handleMoreImages = () => {
-    setNext(next - projectPerRow);
+    setNext(projectPerRow);
   };
 
   return (
