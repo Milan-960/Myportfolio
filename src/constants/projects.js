@@ -1,5 +1,26 @@
 export const PROJECTS = [
   {
+    id: "img-generator",
+    title: "Img generator app 📸",
+    description:
+      "This is a simple text editor app to edit the img for making funny memes. you are also able to convert .JPG to .PNG files as well!!",
+    image: {
+      src: "https://raw.githubusercontent.com/Milan-960/img-generator/main/public/home.png",
+      placeholderSrc:
+        "https://raw.githubusercontent.com/Milan-960/img-generator/main/public/home.png",
+    },
+    links: {
+      site: "https://img-text-generators.netlify.app",
+      repo: "https://github.com/Milan-960/img-generator",
+    },
+    technologies: [
+      "#reactjs",
+      "#downloadjs",
+      "#html-to-image",
+      "#@types/file-saver",
+    ],
+  },
+  {
     id: "Crypto-price-tracking-app",
     title: "Crypto price tracking app 🔥",
     description:
@@ -17,9 +38,9 @@ export const PROJECTS = [
       "#reactjs",
       "#coingeckoApi",
       "#tailwindcss",
-      "zustand",
-      "axios",
-      "recharts",
+      "#zustand",
+      "#axios",
+      "#recharts",
     ],
   },
   {
