@@ -1,29 +1,23 @@
-import React, { useCallback } from "react";
+import React, { useState } from "react";
 import useSound from "use-sound";
 
 import wetClick from "../../assets/sounds/bubble.mp3";
 
 function BoopButton() {
-  const [playbackRate, setPlaybackRate] = React.useState(0.75);
+  const [playbackRate, setPlaybackRate] = useState(0.75);
 
-  const [play, { stop }] = useSound(wetClick, {
-    playbackRate,
-    // `interrupt` ensures that if the sound starts again before it's
-    // ended, it will truncate it. Otherwise, the sound can overlap.
-    interrupt: true,
-  });
+  const [play] = useSound(wetClick);
+
+  const handleClick = () => {
+    setPlaybackRate(playbackRate + 0.1);
+    play();
+  };
 
   return (
-    <div className="App">
-      <button
-        type="button"
-        style={{
-          margin: 20,
-          borderRadius: 10,
-        }}
-        onMouseEnter={play}
-        onMouseLeave={stop}
-      />
+    <div>
+      <button type="button" onClick={handleClick}>
+        Add
+      </button>
     </div>
   );
 }
