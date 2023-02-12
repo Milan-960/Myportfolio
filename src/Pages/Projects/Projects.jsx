@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import s from "./Projects.module.scss";
 import BaseLayout from "../../layouts/BaseLayout/BaseLayout";
 import { PROJECTS } from "../../constants/projects";
@@ -9,11 +9,20 @@ const projectPerRow = 6;
 const Projects = () => {
   const [next, setNext] = useState(projectPerRow);
 
+  const scrollToTop = useCallback(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, [projectPerRow]);
+
   const handleMoreImage = () => {
     setNext(next + projectPerRow);
   };
   const handleMoreImages = () => {
     setNext(projectPerRow);
+    scrollToTop();
   };
 
   return (
