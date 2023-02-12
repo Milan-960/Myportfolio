@@ -1,19 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import s from "./Projects.module.scss";
 import BaseLayout from "../../layouts/BaseLayout/BaseLayout";
 import { PROJECTS } from "../../constants/projects";
 import ProjectCard from "./ProjectCard/ProjectCard";
 
-const imagePerRow = 6;
+const projectPerRow = 6;
 
 const Projects = () => {
-  const [next, setNext] = useState(imagePerRow);
+  const [next, setNext] = useState(projectPerRow);
+
   const handleMoreImage = () => {
-    setNext(next + imagePerRow);
+    setNext(next + projectPerRow);
   };
   const handleMoreImages = () => {
-    setNext(next - imagePerRow);
+    setNext(next - projectPerRow);
   };
+
   return (
     <BaseLayout>
       <div className={s.content}>
