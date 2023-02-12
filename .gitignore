@@ -3,6 +3,9 @@
 /node_modules
 /npm-debug.log
 
+# api keys
+.env  
+
 # dependencies
 node_modules
 /.pnp
