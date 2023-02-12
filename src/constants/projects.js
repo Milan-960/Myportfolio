@@ -1,5 +1,28 @@
 export const PROJECTS = [
   {
+    id: "Crypto-price-tracking-app",
+    title: "Crypto price tracking app 🔥",
+    description:
+      "This is a Crypto price tracking app that was built using Coingecko Api and is a PWA web app. It show latest price all the cryptocurrencies and chart.🔥💰 It also has a dark mode.",
+    image: {
+      src: "https://raw.githubusercontent.com/Milan-960/cryptocurrency-list/main/SS/Dhome.png",
+      placeholderSrc:
+        "https://raw.githubusercontent.com/Milan-960/cryptocurrency-list/main/SS/Dhome.png",
+    },
+    links: {
+      site: "https://cryptocurrency-list-five.vercel.app",
+      repo: "https://github.com/Milan-960/cryptocurrency-list",
+    },
+    technologies: [
+      "#reactjs",
+      "#coingeckoApi",
+      "#tailwindcss",
+      "zustand",
+      "axios",
+      "recharts",
+    ],
+  },
+  {
     id: "The Fitness App",
     title: "The Fitness App",
     description:
