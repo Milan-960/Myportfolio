@@ -1,13 +1,24 @@
 import React, { useCallback, useState } from "react";
+import useSound from "use-sound";
 import s from "./Projects.module.scss";
 import BaseLayout from "../../layouts/BaseLayout/BaseLayout";
 import { PROJECTS } from "../../constants/projects";
 import ProjectCard from "./ProjectCard/ProjectCard";
+import wetClick from "../../assets/sounds/bubble.mp3";
 
 const projectPerRow = 6;
 
 const Projects = () => {
   const [next, setNext] = useState(projectPerRow);
+
+  // This is for sounds
+  const [playbackRate, setPlaybackRate] = useState(0.8);
+  const [play] = useSound(wetClick);
+
+  const handleClick = useCallback(() => {
+    setPlaybackRate(playbackRate + 0.0);
+    play();
+  }, [next, projectPerRow]);
 
   const scrollToTop = useCallback(() => {
     window.scrollTo({
@@ -17,12 +28,15 @@ const Projects = () => {
     });
   }, [projectPerRow]);
 
-  const handleMoreImage = () => {
+  const handleMoreProject = () => {
     setNext(next + projectPerRow);
+    handleClick();
   };
-  const handleMoreImages = () => {
+
+  const handleMoreProjects = () => {
     setNext(projectPerRow);
     scrollToTop();
+    handleClick();
   };
 
   return (
@@ -39,12 +53,13 @@ const Projects = () => {
             <ProjectCard key={props.id} {...props} />
           ))}
         </ul>
+
         {next < PROJECTS?.length ? (
-          <button className={s.button} onClick={handleMoreImage}>
+          <button className={s.button} onClick={handleMoreProject}>
             Load more
           </button>
         ) : (
-          <button className={s.button} onClick={handleMoreImages}>
+          <button className={s.button} onClick={handleMoreProjects}>
             Previous
           </button>
         )}
