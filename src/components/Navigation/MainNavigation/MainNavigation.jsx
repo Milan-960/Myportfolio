@@ -5,15 +5,19 @@ import NavLinks from "../NavLinks/NavLinks";
 import SideDrawer from "../SideDrawer/SideDrawer";
 import Burger from "../Burger/Burger";
 import BtnToggleTheme from "../../BtnToggleTheme/BtnToggleTheme";
+import ClickAwayListener from "@mui/base/ClickAwayListener";
 
 import Logo from "../../Logo/Logo";
-import LanguageSwitch from "I18n/LanguageSwitch";
 
 const MainNavigation = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const toggleDrawer = () => {
-    setIsDrawerOpen((prev) => !prev);
+  const handleClick = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
+  const handleClickAway = () => {
+    setIsDrawerOpen(false);
   };
 
   return (
@@ -23,13 +27,12 @@ const MainNavigation = () => {
       <nav className={ms.desktop}>
         <NavLinks />
         <BtnToggleTheme />
-        <LanguageSwitch />
       </nav>
 
       <Media query={{ maxWidth: 768 }}>
         {() => (
           <>
-            <Burger onClick={toggleDrawer} />
+            <Burger onClick={handleClick} />
 
             <Logo className={ms.mobile} />
 
@@ -38,10 +41,12 @@ const MainNavigation = () => {
         )}
       </Media>
 
-      <SideDrawer show={isDrawerOpen} onClose={toggleDrawer}>
-        <nav className={ms.navigationDrawerNav}>
-          <NavLinks />
-        </nav>
+      <SideDrawer show={isDrawerOpen} onClick={handleClick}>
+        <ClickAwayListener onClickAway={handleClickAway}>
+          <nav className={ms.navigationDrawerNav}>
+            <NavLinks />
+          </nav>
+        </ClickAwayListener>
       </SideDrawer>
     </>
   );

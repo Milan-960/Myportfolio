@@ -18,6 +18,8 @@ import {
 import { routes } from "../../../routes/BaseRoutes";
 import soundUrl from "../../../assets/sounds/bubble.mp3";
 
+import LanguageSwitch from "../../../I18n/LanguageSwitch";
+
 const NavLinks = () => {
   const [play, { stop }] = useSound(soundUrl, { volume: 0.7 });
 
@@ -89,6 +91,10 @@ const NavLinks = () => {
             <FcComments />
             Blogs
           </a>
+        </li>
+
+        <li>
+          <LanguageSwitch />
         </li>
 
         {/* <li>
