@@ -2,17 +2,19 @@ import ms from "./MainSection.module.scss";
 // import homeMainIcon from "../../../assets/home-main.svg";
 import Typewriter from "../../../components/UIElements/Typewriter/Typewriter";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useTranslation } from "react-i18next";
 
 const MainSection = () => {
+  const { t } = useTranslation();
   return (
     <section className={ms.content}>
       <div className={ms.header}>
         <h2 style={{ paddingBottom: 15 }} className={ms.title}>
-          Hola Amigo! <span className={ms.wave}>👋🏼</span>
+          {t("title")} <span className={ms.wave}>👋🏼</span>
         </h2>
 
         <h1 className={ms.mainTitle}>
-          I am
+          {t("name")}
           <strong className={ms.mainName}> Milan Sachani</strong>
         </h1>
 

@@ -7,6 +7,7 @@ import Burger from "../Burger/Burger";
 import BtnToggleTheme from "../../BtnToggleTheme/BtnToggleTheme";
 
 import Logo from "../../Logo/Logo";
+import LanguageSwitch from "I18n/LanguageSwitch";
 
 const MainNavigation = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -22,6 +23,7 @@ const MainNavigation = () => {
       <nav className={ms.desktop}>
         <NavLinks />
         <BtnToggleTheme />
+        <LanguageSwitch />
       </nav>
 
       <Media query={{ maxWidth: 768 }}>
