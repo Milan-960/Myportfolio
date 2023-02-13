@@ -5,15 +5,20 @@ import { AiFillGithub } from "react-icons/ai";
 import Tilt from "react-parallax-tilt";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import milanimg from "../../../assets/milan.jpeg";
+import { useTranslation } from "react-i18next";
 
 const IntroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <section className={ms.content}>
         <div className={ms.introduction}>
           <div className={ms.introductionText}>
             <h1 className={ms.title}>
-              LET ME <span className={ms.purple}> INTRODUCE </span> MYSELF
+              {t("intro.letme")}
+              <span className={ms.purple}> {t("intro.introd")} </span>
+              {t("intro.myself")}
             </h1>
             <div className={ms.description}>
               <p>
