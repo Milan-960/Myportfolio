@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import ms from "./NavLinks.module.scss";
@@ -23,15 +23,15 @@ import LanguageSwitch from "../../../I18n/LanguageSwitch";
 const NavLinks = () => {
   const [play, { stop }] = useSound(soundUrl, { volume: 0.7 });
 
-  const [isHovering, setIsHovering] = React.useState(false);
+  const [ishovering, setIsHovering] = useState();
 
   const soundHandler = () => {
-    setIsHovering(true);
+    setIsHovering(ishovering);
     play();
   };
 
   const onLeaveHandler = () => {
-    setIsHovering(true);
+    setIsHovering(ishovering);
     stop();
   };
 
@@ -44,12 +44,7 @@ const NavLinks = () => {
           alt="img"
         />
         <li>
-          <NavLink
-            to={routes.HOME}
-            activeClassName={ms.activehome}
-            exact
-            isHovering={isHovering}
-          >
+          <NavLink to={routes.HOME} activeClassName={ms.activehome} exact>
             <FcHome />
             Home
           </NavLink>
