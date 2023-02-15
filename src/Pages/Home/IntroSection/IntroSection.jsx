@@ -22,30 +22,28 @@ const IntroSection = () => {
             </h1>
             <div className={ms.description}>
               <p>
-                I fell in love with programming, and I believe...😎 At the very
-                least, I've learned something. As a{" "}
-                <b className={ms.purple}> Software Engineer </b> I work on a
-                variety of projects. I enjoy researching new trends and learning
-                about new technologies. Feel free to contact me if you need
-                consulting, volunteer work, or just want to talk about something
-                interesting.
+                {t("description.info")}
+                <b className={ms.purple}> {t("description.enginner")} </b>
+                {""}
+                {t("description.work")}
               </p>
               <p>
-                My areas of interest include the development of new
+                {t("description.area.web")}
                 <i>
-                  <b className={ms.purple}> Web Apps and Products </b>
+                  <b className={ms.purple}> {t("description.area.product")} </b>
                 </i>
-                based on the business recruitment
+                {t("description.area.business")}
               </p>
               <p>
-                A dedicated <b className={ms.purple}> Software Engineer 🚀 </b>
-                I've worked with{" "}
+                {t("description.experience.title")}
+                <b className={ms.purple}> {t("description.enginner")} 🚀 </b>
+                {t("description.experience.work")}
                 <b className={ms.purple}>
                   {" "}
                   JavaScript, TypeScript, Redux, Nodejs,
                 </b>{" "}
-                and a few other cool 😎 libraries to create{" "}
-                <b className={ms.purple}>Products and web applications.</b>
+                {t("description.experience.tools")}
+                <b className={ms.purple}> {t("description.experience.area")}</b>
               </p>
             </div>
           </div>
@@ -64,7 +62,7 @@ const IntroSection = () => {
         </div>
 
         <div className={ms.introSocial}>
-          <h1>FIND ME ON TECHSITES 🕸</h1>
+          <h1> {t("description.find")}</h1>
           <p>
             Feel free to <span className={ms.purple}>connect </span>with me
           </p>

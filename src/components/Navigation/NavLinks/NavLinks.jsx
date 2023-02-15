@@ -19,8 +19,10 @@ import { routes } from "../../../routes/BaseRoutes";
 import soundUrl from "../../../assets/sounds/bubble.mp3";
 
 import LanguageSwitch from "../../../I18n/LanguageSwitch";
+import { useTranslation } from "react-i18next";
 
 const NavLinks = () => {
+  const { t } = useTranslation();
   const [play, { stop }] = useSound(soundUrl, { volume: 0.7 });
 
   const [ishovering, setIsHovering] = useState();
@@ -46,20 +48,20 @@ const NavLinks = () => {
         <li>
           <NavLink to={routes.HOME} activeClassName={ms.activehome} exact>
             <FcHome />
-            Home
+            {t("navbar.home")}
           </NavLink>
         </li>
         <li>
           <NavLink to={routes.ABOUT} activeClassName={ms.active}>
             <FcAbout />
-            About
+            {t("navbar.about")}
           </NavLink>
         </li>
 
         <li>
           <NavLink to={routes.PROJECTS} activeClassName={ms.active}>
             <FcTouchscreenSmartphone />
-            Projects
+            {t("navbar.projects")}
           </NavLink>
         </li>
 
@@ -73,7 +75,7 @@ const NavLinks = () => {
         <li>
           <NavLink to={routes.CONTACT} activeClassName={ms.active}>
             <FcContacts />
-            Contact
+            {t("navbar.contact")}
           </NavLink>
         </li>
 
@@ -84,7 +86,7 @@ const NavLinks = () => {
             rel="noreferrer"
           >
             <FcComments />
-            Blogs
+            {t("navbar.blogs")}
           </a>
         </li>
 
