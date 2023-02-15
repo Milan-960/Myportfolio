@@ -12,6 +12,6 @@ const Home = () => {
       <IntroSection />
     </HomeLayout>
   );
-};
+}; 
 
 export default Home;
