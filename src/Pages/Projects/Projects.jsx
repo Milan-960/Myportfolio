@@ -2,13 +2,15 @@ import React, { useCallback, useState } from "react";
 import useSound from "use-sound";
 import s from "./Projects.module.scss";
 import BaseLayout from "../../layouts/BaseLayout/BaseLayout";
-import { PROJECTS } from "../../constants/projects";
+import { useProjectsTable } from "../../constants/projects";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import wetClick from "../../assets/sounds/bubble.mp3";
 
 const projectPerRow = 6;
 
 const Projects = () => {
+  // This is a hook that will be used to add trans to projects
+  const { PROJECTS } = useProjectsTable();
   const [next, setNext] = useState(projectPerRow);
 
   // This is for sounds

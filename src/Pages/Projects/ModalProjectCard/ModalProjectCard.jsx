@@ -7,11 +7,13 @@ import ms from "./ModalProjectCard.module.scss";
 import Modal from "../../../components/Modal/Modal";
 import Button from "../../../components/UIElements/Button/Button";
 import { useModal } from "../../../hooks/modalHook";
-import { PROJECTS } from "../../../constants/projects";
+import { useProjectsTable } from "../../../constants/projects";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ModalProjectCard = () => {
+  // This is a hook that will be used to add trans to projects
+  const { PROJECTS } = useProjectsTable();
   const { id } = useParams();
   const { image, title, links, technologies } = PROJECTS.find(
     (p) => id === p.id
@@ -19,7 +21,7 @@ const ModalProjectCard = () => {
   const { isVisible, toggleModal } = useModal();
 
   return (
-    <Modal show={isVisible} onClose={toggleModal}>
+    <Modal key={id} show={isVisible} onClose={toggleModal}>
       <div className={ms.cardWrapper}>
         <LazyLoadImage
           alt="project-img"
