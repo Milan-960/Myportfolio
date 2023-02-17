@@ -25,7 +25,7 @@ const DETECTION_OPTIONS = {
 
 const i18n = i18next.createInstance();
 
-// here we are seeting up the default lang
+// here we are seeting up the default langs
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
