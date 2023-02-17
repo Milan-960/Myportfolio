@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import Header from "./components/Header";
@@ -15,12 +15,13 @@ function App() {
       <div className="App">
         <Header />
       </div>
-      <Switch>
-        <Route exact path="/" component={HomePage}></Route>
-        <Route path="/projects" component={Projects}></Route>
-        <Route path="/skills" component={Skills}></Route>
-        <Route path="/contact" component={Contact}></Route>
-      </Switch>
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
 
       <CookieConsent
         location="bottom"
