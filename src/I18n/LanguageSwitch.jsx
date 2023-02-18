@@ -7,9 +7,6 @@ import { Dropdown } from "primereact/dropdown";
 import EN from "../assets/UK.png";
 import ES from "../assets/ES.png";
 
-import ms from "./LanguageSelector.module.scss";
-import "./LanguageSelector.css";
-
 const LanguageSwitch = () => {
   const { i18n } = useTranslation();
 
@@ -21,7 +18,7 @@ const LanguageSwitch = () => {
   const langItemTemplate = (langOptions) => {
     return (
       <div className="country-flag">
-        <img alt={langOptions.value} src={langOptions.icon} />
+        <img alt={langOptions.label} src={langOptions.icon} />
         <span className="ml-2">{langOptions.label}</span>
       </div>
     );
@@ -43,7 +40,7 @@ const LanguageSwitch = () => {
   }, [i18n, langOptions]);
 
   return (
-    <div className={ms.lang_switch}>
+    <div className="lang_switch">
       <Dropdown
         options={langOptions}
         value={i18n.language}
