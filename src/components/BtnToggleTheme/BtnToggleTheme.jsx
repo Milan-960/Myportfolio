@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ms from "./BtnToggleTheme.module.scss";
+
 import useSound from "use-sound";
 
 import Button from "../UIElements/Button/Button";
@@ -12,7 +12,7 @@ import wetClick from "../../assets/sounds/bubble.mp3";
 const BtnToggleTheme = ({ className }) => {
   const { dark, toggleTheme } = useThemeContext();
 
-  const [playbackRate, setPlaybackRate] = React.useState(0.75);
+  const [playbackRate, setPlaybackRate] = useState(0.75);
   const [play] = useSound(wetClick, {
     playbackRate,
     // `interrupt` ensures that if the sound starts again before it's
@@ -29,8 +29,8 @@ const BtnToggleTheme = ({ className }) => {
   return (
     <div>
       <Button addClass={className} onClick={onThemeChange}>
-        {dark && <ToggleLightIcon className={ms.toggleTheme} />}
-        {!dark && <ToggleDarkIcon className={ms.toggleTheme} />}
+        {dark && <ToggleLightIcon className="toggleTheme" />}
+        {!dark && <ToggleDarkIcon className="toggleTheme" />}
       </Button>
     </div>
   );
