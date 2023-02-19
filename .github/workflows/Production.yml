@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 16
           cache: npm
-      - run: npm install --immutable
+      - run: npm cache --force clean && npm install --force node-sass
       - run: npm vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
       - run: npm vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
       - run: npm vercel deploy --prod --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
