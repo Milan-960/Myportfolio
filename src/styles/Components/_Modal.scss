@@ -1,4 +1,4 @@
-.container {
+.modal_container {
   position: fixed;
   top: 0;
   right: 0;
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.modal {
+.modal_child {
   position: relative;
   z-index: 11;
   background-color: var(--bg-modal);

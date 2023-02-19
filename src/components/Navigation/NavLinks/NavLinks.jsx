@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import ms from "./NavLinks.module.scss";
 import useSound from "use-sound";
 
 import {
@@ -39,41 +38,41 @@ const NavLinks = () => {
 
   return (
     <button onMouseEnter={soundHandler} onMouseLeave={onLeaveHandler}>
-      <ul className={ms.navBar}>
+      <ul className="navBar">
         <img
-          className={ms.img}
+          className="img"
           src="https://camo.githubusercontent.com/8f5b918c2fc8a9d95a5227683cd282c30889a5bad491b8d41f85ba33fbc7e302/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f63642f64392f37362f63646439373632383932383636316564633439303266613964393733343263352e6a7067"
           alt="img"
         />
         <li>
-          <NavLink to={routes.HOME} activeClassName={ms.activehome} exact>
+          <NavLink to={routes.HOME} activeClassName="activehome" exact>
             <FcHome />
             {t("navbar.home")}
           </NavLink>
         </li>
         <li>
-          <NavLink to={routes.ABOUT} activeClassName={ms.active}>
+          <NavLink to={routes.ABOUT} activeClassName="active">
             <FcAbout />
             {t("navbar.about")}
           </NavLink>
         </li>
 
         <li>
-          <NavLink to={routes.PROJECTS} activeClassName={ms.active}>
+          <NavLink to={routes.PROJECTS} activeClassName="active">
             <FcTouchscreenSmartphone />
             {t("navbar.projects")}
           </NavLink>
         </li>
 
         {/* <li>
-        <NavLink to={routes.RESUME} activeClassName={ms.active}>
+        <NavLink to={routes.RESUME} activeClassName="active">
           <FcDocument />
           Resume
         </NavLink>
       </li> */}
 
         <li>
-          <NavLink to={routes.CONTACT} activeClassName={ms.active}>
+          <NavLink to={routes.CONTACT} activeClassName="active">
             <FcContacts />
             {t("navbar.contact")}
           </NavLink>
@@ -95,7 +94,7 @@ const NavLinks = () => {
         </li>
 
         {/* <li>
-        <NavLink to={routes.BLOG} activeClassName={ms.active}>
+        <NavLink to={routes.BLOG} activeClassName="active">
           <FcComments />
           Blog
         </NavLink>

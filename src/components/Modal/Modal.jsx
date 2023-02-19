@@ -1,4 +1,3 @@
-import ms from "./Modal.module.scss";
 import { ReactComponent as ModalCloseIcon } from "../../assets/modal-close.svg";
 import { useHistory } from "react-router-dom";
 import { useEffect } from "react";
@@ -23,7 +22,7 @@ const Modal = ({ children, show, onClose }) => {
   }, []);
 
   return (
-    <div className={ms.container}>
+    <div className="modal_container">
       {show && <Backdrop onClick={closeModal} />}
 
       <CSSTransition
@@ -33,10 +32,10 @@ const Modal = ({ children, show, onClose }) => {
         mountOnEnter
         unmountOnExit
       >
-        <div className={ms.modal}>
-          <div className={ms.closeWrapper} onClick={closeModal}>
-            <button className={ms.closeButton}>
-              <ModalCloseIcon className={ms.closeIcon} />
+        <div className="modal_child">
+          <div className="closeWrapper" onClick={closeModal}>
+            <button className="closeButton">
+              <ModalCloseIcon className="closeIcon" />
             </button>
           </div>
 

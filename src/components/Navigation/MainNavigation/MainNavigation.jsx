@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ms from "./MainNavigation.module.scss";
+
 import Media from "react-media";
 import NavLinks from "../NavLinks/NavLinks";
 import SideDrawer from "../SideDrawer/SideDrawer";
@@ -22,9 +22,9 @@ const MainNavigation = () => {
 
   return (
     <>
-      <Logo className={ms.desktop} />
+      <Logo className="desktop" />
 
-      <nav className={ms.desktop}>
+      <nav className="desktop">
         <NavLinks />
         <BtnToggleTheme />
       </nav>
@@ -34,16 +34,16 @@ const MainNavigation = () => {
           <>
             <Burger onClick={handleClick} />
 
-            <Logo className={ms.mobile} />
+            <Logo className="mobile" />
 
-            <BtnToggleTheme className={ms.mobile} />
+            <BtnToggleTheme className="mobile" />
           </>
         )}
       </Media>
 
       <SideDrawer show={isDrawerOpen} onClick={handleClick}>
         <ClickAwayListener onClickAway={handleClickAway}>
-          <nav className={ms.navigationDrawerNav}>
+          <nav className="navigationDrawerNav">
             <NavLinks />
           </nav>
         </ClickAwayListener>
