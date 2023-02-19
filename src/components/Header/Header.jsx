@@ -1,5 +1,5 @@
 import cx from "classnames";
-import ms from "./Header.module.scss";
+
 import { useState } from "react";
 
 const Header = ({ children }) => {
@@ -12,11 +12,11 @@ const Header = ({ children }) => {
 
   return (
     <div
-      className={cx(ms.header, {
-        [ms.highlighted]: headerHighlight,
+      className={cx("header", {
+        ["highlighted"]: headerHighlight,
       })}
     >
-      <div className={ms.container}>{children}</div>
+      <div className="header_container">{children}</div>
     </div>
   );
 };

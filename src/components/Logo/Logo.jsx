@@ -1,4 +1,3 @@
-import ms from "./Logo.module.scss";
 import { routes } from "../../routes/BaseRoutes";
 import { Link } from "react-router-dom";
 
@@ -7,7 +6,7 @@ const Logo = ({ className }) => {
     <div className={className}>
       <Link to={routes.HOME}>
         <svg
-          fill={ms.logoPrimary}
+          fill="logoPrimary"
           xmlns="http://www.w3.org/2000/svg"
           width="110"
           viewBox="0 0 49 19"

@@ -8,7 +8,7 @@
   text-overflow: clip;
 }
 
-.container {
+.header_container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -28,7 +28,7 @@
     backdrop-filter: none;
     padding: 10px 20px;
   }
-  .container {
+  .header_container {
     justify-content: space-between;
   }
 }

@@ -8,7 +8,7 @@
   background-color: var(--bg-footer);
 }
 
-.container {
+.footer_container {
   display: flex;
   justify-content: space-around;
   bottom: 0;
@@ -28,13 +28,13 @@
   text-align: center;
 }
 
-.body {
+.footer_body {
   flex: 1;
-  text-align: center
+  text-align: center;
 }
 
-.body li {
-  padding: .2rem 1rem;
+.footer_body li {
+  padding: 0.2rem 1rem;
   font-size: 1.2rem;
   color: var(--txt);
   cursor: pointer;
@@ -46,9 +46,9 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   list-style: none;
-  padding: 0
+  padding: 0;
 }
 
 .socialIcons {
-  color: var(--txt)
+  color: var(--txt);
 }
