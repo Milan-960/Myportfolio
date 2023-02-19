@@ -4,6 +4,22 @@ export const useProjectsTable = () => {
   const { t } = useTranslation();
   const PROJECTS = [
     {
+      id: "vite-react-template",
+      title: "Vite React Template",
+      description:
+        "A Vite + React starter template with TypeScript + SWC. Is a new kind of build tool for frontend web development. Think a pre-configured dev server + bundler combo, but leaner and faster.",
+      image: {
+        src: "https://raw.githubusercontent.com/Milan-960/vite-react-template/master/SS/home.png",
+        placeholderSrc:
+          "https://raw.githubusercontent.com/Milan-960/vite-react-template/master/SS/home.png",
+      },
+      links: {
+        site: "https://vite-react-template-seven.vercel.app",
+        repo: "https://github.com/Milan-960/vite-react-template",
+      },
+      technologies: ["#reactjs", "#vite", "#typescript"],
+    },
+    {
       id: "img-generator",
       title: "Img generator app 📸",
       description:
