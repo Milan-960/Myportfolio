@@ -1,4 +1,3 @@
-import ms from "./SideDrawer.module.scss";
 import { CSSTransition } from "react-transition-group";
 import Backdrop from "../../UIElements/Backdrop/Backdrop";
 
@@ -14,7 +13,7 @@ const SideDrawer = ({ children, show, onClose }) => {
         mountOnEnter
         unmountOnExit
       >
-        <aside className={ms.sideDrawer} onClick={onClose}>
+        <aside className="sideDrawer" onClick={onClose}>
           {children}
         </aside>
       </CSSTransition>

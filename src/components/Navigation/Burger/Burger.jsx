@@ -1,8 +1,6 @@
-import ms from "./Burger.module.scss";
-
 const Burger = ({ onClick }) => {
   return (
-    <button onClick={onClick} className={ms.burger}>
+    <button onClick={onClick} className="burger">
       <span />
       <span />
       <span />

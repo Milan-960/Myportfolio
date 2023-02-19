@@ -40,7 +40,7 @@ const IntroSection = () => {
                 {t("description.experience.work")}
                 <b className={ms.purple}>
                   {" "}
-                  JavaScript, TypeScript, Redux, Nodejs,
+                  JavaScript, TypeScript, Reactjs, Vite, Redux, Nodejs,
                 </b>{" "}
                 {t("description.experience.tools")}
                 <b className={ms.purple}> {t("description.experience.area")}</b>
