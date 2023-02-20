@@ -1,4 +1,3 @@
-import ms from "./GithubActivity.module.scss";
 import GitHubCalendar from "react-github-calendar";
 
 const GithubActivity = () => {
@@ -12,7 +11,7 @@ const GithubActivity = () => {
     grade0: "#ecd9fc",
   };
   return (
-    <div className={ms.container}>
+    <div className="gitHubCalendar_container">
       <GitHubCalendar
         username="milan-960"
         year={new Date().getFullYear()}
