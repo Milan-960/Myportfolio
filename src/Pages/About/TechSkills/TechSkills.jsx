@@ -22,77 +22,77 @@ import Tooltip from "../../../components/ToolTips/tooltips";
 
 const TechSkills = () => {
   return (
-    <ul className={ms.container}>
-      <Tooltip content="Javascript" className={ms.techIcons}>
-        <li className={ms.techIcon}>
+    <ul className="techSkills_container">
+      <Tooltip content="Javascript" className="techIcons_Skills">
+        <li className="techIcon">
           <SiJavascript />
         </li>
       </Tooltip>
 
-      <Tooltip content="Typescript" className={ms.techIcons}>
-        <li className={ms.techIcon}>
+      <Tooltip content="Typescript" className="techIcons_Skills">
+        <li className="techIcon">
           <SiTypescript />
         </li>
       </Tooltip>
 
-      <Tooltip content="React" className={ms.techIcons}>
-        <li className={ms.techIcon}>
+      <Tooltip content="React" className="techIcons_Skills">
+        <li className="techIcon">
           <DiReact />
         </li>
       </Tooltip>
 
-      <Tooltip content="Typescript" className={ms.techIcons}>
-        <li className={ms.techIcon}>
+      <Tooltip content="Typescript" className="techIcons_Skills">
+        <li className="techIcon">
           <SiRedux />
         </li>
       </Tooltip>
-      <Tooltip content="Nodejs" className={ms.techIcons}>
-        <li className={ms.techIcon}>
+      <Tooltip content="Nodejs" className="techIcons_Skills">
+        <li className="techIcon">
           <DiNodejs />
         </li>
       </Tooltip>
-      <Tooltip content="Sass" className={ms.techIcons}>
-        <li className={ms.techIcon}>
+      <Tooltip content="Sass" className="techIcons_Skills">
+        <li className="techIcon">
           <DiSass />
         </li>
       </Tooltip>
-      <Tooltip content="NPM" className={ms.techIcons}>
-        <li className={ms.techIcon}>
+      <Tooltip content="NPM" className="techIcons_Skills">
+        <li className="techIcon">
           <DiNpm />
         </li>
       </Tooltip>
-      <Tooltip content="Yarn" className={ms.techIcons}>
-        <li className={ms.techIcon}>
+      <Tooltip content="Yarn" className="techIcons_Skills">
+        <li className="techIcon">
           <SiYarn />
         </li>
       </Tooltip>
-      <Tooltip content="AWS" className={ms.techIcons}>
-        <li className={ms.techIcon}>
+      <Tooltip content="AWS" className="techIcons_Skills">
+        <li className="techIcon">
           <SiAmazonaws />
         </li>
       </Tooltip>
-      <Tooltip content="Mongodb" className={ms.techIcons}>
-        <li className={ms.techIcon}>
+      <Tooltip content="Mongodb" className="techIcons_Skills">
+        <li className="techIcon">
           <DiMongodb />
         </li>
       </Tooltip>
-      <Tooltip content="Firebase" className={ms.techIcons}>
-        <li className={ms.techIcon}>
+      <Tooltip content="Firebase" className="techIcons_Skills">
+        <li className="techIcon">
           <SiFirebase />
         </li>
       </Tooltip>
-      <Tooltip content="Postgresql " className={ms.techIcons}>
-        <li className={ms.techIcon}>
+      <Tooltip content="Postgresql " className="techIcons_Skills">
+        <li className="techIcon">
           <SiPostgresql />
         </li>
       </Tooltip>
-      <Tooltip content="Git" className={ms.techIcons}>
-        <li className={ms.techIcon}>
+      <Tooltip content="Git" className="techIcons_Skills">
+        <li className="techIcon">
           <DiGit />
         </li>
       </Tooltip>
-      <Tooltip content="Adobexd" className={ms.techIcons}>
-        <li className={ms.techIcon}>
+      <Tooltip content="Adobexd" className="techIcons_Skills">
+        <li className="techIcon">
           <SiAdobexd />
         </li>
       </Tooltip>
