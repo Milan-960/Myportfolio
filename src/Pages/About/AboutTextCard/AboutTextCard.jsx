@@ -1,12 +1,11 @@
-import ms from "./AboutTextCard.module.scss";
 import { FaRegHandPointRight } from "react-icons/fa";
 
 const AboutTextCard = () => {
   return (
-    <div className={ms.card}>
+    <div className="aboutTextCard_card">
       <p>
-        Hola Amigos, I am <span className={ms.purple}>Milan Sachani </span>
-        from <span className={ms.purple}> Warsaw, Poland 🇵🇱</span>
+        Hola Amigos, I am <span className="about_purple">Milan Sachani </span>
+        from <span className="about_purple"> Warsaw, Poland 🇵🇱</span>
         <br />
         <br />I have done Bachelor of Science in Computer Engineering from
         <br />
@@ -17,13 +16,13 @@ const AboutTextCard = () => {
       </p>
 
       <ul>
-        <li className={ms.aboutActivity}>
+        <li className="aboutActivity">
           <FaRegHandPointRight /> Travelling ✈️
         </li>
-        <li className={ms.aboutActivity}>
+        <li className="aboutActivity">
           <FaRegHandPointRight /> Reading 📚
         </li>
-        <li className={ms.aboutActivity}>
+        <li className="aboutActivity">
           <FaRegHandPointRight /> Exercise 🏋🏼
         </li>
       </ul>
