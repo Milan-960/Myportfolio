@@ -17,7 +17,14 @@ export const useProjectsTable = () => {
         site: "https://moonlight-film.vercel.app",
         repo: "https://github.com/Milan-960/Moonlight-films",
       },
-      technologies: ["#reactjs", "#typescript", "firebase"],
+      technologies: [
+        "#reactjs",
+        "#typescript",
+        "firebase",
+        "tailwindcss",
+        "react-toastify",
+        "formkit",
+      ],
     },
     {
       id: "vite-react-template",
