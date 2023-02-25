@@ -4,6 +4,29 @@ export const useProjectsTable = () => {
   const { t } = useTranslation();
   const PROJECTS = [
     {
+      id: "moonlight-films",
+      title: "Moonlight-Films",
+      description:
+        "This app is about movie with using the movie database API. it will allow user to create an account and they also will be able to put commnets on in review section on the movie app. As well it it will allow user to stream movie online and can download the app.",
+      image: {
+        src: "https://camo.githubusercontent.com/62739f1a7020b7ac646a96cb97a010d6365171d98d80286d7b49b04980b98bf6/68747470733a2f2f692e6962622e636f2f34574d367853702f686f6d652e706e67",
+        placeholderSrc:
+          "https://camo.githubusercontent.com/30e30b43722ebaf8117f3cdd7479d4657fd579ba8f2cbd44cab05391fc6ad938/68747470733a2f2f692e6962622e636f2f434230363934792f64657461696c2e706e67",
+      },
+      links: {
+        site: "https://moonlight-film.vercel.app",
+        repo: "https://github.com/Milan-960/Moonlight-films",
+      },
+      technologies: [
+        "#reactjs",
+        "#typescript",
+        "firebase",
+        "tailwindcss",
+        "react-toastify",
+        "formkit",
+      ],
+    },
+    {
       id: "vite-react-template",
       title: "Vite React Template",
       description:
@@ -207,22 +230,6 @@ export const useProjectsTable = () => {
         repo: "https://github.com/Milan-960/Quote-App",
       },
       technologies: ["#react", "#firebase", "#NPM", "#CSS3", "#Javascript"],
-    },
-    {
-      id: "expenses-tracker",
-      title: "Expenses-Tracker 💰",
-      description:
-        "An Application where you can add your expenses. After adding an expense there is a filter whitch counts your total expenses of the month.",
-      image: {
-        src: "https://github.com/Milan-960/Expense-App/raw/main/ss.png",
-        placeholderSrc:
-          "https://github.com/Milan-960/Expense-App/raw/main/ss.png",
-      },
-      links: {
-        site: "https://expense-apps.netlify.app/",
-        repo: "https://github.com/milan-960",
-      },
-      technologies: ["#react", "#firebase"],
     },
     {
       id: "React-recipe-list",
