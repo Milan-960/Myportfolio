@@ -232,22 +232,6 @@ export const useProjectsTable = () => {
       technologies: ["#react", "#firebase", "#NPM", "#CSS3", "#Javascript"],
     },
     {
-      id: "expenses-tracker",
-      title: "Expenses-Tracker 💰",
-      description:
-        "An Application where you can add your expenses. After adding an expense there is a filter whitch counts your total expenses of the month.",
-      image: {
-        src: "https://github.com/Milan-960/Expense-App/raw/main/ss.png",
-        placeholderSrc:
-          "https://github.com/Milan-960/Expense-App/raw/main/ss.png",
-      },
-      links: {
-        site: "https://expense-apps.netlify.app/",
-        repo: "https://github.com/milan-960",
-      },
-      technologies: ["#react", "#firebase"],
-    },
-    {
       id: "React-recipe-list",
       title: "React-recipe-list",
       description:
