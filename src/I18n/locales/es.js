@@ -58,5 +58,18 @@ export const ES = {
       activity:
         "Además de programar, ¡algunas otras actividades que me encantan hacer!",
     },
+
+    // Languages
+    aboutactivity: {
+      travelling: "De viaje ✈️",
+      reading: "Lectura 📚",
+      exercise: "Ejercicio 🏋🏼",
+    },
+
+    // Qoute
+    qoute: {
+      qoutebymilan:
+        "La programación es como un océano 🌊 que nunca terminará todos los días habrá algo nuevo que tal vez no sepamos pero debemos aprender 🧑‍💻",
+    },
   },
 };

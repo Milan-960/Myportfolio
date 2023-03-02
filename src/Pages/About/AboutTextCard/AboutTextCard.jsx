@@ -1,5 +1,5 @@
 import { FaRegHandPointRight } from "react-icons/fa";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const AboutTextCard = () => {
   const { t } = useTranslation();
@@ -20,13 +20,13 @@ const AboutTextCard = () => {
 
       <ul>
         <li className="aboutActivity">
-          <FaRegHandPointRight /> Travelling ✈️
+          <FaRegHandPointRight /> {t("aboutpage.aboutactivity.travelling")}
         </li>
         <li className="aboutActivity">
-          <FaRegHandPointRight /> Reading 📚
+          <FaRegHandPointRight /> {t("aboutpage.aboutactivity.reading")}
         </li>
         <li className="aboutActivity">
-          <FaRegHandPointRight /> Exercise 🏋🏼
+          <FaRegHandPointRight /> {t("aboutpage.aboutactivity.exercise")}
         </li>
       </ul>
 
@@ -38,9 +38,7 @@ const AboutTextCard = () => {
           fontWeight: "bold",
         }}
       >
-        "" Programming is like an ocean 🌊 which will never end every day there
-        will be something new which we may don't know but we must have to learn
-        🧑‍💻""
+        {t("aboutpage.qoute.qoutebymilan")}
         <br />
         "" Milan Sachani ""
       </p>

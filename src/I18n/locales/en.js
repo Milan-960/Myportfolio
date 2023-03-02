@@ -60,7 +60,18 @@ export const EN = {
       university: "Vistula University",
       activity: "Apart from coding, some other activities that I love to do!",
     },
-  },
 
-  message: "This is a line.<1/>This is another line.<1/>Yet another line",
+    // Languages
+    aboutactivity: {
+      travelling: "Travelling ✈️",
+      reading: "Reading 📚",
+      exercise: "Exercise 🏋🏼",
+    },
+
+    // Qoute
+    qoute: {
+      qoutebymilan:
+        "Programming is like an ocean 🌊 which will never end every day there will be something new which we may don't know but we must have to learn 🧑‍💻",
+    },
+  },
 };
