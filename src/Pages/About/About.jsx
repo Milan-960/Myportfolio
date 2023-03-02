@@ -7,15 +7,19 @@ import GithubActivity from "./GithubActivity/GithubActivity";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import homeMainIcon from "../../assets/home-main.svg";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <BaseLayout>
       <div className={ms.content}>
         <div className={ms.about}>
           <div className={ms.aboutDescription}>
             <h1 className={ms.title}>
-              Know Who <b className={ms.purple}>I AM 😎</b>
+              {t("aboutpage.title_first")}
+              {""}
+              <b className={ms.purple}> {t("aboutpage.title_second")}</b>
             </h1>
             <AboutTextCard />
           </div>
@@ -32,12 +36,14 @@ const About = () => {
         </div>
 
         <h2 className={ms.skills}>
-          Professional <b className={ms.purple}>Skills</b>
+          {t("aboutpage.professional.title")}{" "}
+          <b className={ms.purple}>{t("aboutpage.professional.skills")}</b>
         </h2>
         <TechSkills />
 
         <h2 className={ms.githubActivity}>
-          ❤️ Days I <b className={ms.purple}>Code ❤️</b>
+          {t("aboutpage.days.title")}{" "}
+          <b className={ms.purple}>{t("aboutpage.days.day")}</b>
         </h2>
         <GithubActivity />
       </div>

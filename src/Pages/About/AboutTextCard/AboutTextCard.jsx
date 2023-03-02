@@ -1,18 +1,21 @@
 import { FaRegHandPointRight } from "react-icons/fa";
+import { Trans, useTranslation } from "react-i18next";
 
 const AboutTextCard = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="aboutTextCard_card">
       <p>
         Hola Amigos, I am <span className="about_purple">Milan Sachani </span>
         from <span className="about_purple"> Warsaw, Poland 🇵🇱</span>
         <br />
-        <br />I have done Bachelor of Science in Computer Engineering from
+        <br /> {t("aboutpage.education.title")}
         <br />
-        Vistula University Warsaw, Poland 🇵🇱
+        {t("aboutpage.education.university")} Warsaw, Poland 🇵🇱
         <br />
         <br />
-        Apart from coding, some other activities that I love to do!
+        {t("aboutpage.education.activity")}
       </p>
 
       <ul>

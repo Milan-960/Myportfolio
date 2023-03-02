@@ -6,6 +6,7 @@ export const ES = {
     contact: "Contacto",
     blogs: "blogs",
   },
+  // Home page
   title: "Hola!",
   name: "Soy",
   intro: {
@@ -13,6 +14,7 @@ export const ES = {
     introd: "INTRODUCIR",
     myself: "MÍ MISMO",
   },
+  // Home page second part
   description: {
     info: "Me enamoré de la programación y creo que, como mínimo 😎, he aprendido algo. Como",
     enginner: "ingeniero de Software",
@@ -29,5 +31,32 @@ export const ES = {
       area: "Productos y aplicaciones web desde cero.",
     },
     find: "ENCUÉNTRAME EN SITIOS DE TECNOLOGÍA 🕸",
+  },
+
+  // Abuot me page
+  aboutpage: {
+    title_first: "Conoce Quién",
+    title_second: "YO SOY 😎",
+
+    // Professional Skills
+    professional: {
+      title: "Profesionales",
+      skills: "Habilidades",
+    },
+
+    // Days I code
+    days: {
+      title: "❤️ Días que",
+      day: "Código ❤️",
+    },
+
+    // Education
+    education: {
+      title:
+        "He realizado la Licenciatura en Ciencias en Ingeniería Informática de",
+      university: "Universidad de Vístula",
+      activity:
+        "Además de programar, ¡algunas otras actividades que me encantan hacer!",
+    },
   },
 };
