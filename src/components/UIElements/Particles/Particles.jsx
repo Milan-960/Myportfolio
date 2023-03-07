@@ -5,9 +5,9 @@ import { DARK_THEME_PARTICLES, LIGHT_THEME_PARTICLES } from "./particleType";
 import { useThemeContext } from "../../../hooks/themeHook/themeHook";
 
 const ParticlesTheme = () => {
-  const { dark } = useThemeContext();
+  const { isDarkMode } = useThemeContext();
 
-  const particles = dark ? DARK_THEME_PARTICLES : LIGHT_THEME_PARTICLES;
+  const particles = isDarkMode ? DARK_THEME_PARTICLES : LIGHT_THEME_PARTICLES;
 
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
