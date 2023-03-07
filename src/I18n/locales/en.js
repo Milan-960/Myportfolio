@@ -1,4 +1,5 @@
 export const EN = {
+  // Navbar
   navbar: {
     home: "Home",
     about: "About",
@@ -6,13 +7,18 @@ export const EN = {
     contact: "Contact",
     blogs: "Blogs",
   },
+
+  // Home page
   title: "Hey!",
   name: "I am",
+
   intro: {
     letme: "LET ME",
     introd: "INTRODUCE",
     myself: "MYSELF",
   },
+
+  // Home page second part
   description: {
     info: "I fell in love with programming, and I believe...😎 At the very least, I've learned something. As a",
     enginner: "Software Engineer ",
@@ -29,5 +35,43 @@ export const EN = {
       area: "Products and web applications from scratch.",
     },
     find: "FIND ME ON TECHSITES 🕸",
+  },
+
+  // About me page
+  aboutpage: {
+    title_first: "Get to Know Who",
+    title_second: "I AM 😎",
+
+    // Professional Skills
+    professional: {
+      title: "Professional",
+      skills: "Skills",
+    },
+
+    // Days I code
+    days: {
+      title: "❤️ Days I",
+      day: "Code ❤️",
+    },
+
+    // Education
+    education: {
+      title: "I have done Bachelor of Science in Computer Engineering from \n",
+      university: "Vistula University",
+      activity: "Apart from coding, some other activities that I love to do!",
+    },
+
+    // Languages
+    aboutactivity: {
+      travelling: "Travelling ✈️",
+      reading: "Reading 📚",
+      exercise: "Exercise 🏋🏼",
+    },
+
+    // Qoute
+    qoute: {
+      qoutebymilan:
+        "Programming is like an ocean 🌊 which will never end every day there will be something new which we may don't know but we must have to learn 🧑‍💻",
+    },
   },
 };
