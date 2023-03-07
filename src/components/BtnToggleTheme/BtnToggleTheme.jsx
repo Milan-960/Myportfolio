@@ -10,7 +10,7 @@ import { useThemeContext } from "../../hooks/themeHook/themeHook";
 import wetClick from "../../assets/sounds/bubble.mp3";
 
 const BtnToggleTheme = ({ className }) => {
-  const { dark, toggleTheme } = useThemeContext();
+  const { isDarkMode, toggleDarkModeHandler } = useThemeContext();
 
   const [playbackRate, setPlaybackRate] = useState(0.75);
   const [play] = useSound(wetClick, {
@@ -22,15 +22,15 @@ const BtnToggleTheme = ({ className }) => {
 
   const onThemeChange = () => {
     setPlaybackRate(playbackRate + 0.1);
-    toggleTheme();
+    toggleDarkModeHandler();
     play();
   };
 
   return (
     <div>
       <Button addClass={className} onClick={onThemeChange}>
-        {dark && <ToggleLightIcon className="toggleTheme" />}
-        {!dark && <ToggleDarkIcon className="toggleTheme" />}
+        {isDarkMode && <ToggleLightIcon className="toggleTheme" />}
+        {!isDarkMode && <ToggleDarkIcon className="toggleTheme" />}
       </Button>
     </div>
   );
