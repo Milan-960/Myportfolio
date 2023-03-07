@@ -3,7 +3,9 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 
 import LanguageWrapper from "./I18n/LanguageWrapper";
-import { ThemeProvider } from "./hooks/themeHook/themeContext";
+import { Provider } from "react-redux";
+import store from "./Store/Store";
+import { DarkModeProvider } from "./hooks/themeHook/darkMode-Context";
 import reportWebVitals from "./reportWebVitals";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
@@ -11,14 +13,16 @@ import AnimatedPointer from "./components/Animation/CursorAnimation";
 
 const Root = () => {
   return (
-    <ThemeProvider>
-      <LanguageWrapper>
-        <BrowserRouter>
-          <App />
-          <AnimatedPointer />
-        </BrowserRouter>
-      </LanguageWrapper>
-    </ThemeProvider>
+    <Provider store={store}>
+      <DarkModeProvider>
+        <LanguageWrapper>
+          <BrowserRouter>
+            <App />
+            <AnimatedPointer />
+          </BrowserRouter>
+        </LanguageWrapper>
+      </DarkModeProvider>
+    </Provider>
   );
 };
 
