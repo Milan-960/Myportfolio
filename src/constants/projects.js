@@ -4,6 +4,22 @@ export const useProjectsTable = () => {
   const { t } = useTranslation();
   const PROJECTS = [
     {
+      id: "nodejs-swagger-api",
+      title: "Nodejs-swagger-api",
+      description:
+        "Simple REST API on Nodejs server build using swagger-ui and ejs.",
+      image: {
+        src: "https://raw.githubusercontent.com/Milan-960/Nodejs-swagger-api/master/public/api-docs.png",
+        placeholderSrc:
+          "https://raw.githubusercontent.com/Milan-960/Nodejs-swagger-api/master/public/api-docs.png",
+      },
+      links: {
+        site: "https://nodejs-swagger-api.vercel.app",
+        repo: "https://github.com/Milan-960/Nodejs-swagger-api",
+      },
+      technologies: ["#reactjs", "#nodejs", "swagger", "ejs"],
+    },
+    {
       id: "moonlight-films",
       title: "Moonlight-Films",
       description:
