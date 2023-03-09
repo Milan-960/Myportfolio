@@ -6,10 +6,25 @@ import { useProjectsTable } from "../../constants/projects";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import wetClick from "../../assets/sounds/bubble.mp3";
 
+// import { useDispatch, useSelector } from "react-redux";
+// import { fetchProjectList } from "../../Store/Reducer/project-Reducer";
+
 const projectPerRow = 6;
 
 const Projects = () => {
   // This is a hook that will be used to add trans to projects
+
+  // Redux and nodejs have been added
+  // const dispatch = useDispatch();
+
+  // const project = useSelector((state) => state.project);
+
+  // console.log("projects", project);
+
+  // React.useEffect(() => {
+  //   dispatch(fetchProjectList()); // dispatch the fetchProject action
+  // }, [dispatch]);
+
   const { PROJECTS } = useProjectsTable();
   const [next, setNext] = useState(projectPerRow);
 
@@ -45,6 +60,9 @@ const Projects = () => {
     <BaseLayout>
       <div className={s.content}>
         <h1 className={s.title}>
+          {/* {project?.project.map((projectItem) => (
+            <li key={projectItem.id}>{projectItem.title}</li>
+          ))} */}
           My Recent <strong className={s.purple}>Works</strong>
         </h1>
         <p className={s.subtitle}>
