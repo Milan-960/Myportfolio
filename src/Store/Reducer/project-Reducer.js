@@ -1,6 +1,7 @@
-import axios from "axios";
-
 import * as actions from "../Actions/Index";
+
+// caling the api
+import { fetchProject } from "../../Api/fetchProject";
 
 export const initialState = {
   project: [],
@@ -13,7 +14,7 @@ export const ProjectReducer = (state = initialState, action) => {
     case actions.PROJECTS:
       return {
         ...state,
-        project: action.payload, // use "project" instead of "projects"
+        project: action.payload,
       };
     case actions.LOADING:
       return {
@@ -23,26 +24,29 @@ export const ProjectReducer = (state = initialState, action) => {
     case actions.ERROR:
       return {
         ...state,
+        error: "An error occurred while loading projects.",
       };
     default:
       return state;
   }
 };
 
-export const fetchItemList = () => {
+// Storing the value from API
+
+export const fetchProjectList = () => {
   return async (dispatch) => {
+    dispatch({ type: actions.LOADING, payload: true });
     try {
-      const response = await axios.get(
-        "https://nodejs-swagger-api.vercel.app/posts"
-      );
-      console.log("redux", response.data);
-      const project = response.data;
+      const projects = await fetchProject();
       dispatch({
-        type: actions.PROJECTS, // use the correct action type here
-        payload: project,
+        type: actions.PROJECTS,
+        payload: projects,
       });
+      dispatch({ type: actions.LOADING, payload: false });
     } catch (error) {
+      console.log(error);
       dispatch({ type: actions.ERROR });
+      dispatch({ type: actions.LOADING, payload: false });
     }
   };
 };

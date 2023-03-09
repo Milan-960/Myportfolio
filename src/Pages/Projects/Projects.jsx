@@ -6,8 +6,8 @@ import { useProjectsTable } from "../../constants/projects";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import wetClick from "../../assets/sounds/bubble.mp3";
 
-// import { useDispatch, useSelector } from "react-redux";
-// import { fetchItemList } from "../../Store/Reducer/project-Reducer";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProjectList } from "../../Store/Reducer/project-Reducer";
 
 const projectPerRow = 6;
 
@@ -15,27 +15,15 @@ const Projects = () => {
   // This is a hook that will be used to add trans to projects
 
   // Redux and nodejs have been added
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // const project = useSelector((state) => state.project);
-  // const loading = useSelector((state) => state.loading);
-  // const error = useSelector((state) => state.error);
+  const project = useSelector((state) => state.project);
 
-  // console.log("projects", project);
-  // console.log("loading", loading);
-  // console.log("error", error);
+  console.log("projects", project);
 
-  // React.useEffect(() => {
-  //   dispatch(fetchItemList());
-  // }, [dispatch]);
-
-  // if (loading) {
-  //   return <div>Loading...</div>;
-  // }
-
-  // if (error) {
-  //   return <div>Error: {error}</div>;
-  // }
+  React.useEffect(() => {
+    dispatch(fetchProjectList()); // dispatch the fetchProject action
+  }, [dispatch]);
 
   const { PROJECTS } = useProjectsTable();
   const [next, setNext] = useState(projectPerRow);

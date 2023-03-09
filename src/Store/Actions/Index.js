@@ -2,6 +2,8 @@
 
 export const DARK_MODE = "DARK_MODE";
 
+export const projectsSuccess = "projectsSuccess";
+
 export const PROJECTS = "PROJECTS";
 export const LOADING = "LOADING";
 export const ERROR = "ERROR";
