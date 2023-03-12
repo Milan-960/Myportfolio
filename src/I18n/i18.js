@@ -3,16 +3,16 @@ import i18next from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
-import { EN } from "./locales/en";
-import { ES } from "./locales/es";
+import { English } from "./locales/English";
+import { Spanish } from "./locales/Spanish";
 
 // the resources is used to render trans files EN is the default
 const resources = {
   en: {
-    translation: EN,
+    translation: English,
   },
   es: {
-    translation: ES,
+    translation: Spanish,
   },
 };
 
