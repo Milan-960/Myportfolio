@@ -1,4 +1,4 @@
-export const EN = {
+export const English = {
   // Navbar
   navbar: {
     home: "Home",

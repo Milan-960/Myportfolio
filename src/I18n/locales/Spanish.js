@@ -1,4 +1,4 @@
-export const ES = {
+export const Spanish = {
   navbar: {
     home: "Inicio",
     about: "Sobre mi",
