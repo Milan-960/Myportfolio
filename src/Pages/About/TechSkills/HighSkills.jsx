@@ -2,49 +2,67 @@ import React from "react";
 import { FaDumbbell } from "react-icons/fa";
 import Tooltip from "../../../components/ToolTips/tooltips";
 
+import Zoom from "react-reveal/Zoom";
+
 export const HighSkills = () => {
+  const skills = [
+    {
+      name: "Reactjs",
+      link: "https://reactjs.org",
+    },
+    {
+      name: "Javascript",
+    },
+    {
+      name: "Typescript",
+    },
+    {
+      name: "Redux",
+    },
+    {
+      name: "NextJs",
+    },
+    {
+      name: "Nodejs",
+    },
+    {
+      name: "NPM",
+    },
+    {
+      name: "Sass/Scss",
+    },
+    {
+      name: "Tailwindcss",
+    },
+  ];
+
   return (
     <div>
-      <div className="techSkills_h1">
-        <FaDumbbell />
-        <h1> HIGHLIGHTS </h1>
-      </div>
+      <Zoom top cascade>
+        <div className="techSkills_h1">
+          <FaDumbbell />
+          <h1> HIGHLIGHTS </h1>
+        </div>
+      </Zoom>
+
       <div className="techSkills_container">
-        <Tooltip content="React" className="techIcons_Skills">
-          <li className="techIcon">Reactjs</li>
-        </Tooltip>
-
-        <Tooltip content="Javascript" className="techIcons_Skills">
-          <li className="techIcon">Javascript</li>
-        </Tooltip>
-
-        <Tooltip content="Typescript" className="techIcons_Skills">
-          <li className="techIcon">Typescript</li>
-        </Tooltip>
-
-        <Tooltip content="Redux" className="techIcons_Skills">
-          <li className="techIcon">Redux</li>
-        </Tooltip>
-
-        <Tooltip content="NextJs" className="techIcons_Skills">
-          <li className="techIcon">NextJs</li>
-        </Tooltip>
-
-        <Tooltip content="Nodejs" className="techIcons_Skills">
-          <li className="techIcon">Nodejs</li>
-        </Tooltip>
-
-        <Tooltip content="NPM" className="techIcons_Skills">
-          <li className="techIcon">NPM</li>
-        </Tooltip>
-
-        <Tooltip content="Sass" className="techIcons_Skills">
-          <li className="techIcon">Sass/Scss</li>
-        </Tooltip>
-
-        <Tooltip content="Tailwindcss" className="techIcons_Skills">
-          <li className="techIcon">Tailwindcss</li>
-        </Tooltip>
+        {skills.map((skill) => (
+          <Tooltip content={skill.name} className="techIcons_Skills">
+            <div className="techSkills_container">
+              <li className="techIcon" key={skill.id}>
+                <Zoom top cascade>
+                  <a
+                    href={skill.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {skill.name}
+                  </a>
+                </Zoom>
+              </li>
+            </div>
+          </Tooltip>
+        ))}
       </div>
     </div>
   );
