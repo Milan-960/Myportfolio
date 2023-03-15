@@ -31,6 +31,7 @@
     "react-animated-cursor": "^2.4.0",
     "react-dom": "^18.2.0",
     "react-github-calendar": "^3.4.0",
+    "react-head": "^3.4.2",
     "react-i18next": "^12.2.0",
     "react-icons": "^4.2.0",
     "react-lazy-load-image-component": "^1.5.1",
