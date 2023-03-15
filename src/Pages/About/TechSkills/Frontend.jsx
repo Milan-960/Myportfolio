@@ -1,5 +1,4 @@
 import React from "react";
-import { FaDumbbell } from "react-icons/fa";
 import { DiReact } from "react-icons/di";
 import Tooltip from "../../../components/ToolTips/tooltips";
 
@@ -10,6 +9,7 @@ export const Frontend = () => {
         <DiReact />
         <h1> Frontend </h1>
       </div>
+
       <div className="techSkills_container">
         <Tooltip content="React" className="techIcons_Skills">
           <li className="techIcon">Reactjs</li>
