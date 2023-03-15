@@ -4,6 +4,8 @@ import { Other } from "./Other";
 import { Backend } from "./Backend";
 import { Database } from "./Database";
 import { Tools } from "./Tools";
+import { Hosting } from "./Hosting";
+import { Discipline } from "./Discipline";
 
 const TechSkills = () => {
   return (
@@ -14,6 +16,8 @@ const TechSkills = () => {
       <Backend />
       <Database />
       <Tools />
+      <Hosting />
+      <Discipline />
     </>
   );
 };
