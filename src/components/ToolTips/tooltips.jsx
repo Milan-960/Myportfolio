@@ -5,7 +5,11 @@ import "tippy.js/dist/tippy.css";
 import "tippy.js/themes/light.css";
 import "tippy.js/animations/scale.css";
 
-const Tooltip = ({ children, ...rest }) => <Tippy {...rest}>{children}</Tippy>;
+const Tooltip = React.forwardRef(({ children, ...rest }, ref) => (
+  <Tippy {...rest} ref={ref}>
+    {children}
+  </Tippy>
+));
 Tooltip.defaultProps = {
   animation: "scale",
   arrow: true,
