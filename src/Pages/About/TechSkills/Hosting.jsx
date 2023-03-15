@@ -1,35 +1,63 @@
 import React from "react";
-import { GrHost } from "react-icons/gr";
+import { BiGhost } from "react-icons/bi";
 import Tooltip from "../../../components/ToolTips/tooltips";
+import Zoom from "react-reveal/Zoom";
 
 export const Hosting = () => {
+  const HOSTING = [
+    {
+      name: "Vercel",
+      link: "https://vercel.com/",
+    },
+    {
+      name: "AWS",
+      link: "https://aws.amazon.com/",
+    },
+    {
+      name: "Netlify",
+      link: "https://www.netlify.com/",
+    },
+    {
+      name: "Heroku",
+      link: "https://www.heroku.com/",
+    },
+    {
+      name: "GithubPages",
+      link: "https://pages.github.com/",
+    },
+  ];
+
   return (
     <div>
-      <div className="techSkills_h1">
-        <GrHost />
-        <h1>Hosting</h1>
-      </div>
+      <Zoom top cascade>
+        <div className="techSkills_h1">
+          <BiGhost />
+          <h1>Hosting</h1>
+        </div>
+      </Zoom>
 
       <div className="techSkills_container">
-        <Tooltip content="Vercel" className="techIcons_Skills">
-          <li className="techIcon">Vercel</li>
-        </Tooltip>
-
-        <Tooltip content="AWS" className="techIcons_Skills">
-          <li className="techIcon">AWS</li>
-        </Tooltip>
-
-        <Tooltip content="Netlify" className="techIcons_Skills">
-          <li className="techIcon">Netlify</li>
-        </Tooltip>
-
-        <Tooltip content="Heroku" className="techIcons_Skills">
-          <li className="techIcon">Heroku</li>
-        </Tooltip>
-
-        <Tooltip content="GithubPages" className="techIcons_Skills">
-          <li className="techIcon">GithubPages</li>
-        </Tooltip>
+        {HOSTING.map((skill) => (
+          <Tooltip
+            content={skill.name}
+            className="techIcons_Skills"
+            key={skill.name}
+          >
+            <div className="techSkills_container">
+              <li className="techIcon">
+                <Zoom top cascade>
+                  <a
+                    href={skill.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {skill.name}
+                  </a>
+                </Zoom>
+              </li>
+            </div>
+          </Tooltip>
+        ))}
       </div>
     </div>
   );
