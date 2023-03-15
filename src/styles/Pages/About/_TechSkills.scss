@@ -2,34 +2,51 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .techIcons_Skills {
-  font-size: 25px !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  font-size: 20px !important;
+  border: 2px solid rgba(200, 137, 230, 0.637) !important;
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   background-color: var(--color-primary) !important;
   color: var(--txt) !important;
 }
 
 .techIcon {
-  font-size: 4rem;
-  margin: 15px;
-  padding: 2rem 4rem;
+  font-size: 20px;
+  margin: 5px;
+  padding: 15px;
   opacity: 0.93;
-  border: 1.7px solid rgba(200, 137, 230, 0.637);
+  border: 2px solid rgba(200, 137, 230, 0.637);
   vertical-align: middle;
   text-align: center;
   border-radius: 5px;
   display: table;
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
   overflow: hidden;
-  transition: all 0.3s ease-in 0s;
   line-height: 0;
+  font-weight: 500;
 
   &:hover {
-    transform: scale(1.05);
     overflow: hidden;
-    border: 2.2px solid rgba(197, 115, 230, 0.883);
+    border: 2px solid rgba(197, 115, 230, 0.883);
+    background-color: var(--hover-bg);
+    color: var(--hover-bg-txt);
+  }
+}
+
+.techSkills_h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--txt-secondary);
+  padding: 20px;
+
+  > h1 {
+    padding-left: 5px;
   }
 }
