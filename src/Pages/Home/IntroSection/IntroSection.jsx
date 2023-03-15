@@ -6,6 +6,8 @@ import Tilt from "react-parallax-tilt";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import milanimg from "../../../assets/milan.jpeg";
 import { useTranslation } from "react-i18next";
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 
 const IntroSection = () => {
   const { t } = useTranslation();
@@ -15,38 +17,50 @@ const IntroSection = () => {
       <section className={ms.content}>
         <div className={ms.introduction}>
           <div className={ms.introductionText}>
-            <h1 className={ms.title}>
-              {t("intro.letme")}
-              <span className={ms.purple}> {t("intro.introd")} </span>
-              {t("intro.myself")}
-            </h1>
+            <Fade top>
+              <h1 className={ms.title}>
+                {t("intro.letme")}
+                <span className={ms.purple}> {t("intro.introd")} </span>
+                {t("intro.myself")}
+              </h1>
+            </Fade>
+
             <div className={ms.description}>
-              <p>
-                {t("description.info")}
-                <b className={ms.purple}> {t("description.enginner")} </b>
-                {""}
-                {t("description.work")}
-              </p>
-              <p>
-                {t("description.area.web")}
-                <i>
-                  <b className={ms.purple}> {t("description.area.product")} </b>
-                </i>
-                {t("description.area.business")}
-              </p>
-              <p>
-                {t("description.experience.title")}
-                <b className={ms.purple}> {t("description.enginner")} 🚀 </b>
-                {t("description.experience.work")}
-                <b className={ms.purple}>
-                  {" "}
-                  JavaScript, TypeScript, Reactjs, Vite, Redux, Nodejs,
-                </b>{" "}
-                {t("description.experience.tools")}
-                <b className={ms.purple}> {t("description.experience.area")}</b>
-              </p>
+              <Fade top cascade>
+                <p>
+                  {t("description.info")}
+                  <b className={ms.purple}> {t("description.enginner")} </b>
+                  {""}
+                  {t("description.work")}
+                </p>
+                <p>
+                  {t("description.area.web")}
+                  <i>
+                    <b className={ms.purple}>
+                      {" "}
+                      {t("description.area.product")}{" "}
+                    </b>
+                  </i>
+                  {t("description.area.business")}
+                </p>
+                <p>
+                  {t("description.experience.title")}
+                  <b className={ms.purple}> {t("description.enginner")} 🚀 </b>
+                  {t("description.experience.work")}
+                  <b className={ms.purple}>
+                    {" "}
+                    JavaScript, TypeScript, Reactjs, Vite, Redux, Nodejs,
+                  </b>{" "}
+                  {t("description.experience.tools")}
+                  <b className={ms.purple}>
+                    {" "}
+                    {t("description.experience.area")}
+                  </b>
+                </p>
+              </Fade>
             </div>
           </div>
+
           <div>
             <Tilt
               tiltMaxAngleX={9}
@@ -66,48 +80,50 @@ const IntroSection = () => {
           <p>
             Feel free to <span className={ms.purple}>connect </span>with me
           </p>
-          <ul className={ms.milan}>
-            <li>
-              <a
-                href="https://github.com/milan-960"
-                target="_blank"
-                rel="noreferrer"
-                className={ms.socialIcon}
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/milan-sachani-9090"
-                target="_blank"
-                rel="noreferrer"
-                className={ms.socialIcon}
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://stackoverflow.com/users/17144934/milan960"
-                target="_blank"
-                rel="noreferrer"
-                className={ms.socialIcon}
-              >
-                <FaStackOverflow />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/MilanSachani"
-                target="_blank"
-                rel="noreferrer"
-                className={ms.socialIcon}
-              >
-                <FaTwitter />
-              </a>
-            </li>
-          </ul>
+          <Slide bottom cascade>
+            <ul className={ms.milan}>
+              <li>
+                <a
+                  href="https://github.com/milan-960"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={ms.socialIcon}
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/milan-sachani-9090"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={ms.socialIcon}
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://stackoverflow.com/users/17144934/milan960"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={ms.socialIcon}
+                >
+                  <FaStackOverflow />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/MilanSachani"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={ms.socialIcon}
+                >
+                  <FaTwitter />
+                </a>
+              </li>
+            </ul>
+          </Slide>
         </div>
         {/* <div>
           <table className={ms.counter}>
