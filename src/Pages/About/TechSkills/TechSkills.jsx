@@ -3,6 +3,7 @@ import { Frontend } from "./Frontend";
 import { Other } from "./Other";
 import { Backend } from "./Backend";
 import { Database } from "./Database";
+import { Tools } from "./Tools";
 
 const TechSkills = () => {
   return (
@@ -12,6 +13,7 @@ const TechSkills = () => {
       <Other />
       <Backend />
       <Database />
+      <Tools />
     </>
   );
 };
