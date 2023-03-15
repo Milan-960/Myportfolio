@@ -1,5 +1,5 @@
 import React from "react";
-import { GrHost } from "react-icons/gr";
+import { BiGhost } from "react-icons/bi";
 import Tooltip from "../../../components/ToolTips/tooltips";
 import Zoom from "react-reveal/Zoom";
 
@@ -31,7 +31,7 @@ export const Hosting = () => {
     <div>
       <Zoom top cascade>
         <div className="techSkills_h1">
-          <GrHost />
+          <BiGhost />
           <h1>Hosting</h1>
         </div>
       </Zoom>

@@ -55,7 +55,11 @@ export const HighSkills = () => {
 
       <div className="techSkills_container">
         {skills.map((skill) => (
-          <Tooltip content={skill.name} className="techIcons_Skills">
+          <Tooltip
+            content={skill.name}
+            key={skill.name}
+            className="techIcons_Skills"
+          >
             <div className="techSkills_container">
               <li className="techIcon" key={skill.id}>
                 <Zoom top cascade>
