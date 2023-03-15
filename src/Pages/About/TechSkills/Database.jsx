@@ -1,27 +1,50 @@
 import React from "react";
 import Tooltip from "../../../components/ToolTips/tooltips";
 import { FaDatabase } from "react-icons/fa";
+import Zoom from "react-reveal/Zoom";
 
 export const Database = () => {
+  const DATABASE = [
+    {
+      name: "MongoBD",
+      link: "https://www.mongodb.com/",
+    },
+    {
+      name: "Firebase",
+      link: "https://firebase.google.com/",
+    },
+    {
+      name: "PostgreSQL",
+      link: "https://www.postgresql.org/",
+    },
+  ];
   return (
     <div>
-      <div className="techSkills_h1">
-        <FaDatabase />
-        <h1> DATABASE </h1>
-      </div>
+      <Zoom top cascade>
+        <div className="techSkills_h1">
+          <FaDatabase />
+          <h1> DATABASE </h1>
+        </div>
+      </Zoom>
 
       <div className="techSkills_container">
-        <Tooltip content="MongoBD" className="techIcons_Skills">
-          <li className="techIcon">MongoBD</li>
-        </Tooltip>
-
-        <Tooltip content="Firebase" className="techIcons_Skills">
-          <li className="techIcon">Firebase</li>
-        </Tooltip>
-
-        <Tooltip content="PostgreSQL" className="techIcons_Skills">
-          <li className="techIcon">PostgreSQL</li>
-        </Tooltip>
+        {DATABASE.map((skill) => (
+          <Tooltip content={skill.name} className="techIcons_Skills">
+            <div className="techSkills_container">
+              <li className="techIcon" key={skill.id}>
+                <Zoom top cascade>
+                  <a
+                    href={skill.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {skill.name}
+                  </a>
+                </Zoom>
+              </li>
+            </div>
+          </Tooltip>
+        ))}
       </div>
     </div>
   );

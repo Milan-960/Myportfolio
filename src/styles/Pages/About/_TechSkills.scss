@@ -35,6 +35,10 @@
     background-color: var(--hover-bg);
     color: var(--hover-bg-txt);
   }
+
+  > a {
+    cursor: pointer !important;
+  }
 }
 
 .techSkills_h1 {

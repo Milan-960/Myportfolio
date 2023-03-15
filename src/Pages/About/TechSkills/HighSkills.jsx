@@ -12,27 +12,35 @@ export const HighSkills = () => {
     },
     {
       name: "Javascript",
+      link: "https://www.javascript.com/",
     },
     {
       name: "Typescript",
+      link: "https://www.typescriptlang.org/",
     },
     {
       name: "Redux",
+      link: "https://redux.js.org",
     },
     {
       name: "NextJs",
+      link: "https://nextjs.org/",
     },
     {
       name: "Nodejs",
+      link: "https://nodejs.org/en/",
     },
     {
       name: "NPM",
+      link: "https://www.npmjs.com/",
     },
     {
       name: "Sass/Scss",
+      link: "https://sass-lang.com/",
     },
     {
       name: "Tailwindcss",
+      link: "https://tailwindcss.com/",
     },
   ];
 
