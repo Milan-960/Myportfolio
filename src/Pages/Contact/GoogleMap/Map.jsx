@@ -2,6 +2,7 @@ import m from "./Map.module.scss";
 
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
+import Fade from "react-reveal/Fade";
 
 export class MapContainer extends Component {
   constructor(props) {
@@ -30,18 +31,20 @@ export class MapContainer extends Component {
 
   render() {
     return (
-      <div className={m.map}>
-        <Map
-          google={this.props.google}
-          zoom={11}
-          initialCenter={{
-            lat: 52.2297,
-            lng: 21.0122,
-          }}
-        >
-          {this.showMarkers()}
-        </Map>
-      </div>
+      <Fade left>
+        <div className={m.map}>
+          <Map
+            google={this.props.google}
+            zoom={11}
+            initialCenter={{
+              lat: 52.2297,
+              lng: 21.0122,
+            }}
+          >
+            {this.showMarkers()}
+          </Map>
+        </div>
+      </Fade>
     );
   }
 }
