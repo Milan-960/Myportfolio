@@ -3,6 +3,7 @@ import React from "react";
 import m from "./Contact.module.scss";
 
 import emailjs from "emailjs-com";
+import Fade from "react-reveal/Fade";
 
 function sendEmail(e) {
   e.preventDefault();
@@ -135,71 +136,73 @@ class DemoForm extends React.Component {
   render() {
     return (
       <div className={m.loginbox}>
-        <form className={m.contactform} onSubmit={this.handleSubmit}>
-          <h2>Contact Me</h2>
-          <div className={m.userbox}>
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              name="name"
-              value={this.state.input.name}
-              onChange={this.handleChange}
-              placeholder="Enter name"
-              id="name"
-            />
+        <Fade right>
+          <form className={m.contactform} onSubmit={this.handleSubmit}>
+            <h2>Contact Me</h2>
+            <div className={m.userbox}>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                value={this.state.input.name}
+                onChange={this.handleChange}
+                placeholder="Enter name"
+                id="name"
+              />
 
-            <div className={m.text_danger}>{this.state.errors.name}</div>
-          </div>
+              <div className={m.text_danger}>{this.state.errors.name}</div>
+            </div>
 
-          <div className={m.userbox}>
-            <label for="email">Email Address:</label>
-            <input
-              type="text"
-              name="email"
-              value={this.state.input.email}
-              onChange={this.handleChange}
-              placeholder="Enter email"
-              id="email"
-            />
+            <div className={m.userbox}>
+              <label for="email">Email Address:</label>
+              <input
+                type="text"
+                name="email"
+                value={this.state.input.email}
+                onChange={this.handleChange}
+                placeholder="Enter email"
+                id="email"
+              />
 
-            <div className={m.text_danger}>{this.state.errors.email}</div>
-          </div>
+              <div className={m.text_danger}>{this.state.errors.email}</div>
+            </div>
 
-          <div className={m.userbox}>
-            <label for="Phone">Phone:</label>
-            <input
-              type="number"
-              name="phone"
-              value={this.state.input.phone}
-              onChange={this.handleChange}
-              placeholder="+48 Enter phone"
-              id="email"
-            />
+            <div className={m.userbox}>
+              <label for="Phone">Phone:</label>
+              <input
+                type="number"
+                name="phone"
+                value={this.state.input.phone}
+                onChange={this.handleChange}
+                placeholder="+48 Enter phone"
+                id="email"
+              />
 
-            <div className={m.text_danger}>{this.state.errors.phone}</div>
-          </div>
+              <div className={m.text_danger}>{this.state.errors.phone}</div>
+            </div>
 
-          <div className={m.userbox}>
-            <label for="comment">Message:</label>
-            <input
-              name="comment"
-              value={this.state.input.comment}
-              onChange={this.handleChange}
-              placeholder="Enter Your Message"
-            />
+            <div className={m.userbox}>
+              <label for="comment">Message:</label>
+              <input
+                name="comment"
+                value={this.state.input.comment}
+                onChange={this.handleChange}
+                placeholder="Enter Your Message"
+              />
 
-            <div className={m.text_danger}>{this.state.errors.comment}</div>
-          </div>
+              <div className={m.text_danger}>{this.state.errors.comment}</div>
+            </div>
 
-          <button>
-            <input
-              type="submit"
-              value="Submit"
-              onSubmit={sendEmail}
-              className={m.btn}
-            />
-          </button>
-        </form>
+            <button>
+              <input
+                type="submit"
+                value="Submit"
+                onSubmit={sendEmail}
+                className={m.btn}
+              />
+            </button>
+          </form>
+        </Fade>
       </div>
     );
   }

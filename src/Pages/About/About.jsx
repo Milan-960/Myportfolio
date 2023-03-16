@@ -64,10 +64,13 @@ const About = () => {
 
             <TechSkills />
 
-            <h2 className={ms.githubActivity}>
-              {t("aboutpage.days.title")}{" "}
-              <b className={ms.purple}>{t("aboutpage.days.day")}</b>
-            </h2>
+            <Fade top>
+              <h2 className={ms.githubActivity}>
+                {t("aboutpage.days.title")}{" "}
+                <b className={ms.purple}>{t("aboutpage.days.day")}</b>
+              </h2>
+            </Fade>
+
             <GithubActivity />
           </div>
         </BaseLayout>

@@ -1,4 +1,5 @@
 import GitHubCalendar from "react-github-calendar";
+import Flash from "react-reveal/Flash";
 
 const GithubActivity = () => {
   const colorTheme = {
@@ -12,14 +13,16 @@ const GithubActivity = () => {
   };
   return (
     <div className="gitHubCalendar_container">
-      <GitHubCalendar
-        username="milan-960"
-        year={new Date().getFullYear()}
-        blockSize={15}
-        blockMargin={5}
-        theme={colorTheme}
-        fontSize={16}
-      />
+      <Flash>
+        <GitHubCalendar
+          username="milan-960"
+          year={new Date().getFullYear()}
+          blockSize={15}
+          blockMargin={5}
+          theme={colorTheme}
+          fontSize={16}
+        />
+      </Flash>
     </div>
   );
 };
