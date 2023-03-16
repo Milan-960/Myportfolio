@@ -6,6 +6,7 @@ import BaseLayout from "../../layouts/BaseLayout/BaseLayout";
 import { useProjectsTable } from "../../constants/projects";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import wetClick from "../../assets/sounds/bubble.mp3";
+import Zoom from "react-reveal/Zoom";
 
 // import { useDispatch, useSelector } from "react-redux";
 // import { fetchProjectList } from "../../Store/Reducer/project-Reducer";
@@ -71,30 +72,35 @@ const Projects = () => {
 
         <BaseLayout>
           <div className={s.content}>
-            <h1 className={s.title}>
-              {/* {project?.project.map((projectItem) => (
+            <Zoom top cascade>
+              <h1 className={s.title}>
+                {/* {project?.project.map((projectItem) => (
             <li key={projectItem.id}>{projectItem.title}</li>
             ))} */}
-              My Recent <strong className={s.purple}>Works</strong>
-            </h1>
-            <p className={s.subtitle}>
-              Here are a few projects I've worked on recently.
-            </p>
+                My Recent <strong className={s.purple}>Works</strong>
+              </h1>
+              <p className={s.subtitle}>
+                Here are a few projects I've worked on recently.
+              </p>
+            </Zoom>
+
             <ul className={s.projects}>
               {PROJECTS?.slice(0, next)?.map((props) => (
                 <ProjectCard key={props.id} {...props} />
               ))}
             </ul>
 
-            {next < PROJECTS?.length ? (
-              <button className={s.button} onClick={handleMoreProject}>
-                Load more
-              </button>
-            ) : (
-              <button className={s.button} onClick={handleMoreProjects}>
-                Previous
-              </button>
-            )}
+            <Zoom bottom cascade>
+              {next < PROJECTS?.length ? (
+                <button className={s.button} onClick={handleMoreProject}>
+                  Load more
+                </button>
+              ) : (
+                <button className={s.button} onClick={handleMoreProjects}>
+                  Previous
+                </button>
+              )}
+            </Zoom>
           </div>
         </BaseLayout>
       </HeadProvider>
