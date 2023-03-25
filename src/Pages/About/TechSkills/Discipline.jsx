@@ -13,6 +13,10 @@ export const Discipline = () => {
       name: "TDD",
       link: "https://en.wikipedia.org/wiki/Test-driven_development",
     },
+    {
+      name: "BDD",
+      link: "https://en.wikipedia.org/wiki/Behavior-driven_development",
+    },
   ];
   return (
     <div>
