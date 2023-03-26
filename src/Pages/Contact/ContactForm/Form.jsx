@@ -126,12 +126,15 @@
 
 // export default DemoForm;
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 
 import m from "./Contact.module.scss";
 
 import Fade from "react-reveal/Fade";
+
+import { Toast } from "primereact/toast";
+import { useCallback } from "react";
 
 const DemoForm = () => {
   const [input, setInput] = useState({
@@ -141,9 +144,23 @@ const DemoForm = () => {
     user_message: "",
   });
 
+  const toast = useRef(null);
+
   const handleChange = (event) => {
     setInput({ ...input, [event.target.name]: event.target.value });
   };
+
+  // success popups
+  const showSuccess = useCallback(() => {
+    toast.current.show({
+      handleSubmit,
+      severity: "success",
+      summary: "Success",
+      detail:
+        "Thank you for connecting with me your message has been recevied!!",
+      life: 4000,
+    });
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -164,7 +181,7 @@ const DemoForm = () => {
       )
       .then(
         () => {
-          alert("😎 Thank you for your message 😎");
+          showSuccess();
         },
         (err) => {
           alert(JSON.stringify(err));
@@ -176,6 +193,9 @@ const DemoForm = () => {
     <div className={m.loginbox}>
       <Fade right>
         <form className={m.contactform} id="form" onSubmit={handleSubmit}>
+          <div className="card flex justify-content-center">
+            <Toast ref={toast} />
+          </div>
           <h2>Contact Me</h2>
           <div>
             <div className={m.userbox}>
