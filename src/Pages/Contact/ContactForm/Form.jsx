@@ -177,59 +177,60 @@ const DemoForm = () => {
       <Fade right>
         <form className={m.contactform} id="form" onSubmit={handleSubmit}>
           <h2>Contact Me</h2>
-          <div className={m.userbox}>
-            <label htmlFor="from_name">Subject</label>
-            <input
-              type="text"
-              name="from_name"
-              id="from_name"
-              value={input.from_name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className={m.userbox}>
-            <label htmlFor="user_name">Name</label>
-            <input
-              type="text"
-              name="user_name"
-              id="user_name"
-              value={input.user_name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className={m.userbox}>
-            <label htmlFor="user_email">Email</label>
-            <input
-              type="text"
-              name="user_email"
-              id="user_email"
-              value={input.user_email}
-              onChange={handleChange}
-              required
-            />
-          </div>
+          <div>
+            <div className={m.userbox}>
+              <label htmlFor="from_name">Subject</label>
+              <input
+                type="text"
+                name="from_name"
+                id="from_name"
+                value={input.from_name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className={m.userbox}>
+              <label htmlFor="user_name">Name</label>
+              <input
+                type="text"
+                name="user_name"
+                id="user_name"
+                value={input.user_name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className={m.userbox}>
+              <label htmlFor="user_email">Email</label>
+              <input
+                type="text"
+                name="user_email"
+                id="user_email"
+                value={input.user_email}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-          <div className={m.userbox}>
-            <label htmlFor="user_message">Message</label>
-            <textarea
-              id="user_message"
-              name="user_message"
-              rows="5"
-              cols="33"
-              value={input.user_message}
-              onChange={handleChange}
-              required
-            />
+            <div className={m.userbox}>
+              <label htmlFor="user_message">Message</label>
+              <textarea
+                id="user_message"
+                name="user_message"
+                rows="5"
+                cols="33"
+                value={input.user_message}
+                onChange={handleChange}
+                required
+              />
+            </div>
           </div>
-
           <button>
             <input
               className={m.btn}
               type="submit"
               id="button"
-              value="Send Email"
+              value="Connect with me!"
             />
           </button>
         </form>

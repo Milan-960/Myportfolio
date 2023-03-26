@@ -14,7 +14,7 @@
     border-radius: 10px;
     margin: -10px 0 20px;
     padding: 0;
-    color: white;
+    color: wheat;
     font-size: 50px;
     text-align: center;
     font-family: "Caveat", cursive;
@@ -33,21 +33,45 @@
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
 
+    input {
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background: transparent;
+      outline: none;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background: transparent;
+      outline: none;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
     &:focus {
       box-shadow: 0 0 5px #b0cfe0;
       border: 1px solid #b0cfe0;
     }
     label {
       color: #ffffff;
-      font-size: 15px;
+      font-size: 20px;
       padding-block: 5px;
     }
   }
 
   .btn {
-    background: #2a2957;
+    background-color: black;
     padding: 10px 10px;
-    color: white;
+    color: wheat;
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -56,11 +80,10 @@
     letter-spacing: 3px;
     border-radius: 15px;
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
     &:hover {
       cursor: pointer;
       background: #58505034;
-      color: white;
+      color: wheat;
       border-radius: 15px;
       box-shadow: #8cabdaea;
     }
@@ -70,8 +93,7 @@
     padding-block: 10px;
   }
 }
-
-@media only screen and (max-width: 800px) {
+@media (max-width: 600px) {
   .loginbox {
     top: 40%;
     left: 50%;
@@ -79,11 +101,38 @@
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(101, 103, 224, 0.6);
     border-radius: 10px;
+
     h2 {
-      margin: 0 0 25px;
+      margin: 0 0 10px;
       padding: 0;
       color: wheat;
       text-align: center;
+    }
+
+    .userbox {
+      input {
+        padding: 5px;
+        margin: 5px 0;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      textarea {
+        padding: 5px;
+        margin: 5px 0;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      &:focus {
+        box-shadow: 0 0 5px #b0cfe0;
+        border: 1px solid #b0cfe0;
+      }
+      label {
+        color: #ffffff;
+        font-size: 20px;
+        padding-block: 5px;
+      }
     }
   }
 }
