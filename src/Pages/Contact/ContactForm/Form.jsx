@@ -126,12 +126,15 @@
 
 // export default DemoForm;
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 
 import m from "./Contact.module.scss";
 
 import Fade from "react-reveal/Fade";
+
+import { Toast } from "primereact/toast";
+import { useCallback } from "react";
 
 const DemoForm = () => {
   const [input, setInput] = useState({
@@ -141,9 +144,23 @@ const DemoForm = () => {
     user_message: "",
   });
 
+  const toast = useRef(null);
+
   const handleChange = (event) => {
     setInput({ ...input, [event.target.name]: event.target.value });
   };
+
+  // success popups
+  const showSuccess = useCallback(() => {
+    toast.current.show({
+      handleSubmit,
+      severity: "success",
+      summary: "Success",
+      detail:
+        "Thank you for connecting with me your message has been recevied!!",
+      life: 4000,
+    });
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -164,7 +181,7 @@ const DemoForm = () => {
       )
       .then(
         () => {
-          alert("😎 Thank you for your message 😎");
+          showSuccess();
         },
         (err) => {
           alert(JSON.stringify(err));
@@ -176,60 +193,64 @@ const DemoForm = () => {
     <div className={m.loginbox}>
       <Fade right>
         <form className={m.contactform} id="form" onSubmit={handleSubmit}>
+          <div className="card flex justify-content-center">
+            <Toast ref={toast} />
+          </div>
           <h2>Contact Me</h2>
-          <div className={m.userbox}>
-            <label htmlFor="from_name">Subject</label>
-            <input
-              type="text"
-              name="from_name"
-              id="from_name"
-              value={input.from_name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className={m.userbox}>
-            <label htmlFor="user_name">Name</label>
-            <input
-              type="text"
-              name="user_name"
-              id="user_name"
-              value={input.user_name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className={m.userbox}>
-            <label htmlFor="user_email">Email</label>
-            <input
-              type="text"
-              name="user_email"
-              id="user_email"
-              value={input.user_email}
-              onChange={handleChange}
-              required
-            />
-          </div>
+          <div>
+            <div className={m.userbox}>
+              <label htmlFor="from_name">Subject</label>
+              <input
+                type="text"
+                name="from_name"
+                id="from_name"
+                value={input.from_name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className={m.userbox}>
+              <label htmlFor="user_name">Name</label>
+              <input
+                type="text"
+                name="user_name"
+                id="user_name"
+                value={input.user_name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className={m.userbox}>
+              <label htmlFor="user_email">Email</label>
+              <input
+                type="text"
+                name="user_email"
+                id="user_email"
+                value={input.user_email}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-          <div className={m.userbox}>
-            <label htmlFor="user_message">Message</label>
-            <textarea
-              id="user_message"
-              name="user_message"
-              rows="5"
-              cols="33"
-              value={input.user_message}
-              onChange={handleChange}
-              required
-            />
+            <div className={m.userbox}>
+              <label htmlFor="user_message">Message</label>
+              <textarea
+                id="user_message"
+                name="user_message"
+                rows="5"
+                cols="33"
+                value={input.user_message}
+                onChange={handleChange}
+                required
+              />
+            </div>
           </div>
-
           <button>
             <input
               className={m.btn}
               type="submit"
               id="button"
-              value="Send Email"
+              value="Connect with me!"
             />
           </button>
         </form>
