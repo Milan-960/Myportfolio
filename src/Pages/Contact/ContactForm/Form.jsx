@@ -155,7 +155,7 @@ const DemoForm = () => {
     toast.current.show({
       handleSubmit,
       severity: "success",
-      summary: "Success",
+      summary: "",
       detail:
         "Thank you for connecting with me your message has been recevied!!",
       life: 4000,
