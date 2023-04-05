@@ -43,6 +43,22 @@ export const useProjectsTable = () => {
       ],
     },
     {
+      id: "raect-webpack-template",
+      title: "Reactjs Webpack Template",
+      description:
+        "A Raect + Webpack starter template with JS. This template can be used directly for the creation of new projects. When using it like this, make sure to not install it via npm but download it directly. The template is (nearly) useless for itself when downloaded via npm! Is a new kind of build tool for frontend web development",
+      image: {
+        src: "https://raw.githubusercontent.com/Milan-960/Reactjs-webpack-template/master/SS/homenew.png",
+        placeholderSrc:
+          "https://raw.githubusercontent.com/Milan-960/Reactjs-webpack-template/master/SS/homenew.png",
+      },
+      links: {
+        site: "https://reactjs-webpack-template.vercel.app",
+        repo: "https://github.com/Milan-960/Reactjs-webpack-template",
+      },
+      technologies: ["#reactjs", "#webpack", "#javascript"],
+    },
+    {
       id: "vite-react-template",
       title: "Vite React Template",
       description:
