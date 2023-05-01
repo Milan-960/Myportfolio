@@ -4,6 +4,28 @@ export const useProjectsTable = () => {
   const { t } = useTranslation();
   const PROJECTS = [
     {
+      id: "bingo-app",
+      title: "Bingo-App",
+      description:
+        "The Bingo app is a simple web application that generates a 5x5 bingo card with random phrases related to video conference calls!",
+      image: {
+        src: "https://raw.githubusercontent.com/Milan-960/Bingo-App/master/SS/dark.png",
+        placeholderSrc:
+          "https://raw.githubusercontent.com/Milan-960/Bingo-App/master/SS/dark.png",
+      },
+      links: {
+        site: "https://bingo-apps.vercel.app",
+        repo: "https://github.com/Milan-960/Bingo-App",
+      },
+      technologies: [
+        "#reactjs",
+        "fireworks",
+        "react-icons",
+        "use-sound",
+        "gsap",
+      ],
+    },
+    {
       id: "nodejs-swagger-api",
       title: "Nodejs-swagger-api",
       description:
