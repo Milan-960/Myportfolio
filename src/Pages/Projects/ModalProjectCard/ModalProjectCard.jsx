@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-import { BiLinkExternal } from "react-icons/all";
+import { BiLinkExternal } from "react-icons/bi";
 
 import ms from "./ModalProjectCard.module.scss";
 
