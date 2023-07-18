@@ -9,15 +9,22 @@ export const useProjectsTable = () => {
       description:
         "Muzes utilizes AI, data, and analytics to give you the easiest and most intuitive software marketplace experience.",
       image: {
-        src: "https://raw.githubusercontent.com/Milan-960/Bingo-App/master/SS/dark.png",
+        src: "https://raw.githubusercontent.com/Milan-960/Myportfolio/develop/SS/Muzes.png",
         placeholderSrc:
-          "https://raw.githubusercontent.com/Milan-960/Bingo-App/master/SS/dark.png",
+          "https://raw.githubusercontent.com/Milan-960/Myportfolio/develop/SS/Muzes.png",
       },
       links: {
         site: "https://www.muzes.ai/",
         repo: "https://github.com/Muzesorg",
       },
-      technologies: ["#reactjs", "#nextjs", "#react-icons"],
+      technologies: [
+        "#reactjs",
+        "#nextjs",
+        "#react-icons",
+        "#MUI",
+        "#axios",
+        "#react-toastify",
+      ],
     },
     {
       id: "bingo-app",
