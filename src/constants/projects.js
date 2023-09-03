@@ -4,6 +4,21 @@ export const useProjectsTable = () => {
   const { t } = useTranslation();
   const PROJECTS = [
     {
+      id: "Threejs-react",
+      title: "Threejs-react",
+      description: "Threejs-react app with cool animations and interactions.",
+      image: {
+        src: "https://raw.githubusercontent.com/Milan-960/Threejs-react/master/ss/Home.png",
+        placeholderSrc:
+          "https://raw.githubusercontent.com/Milan-960/Threejs-react/master/ss/Home.png",
+      },
+      links: {
+        site: "https://threejs-react-cube.vercel.app/",
+        repo: "https://github.com/Milan-960/Threejs-react",
+      },
+      technologies: ["#reactjs", "#threejs", "#react-icons"],
+    },
+    {
       id: "MuzesAi",
       title: "Muzes.ai",
       description:
