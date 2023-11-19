@@ -1,65 +1,11 @@
-.p-dropdown .p-dropdown-trigger {
-  display: none !important;
-}
-
-.p-dropdown .p-dropdown-label {
-  background-color: var(--bg-header) !important;
-  height: 30px;
+.lang_switch {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.p-dropdown {
-  background: none;
-}
-
-.p-dropdown > span {
-  padding-right: 10px !important;
-  color: var(--txt) !important;
-}
-
-.p-inputtext {
-  padding: 5px !important;
-}
-
-.country-flag {
-  display: flex !important;
-  align-items: center !important;
-}
-
-.country-flag > img {
-  object-fit: cover;
-  width: 20px;
-  height: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.p-dropdown-clear-icon {
-  display: none !important;
-}
-
-.p-dropdown-trigger {
-  display: none !important;
-}
-
-/* This style is for lang drop-down */
-
-.p-dropdown-panel .p-dropdown-items .p-dropdown-item {
-  padding: 6px 8px !important;
-  color: var(--txt) !important;
-  background-color: var(--bg-header) !important;
-}
-
-.p-dropdown-panel .p-dropdown-items {
-  padding: 5px 0px;
-  color: var(--txt) !important;
-  background-color: var(--bg-header) !important;
-}
-
-.field {
-  margin-top: 0 !important;
-  margin-bottom: 0;
-  padding: 0px;
+  .lang_btn {
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+  }
 }
