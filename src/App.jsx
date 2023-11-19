@@ -5,6 +5,7 @@ import Preloader from "./components/UIElements/Preloader/Preloader";
 import "./styles/Globals.scss";
 
 const App = () => {
+  console.log("App");
   return (
     <Suspense fallback={<Preloader />}>
       <Router>
