@@ -1,9 +1,6 @@
-import { useCallback } from "react";
-
+import React, { useCallback } from "react";
 import { useTranslation } from "react-i18next";
-
-import { Dropdown } from "primereact/dropdown";
-
+import Select from "react-select";
 import EN from "../assets/UK.png";
 import ES from "../assets/ES.png";
 
@@ -15,38 +12,33 @@ const LanguageSwitch = () => {
     { value: "es", label: "ES", icon: ES },
   ];
 
-  const langItemTemplate = (langOptions) => {
-    return (
-      <div className="country-flag">
-        <img alt={langOptions.label} src={langOptions.icon} />
-        <span className="ml-2">{langOptions.label}</span>
-      </div>
-    );
-  };
+  const formatOptionLabel = ({ label, icon }) => (
+    <div style={{ display: "flex", alignItems: "center" }}>
+      <img
+        src={icon}
+        alt={label}
+        style={{ marginRight: 10, width: 25, height: 20 }}
+      />
+      <span>{label}</span>
+    </div>
+  );
 
-  const selectedLangTemplate = (langOptions) => {
-    if (langOptions) {
-      return (
-        <div className="country-flag">
-          <img alt={langOptions.label} src={Poland} />
-          <div>{langOptions.label}</div>
-        </div>
-      );
-    }
-  };
-
-  const handleLanguageChange = useCallback(() => {
-    i18n.changeLanguage(i18n.language === "en" ? "es" : "en");
-  }, [i18n, langOptions]);
+  const handleLanguageChange = useCallback(
+    (option) => {
+      i18n.changeLanguage(option.value);
+    },
+    [i18n]
+  );
 
   return (
     <div className="lang_switch">
-      <Dropdown
+      <Select
         options={langOptions}
-        value={i18n.language}
-        itemTemplate={langItemTemplate}
-        valueTemplate={langItemTemplate || selectedLangTemplate}
+        getOptionLabel={(option) => option.label}
+        getOptionValue={(option) => option.value}
+        formatOptionLabel={formatOptionLabel}
         onChange={handleLanguageChange}
+        value={langOptions.find((option) => option.value === i18n.language)}
       />
     </div>
   );
