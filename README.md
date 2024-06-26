@@ -26,7 +26,8 @@ npm start
 - [MaterialUI](https://mui.com/)
 - [I18n](https://www.i18next.com/)
 
-<img align="right" src="./SS/Home.png" width="100%"/>&nbsp;
+<img align="right" src="./SS/Home.png" width="100%"/>
 &nbsp;
 
-<img align="right" src="./SS/Hom2.png" width="100%"/>&nbsp;
+<img align="right" src="./SS/Hom2.png" width="100%"/>
+&nbsp;
