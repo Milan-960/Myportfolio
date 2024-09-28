@@ -2,7 +2,9 @@ import * as actions from "../Actions/Index";
 
 // initial state
 const initialState = {
-  isDarkMode: !!JSON.parse(localStorage.getItem("dark")),
+  isDarkMode:
+    localStorage.getItem("dark") === null ||
+    !!JSON.parse(localStorage.getItem("dark")),
 };
 
 const DarkModeReducer = (state = initialState, action) => {

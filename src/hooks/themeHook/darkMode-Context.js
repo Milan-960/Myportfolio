@@ -13,22 +13,28 @@ export const DarkModeProvider = ({ children }) => {
   const { isDarkMode } = darkMode;
 
   const toggleDarkModeHandler = () => {
-    // dispatch the action to toggle the dark mode
+    // Dispatch Redux action to toggle dark mode
     dispatch(toggleDarkMode());
 
-    // // save the dark mode state to local storage
+    // Update the body class and localStorage
+    const updatedMode = !isDarkMode;
+    localStorage.setItem("dark", JSON.stringify(updatedMode));
 
-    // // set the dark mode class to the body
-    localStorage.setItem("dark", JSON.stringify(!isDarkMode));
-    document.body.classList.toggle("dark");
-    document.body.classList.toggle("light");
+    if (updatedMode) {
+      document.body.classList.add("dark");
+      document.body.classList.remove("light");
+    } else {
+      document.body.classList.add("light");
+      document.body.classList.remove("dark");
+    }
   };
 
   useEffect(() => {
     // get the dark mode state from local storage
     const darkModeFromStorage = JSON.parse(localStorage.getItem("dark"));
-    // if the dark mode state is true
-    if (darkModeFromStorage) {
+
+    // if the dark mode state is true or undefined (for first-time users), set dark mode
+    if (darkModeFromStorage === null || darkModeFromStorage) {
       // set the dark mode class to the body
       document.body.classList.add("dark");
       document.body.classList.remove("light");
