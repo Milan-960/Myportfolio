@@ -4,6 +4,22 @@ export const useProjectsTable = () => {
   const { t } = useTranslation();
   const PROJECTS = [
     {
+      id: "AI Powered Image Recognition",
+      title: "AI Powered Image Recognition",
+      description:
+        "This repository contains a Progressive Web App (PWA) that leverages TensorFlow.js and the MobileNet model to perform real-time image classification.",
+      image: {
+        src: "https://raw.githubusercontent.com/Milan-960/AI-Powered-Image-Recognition/main/SS/home.png",
+        placeholderSrc:
+          "https://raw.githubusercontent.com/Milan-960/AI-Powered-Image-Recognition/main/SS/home.png",
+      },
+      links: {
+        site: "https://ai-powered-image-recognition.vercel.app",
+        repo: "https://github.com/Milan-960/AI-Powered-Image-Recognition",
+      },
+      technologies: ["#nestjs14", "#threejs", "#tensorflow", "#pwa-apps"],
+    },
+    {
       id: "Threejs-react",
       title: "Threejs-react",
       description: "Threejs-react app with cool animations and interactions.",
