@@ -6,6 +6,7 @@ export const English = {
     projects: "Projects",
     contact: "Contact",
     blogs: "Blogs",
+    status: "Status",
   },
 
   // Home page

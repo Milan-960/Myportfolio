@@ -11,6 +11,7 @@ import {
   FcTouchscreenSmartphone,
   FcAbout,
 } from "react-icons/fc";
+import { GiNetworkBars } from "react-icons/gi";
 
 // import { FcComments } from "react-icons/fc";
 
@@ -86,6 +87,17 @@ const NavLinks = () => {
           >
             <FcComments />
             {t("navbar.blogs")}
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://status.milansachani.dev"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GiNetworkBars />
+            {t("navbar.status")}
           </a>
         </li>
 
