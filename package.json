@@ -5,7 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@material-ui/core": "^4.12.4",
+    "@mui/base": "^5.0.0-beta.58",
     "@mui/material": "^5.11.8",
     "@react-navigation/native": "^6.0.6",
     "@sanity/block-content-to-react": "^3.0.0",
@@ -52,6 +52,7 @@
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
     "sass": "^1.51.0",
+    "sass-loader": "^16.0.2",
     "scrollreveal": "^4.0.9",
     "typewriter-effect": "^2.17.0",
     "use-sound": "^4.0.1",
