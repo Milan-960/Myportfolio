@@ -90,7 +90,7 @@ const NavLinks = () => {
           </a>
         </li>
 
-        {/* <li>
+        <li>
           <a
             href="https://status.milansachani.dev"
             target="_blank"
@@ -99,7 +99,7 @@ const NavLinks = () => {
             <GiNetworkBars />
             {t("navbar.status")}
           </a>
-        </li> */}
+        </li>
 
         <li>
           <LanguageSwitch />
