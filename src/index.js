@@ -8,8 +8,7 @@ import store from "./Store/Store";
 import { DarkModeProvider } from "./hooks/themeHook/darkMode-Context";
 import reportWebVitals from "./reportWebVitals";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
-
-import AnimatedPointer from "./components/Animation/CursorAnimation";
+import AnimatedPointer from "./components/Animation/CursorAnimation"; // Restore AnimatedPointer
 
 const Root = () => {
   return (
@@ -18,7 +17,7 @@ const Root = () => {
         <LanguageWrapper>
           <BrowserRouter>
             <App />
-            <AnimatedPointer />
+            {/* <AnimatedPointer /> */}
           </BrowserRouter>
         </LanguageWrapper>
       </DarkModeProvider>
