@@ -2,6 +2,13 @@
   "name": "Milan-portfolio",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "serve": "serve -s build",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -11,6 +18,8 @@
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^2.23.2",
     "@tippyjs/react": "^4.2.6",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
     "axios": "^1.6.0",
     "classnames": "^2.3.1",
     "dotenv": "^10.0.0",
@@ -33,7 +42,7 @@
     "react-github-calendar": "^3.4.0",
     "react-head": "^3.4.2",
     "react-i18next": "^12.2.0",
-    "react-icons": "^4.10.1",
+    "react-icons": "^5.3.0",
     "react-lazy-load-image-component": "^1.5.1",
     "react-matrix-parallax": "^2.1.5",
     "react-media": "^1.10.0",
@@ -44,9 +53,9 @@
     "react-reveal": "^1.2.2",
     "react-router": "^6.7.0",
     "react-router-dom": "^5.3.4",
-    "react-scripts": "^5.0.0",
+    "react-scripts": "^5.0.1",
     "react-select": "^5.8.0",
-    "react-tilty": "^2.0.3",
+    "react-tilty": "^3.0.0",
     "react-transition-group": "^4.4.2",
     "react-tsparticles": "^2.8.0",
     "redux": "^5.0.1",
@@ -57,11 +66,11 @@
     "typewriter-effect": "^2.17.0",
     "use-sound": "^4.0.1",
     "web-vitals": "^1.1.2",
-    "workbox-core": "^5.1.4",
-    "workbox-expiration": "^5.1.4",
-    "workbox-precaching": "^5.1.4",
-    "workbox-routing": "^5.1.4",
-    "workbox-strategies": "^5.1.4"
+    "workbox-core": "^7.1.0",
+    "workbox-expiration": "^7.1.0",
+    "workbox-precaching": "^7.1.0",
+    "workbox-routing": "^7.1.0",
+    "workbox-strategies": "^7.1.0"
   },
   "overrides": {
     "@babel/core": "7.19.6",
@@ -70,13 +79,6 @@
     "@babel/helper-compilation-targets": "7.19.3",
     "@babel/helper-create-class-features-plugin": "7.19.0",
     "@babel/helper-module-transforms": "7.19.6"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "serve": "serve -s build",
-    "eject": "react-scripts eject"
   },
   "browserslist": [
     ">0.2%",
