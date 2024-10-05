@@ -23,7 +23,7 @@
     "i18next-browser-languagedetector": "^7.0.1",
     "i18next-http-backend": "^2.1.1",
     "modern-normalize": "^1.1.0",
-    "node-sass": "^8.0.0",
+    "node-sass": "^9.0.0",
     "npm": "^8.11.0",
     "primereact": "^8.7.3",
     "radium": "^0.26.2",
