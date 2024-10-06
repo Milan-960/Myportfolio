@@ -321,7 +321,6 @@ const ThreeJSVisualizer = () => {
   const [audioLoaded, setAudioLoaded] = useState(false); // Track if the audio is loaded
   const rendererRef = useRef(null); // To store the renderer
   const playerRef = useRef(null); // Store player instance across renders
-  console.log("🚀 ~ ThreeJSVisualizer ~ playerRef:", playerRef);
   const animationIdRef = useRef(null); // Store animation ID
   const controlsRef = useRef(null); // To store OrbitControls
   let particles, analyser;
@@ -379,13 +378,13 @@ const ThreeJSVisualizer = () => {
     // Create particle system
     const particleCount = 500;
     const geometry = new THREE.BufferGeometry();
-    const positions = new Float32Array(particleCount * 3);
-    const sphericalRadius = 5; // Set a spherical radius
+    const positions = new Float32Array(particleCount * 4);
+    const sphericalRadius = 5.5; // Set a spherical radius
 
     for (let i = 0; i < particleCount; i++) {
       // Generate random positions within a sphere
-      const phi = Math.random() * Math.PI * 2;
-      const theta = Math.acos(Math.random() * 2 - 1);
+      const phi = Math.random() * Math.PI * 3;
+      const theta = Math.acos(Math.random() * 3 - 1);
 
       positions[i * 3] = sphericalRadius * Math.sin(theta) * Math.cos(phi);
       positions[i * 3 + 1] = sphericalRadius * Math.sin(theta) * Math.sin(phi);
@@ -395,7 +394,8 @@ const ThreeJSVisualizer = () => {
     geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
     const material = new THREE.PointsMaterial({
       color: 0xcd5ff8, // Color updated to #cd5ff8
-      size: 0.1,
+      size: 0.2,
+      opacity: 1,
     });
 
     particles = new THREE.Points(geometry, material);
