@@ -6,12 +6,16 @@ import Zoom from "react-reveal/Zoom";
 export const Other = () => {
   const Other = [
     {
-      name: "Typescript",
-      link: "https://www.typescriptlang.org/",
+      name: "Docker",
+      link: "https://www.docker.com/",
     },
     {
-      name: "Redux",
-      link: "https://redux.js.org",
+      name: "GraphQL",
+      link: "https://graphql.org/",
+    },
+    {
+      name: "WebSocket",
+      link: "https://socket.io/",
     },
   ];
 

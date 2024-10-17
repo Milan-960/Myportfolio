@@ -12,12 +12,12 @@ const TechSkills = () => {
     <>
       <HighSkills />
       <Frontend />
-      <Other />
       <Backend />
       <Database />
       <Tools />
       <Hosting />
       <Discipline />
+      <Other />
     </>
   );
 };

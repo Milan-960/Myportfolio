@@ -10,12 +10,16 @@ export const Frontend = () => {
       link: "https://reactjs.org",
     },
     {
-      name: "Javascript",
-      link: "https://www.javascript.com/",
-    },
-    {
       name: "NextJs",
       link: "https://nextjs.org/",
+    },
+    {
+      name: "Svelte",
+      link: "https://svelte.dev/",
+    },
+    {
+      name: "Javascript",
+      link: "https://www.javascript.com/",
     },
     {
       name: "Material UI",

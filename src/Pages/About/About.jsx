@@ -12,6 +12,7 @@ import homeMainIcon from "../../assets/home-main.svg";
 import { useTranslation } from "react-i18next";
 
 import Fade from "react-reveal/Fade";
+import Recommendations from "./Recommodations/Recommendations";
 
 const About = () => {
   const { t } = useTranslation();
@@ -53,6 +54,11 @@ const About = () => {
             <img src={aboutPromoImg} alt="about" />
           </div> */}
             </div>
+
+            {/* <Fade top>
+              <Recommendations />
+            </Fade> */}
+
             <Fade top>
               <h2 className={ms.skills}>
                 {t("aboutpage.professional.title")}{" "}

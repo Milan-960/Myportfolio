@@ -11,6 +11,10 @@ export const HighSkills = () => {
       link: "https://reactjs.org",
     },
     {
+      name: "NextJs",
+      link: "https://nextjs.org/",
+    },
+    {
       name: "Javascript",
       link: "https://www.javascript.com/",
     },
@@ -21,10 +25,6 @@ export const HighSkills = () => {
     {
       name: "Redux",
       link: "https://redux.js.org",
-    },
-    {
-      name: "NextJs",
-      link: "https://nextjs.org/",
     },
     {
       name: "Nodejs",

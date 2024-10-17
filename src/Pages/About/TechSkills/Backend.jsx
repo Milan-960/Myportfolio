@@ -14,10 +14,15 @@ export const Backend = () => {
       link: "https://nestjs.com/",
     },
     {
-      name: "GraphQL",
-      link: "https://graphql.org/",
+      name: "ExpressJs",
+      link: "https://expressjs.com/",
+    },
+    {
+      name: "JAVA (Basic)",
+      link: "https://www.java.com/en/",
     },
   ];
+
   return (
     <div>
       <Zoom top cascade>
