@@ -43,6 +43,12 @@ export const English = {
     title_first: "Get to Know Who",
     title_second: "I AM 😎",
 
+    // Recommendations
+    reco: {
+      title: "Recommendations",
+      received: "Received",
+    },
+
     // Professional Skills
     professional: {
       title: "Professional",

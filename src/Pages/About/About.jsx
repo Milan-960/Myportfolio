@@ -55,9 +55,7 @@ const About = () => {
           </div> */}
             </div>
 
-            {/* <Fade top>
-              <Recommendations />
-            </Fade> */}
+            <Recommendations />
 
             <Fade top>
               <h2 className={ms.skills}>
