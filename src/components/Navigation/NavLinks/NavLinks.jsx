@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import useSound from "use-sound";
+import milanMemoji from "../../../assets/milan-emoji.png";
 
 import {
   FcHome,
@@ -40,11 +41,7 @@ const NavLinks = () => {
   return (
     <button onMouseEnter={soundHandler} onMouseLeave={onLeaveHandler}>
       <ul className="navBar">
-        <img
-          className="img"
-          src="https://camo.githubusercontent.com/8f5b918c2fc8a9d95a5227683cd282c30889a5bad491b8d41f85ba33fbc7e302/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f63642f64392f37362f63646439373632383932383636316564633439303266613964393733343263352e6a7067"
-          alt="img"
-        />
+        <img className="img" src={milanMemoji} alt="memoji" />
         <li>
           <NavLink to={routes.HOME} activeClassName="activehome" exact>
             <FcHome />
