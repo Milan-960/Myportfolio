@@ -144,7 +144,7 @@ function Recommendations() {
               <FaLinkedin />
             </a>
           </div>
-          <div className="backdrop" onClick={closeModal}></div>
+          <div className="recommendations_backdrop" onClick={closeModal}></div>
         </div>
       )}
     </div>
