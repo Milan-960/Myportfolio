@@ -1,5 +1,15 @@
 import { useTranslation } from "react-i18next";
 
+// Import all images using dynamic import
+import moonlightMovies from "../assets/moonlight-movies.png";
+import muzesAi from "../assets/Muzes.png";
+
+// Centralize image imports
+const PROJECT_IMAGES = {
+  moonlightMovies,
+  muzesAi,
+};
+
 export const useProjectsTable = () => {
   const { t } = useTranslation();
   const PROJECTS = [
@@ -40,9 +50,8 @@ export const useProjectsTable = () => {
       description:
         "Muzes utilizes AI, data, and analytics to give you the easiest and most intuitive software marketplace experience.",
       image: {
-        src: "https://raw.githubusercontent.com/Milan-960/Myportfolio/develop/SS/Muzes.png",
-        placeholderSrc:
-          "https://raw.githubusercontent.com/Milan-960/Myportfolio/develop/SS/Muzes.png",
+        src: PROJECT_IMAGES.muzesAi,
+        placeholderSrc: PROJECT_IMAGES.muzesAi,
       },
       links: {
         site: "https://www.muzes.ai/",
@@ -101,9 +110,8 @@ export const useProjectsTable = () => {
       description:
         "This app is about movie with using the movie database API. it will allow user to create an account and they also will be able to put commnets on in review section on the movie app. As well it it will allow user to stream movie online and can download the app.",
       image: {
-        src: "https://camo.githubusercontent.com/62739f1a7020b7ac646a96cb97a010d6365171d98d80286d7b49b04980b98bf6/68747470733a2f2f692e6962622e636f2f34574d367853702f686f6d652e706e67",
-        placeholderSrc:
-          "https://camo.githubusercontent.com/30e30b43722ebaf8117f3cdd7479d4657fd579ba8f2cbd44cab05391fc6ad938/68747470733a2f2f692e6962622e636f2f434230363934792f64657461696c2e706e67",
+        src: PROJECT_IMAGES.moonlightMovies,
+        placeholderSrc: PROJECT_IMAGES.moonlightMovies,
       },
       links: {
         site: "https://moonlight.milansachani.dev",
