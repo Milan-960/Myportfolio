@@ -68,7 +68,7 @@ export const useProjectsTable = () => {
           "https://raw.githubusercontent.com/Milan-960/Bingo-App/master/SS/dark.png",
       },
       links: {
-        site: "https://bingo-apps.vercel.app",
+        site: "https://bingo.milansachani.dev",
         repo: "https://github.com/Milan-960/Bingo-App",
       },
       technologies: [
@@ -106,7 +106,7 @@ export const useProjectsTable = () => {
           "https://camo.githubusercontent.com/30e30b43722ebaf8117f3cdd7479d4657fd579ba8f2cbd44cab05391fc6ad938/68747470733a2f2f692e6962622e636f2f434230363934792f64657461696c2e706e67",
       },
       links: {
-        site: "https://moonlight-film.vercel.app",
+        site: "https://moonlight.milansachani.dev",
         repo: "https://github.com/Milan-960/Moonlight-films",
       },
       technologies: [
