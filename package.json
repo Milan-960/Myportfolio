@@ -7,6 +7,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "serve": "serve -s build",
+    "generate-sitemap": "node src/sitemap-generator.js",
     "eject": "react-scripts eject"
   },
   "dependencies": {

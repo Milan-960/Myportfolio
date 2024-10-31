@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+        <url>
+          <loc>https://milansachani.dev/</loc>
+          <lastmod>2024-10-31T22:24:33.226Z</lastmod>
+          <priority>0.80</priority>
+        </url>
+      
+        <url>
+          <loc>https://milansachani.dev/blog</loc>
+          <lastmod>2024-10-31T22:24:33.226Z</lastmod>
+          <priority>0.80</priority>
+        </url>
+      
+        <url>
+          <loc>https://milansachani.dev/about</loc>
+          <lastmod>2024-10-31T22:24:33.226Z</lastmod>
+          <priority>0.80</priority>
+        </url>
+      
+        <url>
+          <loc>https://milansachani.dev/projects</loc>
+          <lastmod>2024-10-31T22:24:33.226Z</lastmod>
+          <priority>0.80</priority>
+        </url>
+      
+        <url>
+          <loc>https://milansachani.dev/contact</loc>
+          <lastmod>2024-10-31T22:24:33.226Z</lastmod>
+          <priority>0.80</priority>
+        </url>
+      
+</urlset>
