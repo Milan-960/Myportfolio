@@ -10,6 +10,8 @@ import reportWebVitals from "./reportWebVitals";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import AnimatedPointer from "./components/Animation/CursorAnimation"; // Restore AnimatedPointer
 
+import { Analytics } from "@vercel/analytics/react";
+
 const Root = () => {
   return (
     <Provider store={store}>
@@ -19,6 +21,7 @@ const Root = () => {
             <App />
             {/* <AnimatedPointer /> */}
           </BrowserRouter>
+          <Analytics />
         </LanguageWrapper>
       </DarkModeProvider>
     </Provider>
