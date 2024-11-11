@@ -18,7 +18,7 @@ export const Backend = () => {
       link: "https://expressjs.com/",
     },
     {
-      name: "JAVA (Basic)",
+      name: "JAVA ",
       link: "https://www.java.com/en/",
     },
   ];
