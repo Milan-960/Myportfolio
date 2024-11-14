@@ -15,8 +15,12 @@ const ModalProjectCard = () => {
   // This is a hook that will be used to add trans to projects
   const { PROJECTS } = useProjectsTable();
   const { id } = useParams();
+
+  // Decode the ID (replace dashes with spaces)
+  const projectId = id.replace(/-/g, " ");
+
   const { image, title, links, technologies } = PROJECTS.find(
-    (p) => id === p.id
+    (p) => projectId === p.id
   );
   const { isVisible, toggleModal } = useModal();
 

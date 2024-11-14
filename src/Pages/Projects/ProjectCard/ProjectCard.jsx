@@ -6,13 +6,15 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ProjectCard = ({ id, image, title, description }) => {
   const location = useLocation();
+  // Replace spaces in the ID with dashes
+  const formattedId = id.replace(/\s+/g, "-");
 
   return (
     <li className={s.card}>
       <div className={s.cardWrapper}>
         <Link
           to={{
-            pathname: `/project/${id}`,
+            pathname: `/project/${formattedId}`,
             state: {
               background: location,
             },

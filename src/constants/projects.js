@@ -3,16 +3,40 @@ import { useTranslation } from "react-i18next";
 // Import all images using dynamic import
 import moonlightMovies from "../assets/moonlight-movies.png";
 import muzesAi from "../assets/Muzes.png";
+import devBookmark from "../assets/devBookmark.png";
 
 // Centralize image imports
 const PROJECT_IMAGES = {
   moonlightMovies,
   muzesAi,
+  devBookmark,
 };
 
 export const useProjectsTable = () => {
   const { t } = useTranslation();
   const PROJECTS = [
+    {
+      id: "Dev Bookmark",
+      title: "Dev Bookmark",
+      description:
+        "DevBookmark transforms how developers manage their digital resources. We're not just a bookmarking tool – we're your partner in professional growth, helping you curate, organize, and share knowledge that matters.",
+      image: {
+        src: PROJECT_IMAGES.devBookmark,
+        placeholderSrc: PROJECT_IMAGES.devBookmark,
+      },
+      links: {
+        site: "https://www.devbookmark.site",
+        repo: "https://www.devbookmark.site",
+      },
+      technologies: [
+        "#nestjs14",
+        "#typescript",
+        "#javascript",
+        "#prisma",
+        "#Lucide",
+        "#cloudflare",
+      ],
+    },
     {
       id: "AI Powered Image Recognition",
       title: "AI Powered Image Recognition",
@@ -30,8 +54,8 @@ export const useProjectsTable = () => {
       technologies: ["#nestjs14", "#threejs", "#tensorflow", "#pwa-apps"],
     },
     {
-      id: "Threejs-react",
-      title: "Threejs-react",
+      id: "Threejs react",
+      title: "Threejs react",
       description: "Threejs-react app with cool animations and interactions.",
       image: {
         src: "https://raw.githubusercontent.com/Milan-960/Threejs-react/master/ss/Home.png",
@@ -67,8 +91,8 @@ export const useProjectsTable = () => {
       ],
     },
     {
-      id: "bingo-app",
-      title: "Bingo-App",
+      id: "bingo app",
+      title: "Bingo App",
       description:
         "The Bingo app is a simple web application that generates a 5x5 bingo card with random phrases related to video conference calls!",
       image: {
@@ -89,8 +113,8 @@ export const useProjectsTable = () => {
       ],
     },
     {
-      id: "nodejs-swagger-api",
-      title: "Nodejs-swagger-api",
+      id: "nodejs swagger api",
+      title: "Nodejs swagger api",
       description:
         "Simple REST API on Nodejs server build using swagger-ui and ejs.",
       image: {
@@ -105,8 +129,8 @@ export const useProjectsTable = () => {
       technologies: ["#reactjs", "#nodejs", "swagger", "ejs"],
     },
     {
-      id: "moonlight-films",
-      title: "Moonlight-Films",
+      id: "moonlight films",
+      title: "Moonlight Films",
       description:
         "This app is about movie with using the movie database API. it will allow user to create an account and they also will be able to put commnets on in review section on the movie app. As well it it will allow user to stream movie online and can download the app.",
       image: {
@@ -127,7 +151,7 @@ export const useProjectsTable = () => {
       ],
     },
     {
-      id: "raect-webpack-template",
+      id: "raect webpack template",
       title: "Reactjs Webpack Template",
       description:
         "A Raect + Webpack starter template with JS. This template can be used directly for the creation of new projects. When using it like this, make sure to not install it via npm but download it directly. The template is (nearly) useless for itself when downloaded via npm! Is a new kind of build tool for frontend web development",
@@ -143,7 +167,7 @@ export const useProjectsTable = () => {
       technologies: ["#reactjs", "#webpack", "#javascript"],
     },
     {
-      id: "vite-react-template",
+      id: "vite react template",
       title: "Vite React Template",
       description:
         "A Vite + React starter template with TypeScript + SWC. Is a new kind of build tool for frontend web development. Think a pre-configured dev server + bundler combo, but leaner and faster.",
@@ -159,7 +183,7 @@ export const useProjectsTable = () => {
       technologies: ["#reactjs", "#vite", "#typescript"],
     },
     {
-      id: "img-generator",
+      id: "img generator",
       title: "Img generator app 📸",
       description:
         "This is a simple text editor app to edit the img for making funny memes. you are also able to convert .JPG to .PNG files as well!!",
@@ -180,7 +204,7 @@ export const useProjectsTable = () => {
       ],
     },
     {
-      id: "Crypto-price-tracking-app",
+      id: "Crypto price tracking-app",
       title: "Crypto price tracking app 🔥",
       description:
         "This is a Crypto price tracking app that was built using Coingecko Api and is a PWA web app. It show latest price all the cryptocurrencies and chart.🔥💰 It also has a dark mode.",
@@ -220,8 +244,8 @@ export const useProjectsTable = () => {
     },
 
     {
-      id: "The-Traveller-Test-Smart-pension",
-      title: "The-Traveller-Test-Smart-pension",
+      id: "The Traveller Test Smart pension",
+      title: "The Traveller Test Smart pension",
       description:
         "This is a reactjs and nodejs-based traveler application. It's for making a wishlist for your future travels in which city you want to visit. You can create a wishlist and see if you've already been to the place.🔥 🔥",
       image: {
@@ -237,8 +261,8 @@ export const useProjectsTable = () => {
     },
 
     {
-      id: "The-cryptoverse",
-      title: "The-cryptoverses",
+      id: "The cryptoverse",
+      title: "The cryptoverses",
       description:
         "This is a cryptoverse App that was built using CryptAPIs and is a PWA web app. It show very updated data of all the cryptocurrencies. 🔥 🔥",
       image: {
@@ -260,8 +284,8 @@ export const useProjectsTable = () => {
       ],
     },
     {
-      id: "stone-papers-scissor",
-      title: "stone-papers-scissors",
+      id: "stone papers scissor",
+      title: "stone papers scissors",
       description:
         "Stone Paper Scissors game built with React.js and framer motion and it is a PWA 🔥 I alos have used confetti and winning voice.",
       image: {
@@ -276,8 +300,8 @@ export const useProjectsTable = () => {
       technologies: ["#reactjs", "#pwa", "#framer motion"],
     },
     {
-      id: "Memories-app",
-      title: "Memories-app",
+      id: "Memories app",
+      title: "Memories app",
       description:
         "This is a memory app that was built using nodejs, expressjs and mongodb APIs and is a PWA web app. Where we can store our past memories and as well as we can add images.",
       image: {
@@ -300,8 +324,8 @@ export const useProjectsTable = () => {
       ],
     },
     {
-      id: "weather-app",
-      title: "weather-app ☃️",
+      id: "weather app",
+      title: "weather app ☃️",
       description:
         "This is a weather app that was built using weather APIs and is a PWA web app. I also have used AXIOS for implementing APIS.",
       image: {
@@ -316,8 +340,8 @@ export const useProjectsTable = () => {
       technologies: ["#react", "#axios", "#NPM", "#CSS3"],
     },
     {
-      id: "realtime-chat-app",
-      title: "chat-app 💬",
+      id: "realtime chat app",
+      title: "chat app 💬",
       description:
         "This app has been created with firebase version 9.6.1 which is the very latest version of firebase. where I have used firebase config APIS and have implemented in reactjs to make a REALTIME-CHAT-APP.",
       image: {
@@ -332,8 +356,8 @@ export const useProjectsTable = () => {
       technologies: ["#react", "#firebase", "#moment", "#NPM", "#CSS3"],
     },
     {
-      id: "quote-app",
-      title: "Quote-App 💭",
+      id: "quote app",
+      title: "Quote App 💭",
       description:
         "Basically, This app is about Quotes, I have created this app for adding some Quotes as well as some of your interesting thoughts. 😉",
       image: {
@@ -348,8 +372,8 @@ export const useProjectsTable = () => {
       technologies: ["#react", "#firebase", "#NPM", "#CSS3", "#Javascript"],
     },
     {
-      id: "React-recipe-list",
-      title: "React-recipe-list",
+      id: "React recipe list",
+      title: "React recipe list",
       description:
         "This is a react recipe list app that allows you to add your own recipes and use as a reminder. Take a look at the link provided below.😉",
       image: {
@@ -380,8 +404,8 @@ export const useProjectsTable = () => {
       technologies: ["#HTML5", "#CSS3", "#Javascript"],
     },
     {
-      id: "tic-tac-toe-game",
-      title: "Tic-Tac-Toe-Game 🎮",
+      id: "tic tac toe game",
+      title: "Tic Tac Toe Game 🎮",
       description:
         "A Game. where player can play with computer if He/She doesn't have any opponent!",
       image: {
