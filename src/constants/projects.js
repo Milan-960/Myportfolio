@@ -4,12 +4,14 @@ import { useTranslation } from "react-i18next";
 import moonlightMovies from "../assets/moonlight-movies.png";
 import muzesAi from "../assets/Muzes.png";
 import devBookmark from "../assets/devBookmark.png";
+import IMPC from "../assets/IMPC.png";
 
 // Centralize image imports
 const PROJECT_IMAGES = {
   moonlightMovies,
   muzesAi,
   devBookmark,
+  IMPC,
 };
 
 export const useProjectsTable = () => {
@@ -35,6 +37,28 @@ export const useProjectsTable = () => {
         "#prisma",
         "#Lucide",
         "#cloudflare",
+      ],
+    },
+    {
+      id: "IMPC mouse phenotyping",
+      title: "IMPC mouse phenotyping",
+      description:
+        "This app allows users to compare the knockout effect of a list of genes among different phenotyping systems by visualizing the data using a heatmap!",
+      image: {
+        src: PROJECT_IMAGES.IMPC,
+        placeholderSrc: PROJECT_IMAGES.IMPC,
+      },
+      links: {
+        site: "https://impc-mouse-phenotyping.vercel.app",
+        repo: "https://github.com/Milan-960/EBI-IMPC-Mouse-Phenotyping",
+      },
+      technologies: [
+        "#reactjs",
+        "#typescript",
+        "#javascript",
+        "#heatmap",
+        "#bootstrap",
+        "#nivo",
       ],
     },
     {
