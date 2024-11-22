@@ -4,12 +4,17 @@ import Typewriter from "../../../components/UIElements/Typewriter/Typewriter";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useTranslation } from "react-i18next";
 import Fade from "react-reveal/Fade";
+import { motion } from "framer-motion";
 
 const MainSection = () => {
   const { t } = useTranslation();
   return (
     <section className={ms.content}>
-      <Fade left>
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className={ms.header}>
           <h2 style={{ paddingBottom: 15 }} className={ms.title}>
             {t("title")} <span className={ms.wave}>👋🏼</span>
@@ -32,7 +37,7 @@ const MainSection = () => {
             />
           </div>
         </div>
-      </Fade>
+      </motion.div>
 
       {/* <LazyLoadImage
       // alt="home-img"
@@ -40,7 +45,12 @@ const MainSection = () => {
       // src={homeMainIcon}
       // wrapperClassName={ms.homeMainIcon}
       /> */}
-      <Fade right>
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        className={ms.homeMainIcon}
+      >
         <div className={ms.homeMainIcon}>
           <a href="https://app.daily.dev/Milan960">
             <img
@@ -51,7 +61,7 @@ const MainSection = () => {
             />
           </a>
         </div>
-      </Fade>
+      </motion.div>
     </section>
   );
 };

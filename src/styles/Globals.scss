@@ -1,11 +1,11 @@
+//main theme
+@use "./main";
+
 //styles normalizer
-@import "~modern-normalize/modern-normalize.css";
+@use "./modern.scss";
 
 //fonts
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500&display=swap");
-
-//main theme
-@import "./main";
 
 html,
 body {

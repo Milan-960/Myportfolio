@@ -1,4 +1,4 @@
-import { ReactComponent as ModalCloseIcon } from "../../assets/modal-close.svg";
+import ModalCloseIcon from "../../assets/modal-close.svg?react";
 import { useHistory } from "react-router-dom";
 import { useEffect } from "react";
 import { CSSTransition } from "react-transition-group";

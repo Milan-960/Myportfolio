@@ -1,19 +1,21 @@
-import ReactDOM from "react-dom";
-import App from "./App";
+import React from "react";
+import { Provider } from "react-redux";
+import { createRoot } from "react-dom/client"; // Use createRoot from react-dom/client
 import { BrowserRouter } from "react-router-dom";
 
+import App from "./App";
 import LanguageWrapper from "./I18n/LanguageWrapper";
-import { Provider } from "react-redux";
 import store from "./Store/Store";
 import { DarkModeProvider } from "./hooks/themeHook/darkMode-Context";
 import reportWebVitals from "./reportWebVitals";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import AnimatedPointer from "./components/Animation/CursorAnimation"; // Restore AnimatedPointer
-
 import { Analytics } from "@vercel/analytics/react";
+import ErrorBoundary from "./ErrorBoundary";
 
-const Root = () => {
-  return (
+// Create the root container
+createRoot(document.getElementById("root")).render(
+  <React.Fragment>
     <Provider store={store}>
       <DarkModeProvider>
         <LanguageWrapper>
@@ -25,10 +27,8 @@ const Root = () => {
         </LanguageWrapper>
       </DarkModeProvider>
     </Provider>
-  );
-};
-
-ReactDOM.render(<Root />, document.getElementById("root"));
+  </React.Fragment>
+);
 
 reportWebVitals();
 serviceWorkerRegistration.register();

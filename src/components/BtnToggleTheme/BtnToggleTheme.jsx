@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import useSound from "use-sound";
 
 import Button from "../UIElements/Button/Button";
-import { ReactComponent as ToggleLightIcon } from "../../assets/toggle-light.svg";
-import { ReactComponent as ToggleDarkIcon } from "../../assets/toggle-dark.svg";
+import ToggleLightIcon from "../../assets/toggle-light.svg?react";
+import ToggleDarkIcon from "../../assets/toggle-dark.svg?react";
 import { useThemeContext } from "../../hooks/themeHook/themeHook";
 
 import wetClick from "../../assets/sounds/bubble.mp3";
