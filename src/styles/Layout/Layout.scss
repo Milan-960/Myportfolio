@@ -1,2 +1,2 @@
-@import "./base-layout";
-@import "./home-layout";
+@use "./base-layout" as *;
+@use "./home-layout";

@@ -1,15 +1,15 @@
 //keyframes
-@import "./keyframes";
+@use "./keyframes";
 
 //transitions
-@import "./transitions";
+@use "./transitions";
 
 //theme
-@import "./theme";
+@use "./theme";
 
 // This is nested folders
 
-@import "./Layout/Layout.scss";
-@import "./I18n/I18n.scss";
-@import "./Components/Components.scss";
-@import "./Pages/Pages.scss";
+@use "./Layout/Layout.scss";
+@use "./I18n/I18n.scss";
+@use "./Components/Components.scss";
+@use "./Pages/Pages.scss";

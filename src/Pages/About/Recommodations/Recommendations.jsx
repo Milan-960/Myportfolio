@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { ReactComponent as ModalCloseIcon } from "../../../assets/modal-close.svg";
+import ModalCloseIcon from "../../../assets/modal-close.svg?react";
+
 import { FaLinkedin } from "react-icons/fa";
 
 import "./Recommendations.scss";
-import { recommendations } from "constants/recommendations";
+import { recommendations } from "../../../constants/recommendations";
 
 // Truncate the text to a word limit
 const truncateText = (text, wordLimit) => {

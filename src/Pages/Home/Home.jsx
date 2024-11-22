@@ -2,9 +2,10 @@ import * as React from "react";
 import { HeadProvider, Title, Link, Meta } from "react-head";
 import MainSection from "./MainSection/MainSection";
 import IntroSection from "./IntroSection/IntroSection";
-import HomeLayout from "layouts/HomeLayout/HomeLayout";
-import SectionBG from "components/UIElements/SectionBG/SectionBG";
-import Recommendations from "Pages/About/Recommodations/Recommendations";
+
+import HomeLayout from "../../layouts/HomeLayout/HomeLayout";
+import SectionBG from "../../components/UIElements/SectionBG/SectionBG";
+import Recommendations from "../../Pages/About/Recommodations/Recommendations";
 
 const Home = () => {
   return (

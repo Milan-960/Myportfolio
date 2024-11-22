@@ -308,7 +308,6 @@
 // };
 
 // export default ThreeJSVisualizer;
-
 import React, { useRef, useEffect, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
@@ -318,73 +317,62 @@ const ThreeJSVisualizer = () => {
   const mountRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [toneStarted, setToneStarted] = useState(false);
-  const [audioLoaded, setAudioLoaded] = useState(false); // Track if the audio is loaded
-  const rendererRef = useRef(null); // To store the renderer
-  const playerRef = useRef(null); // Store player instance across renders
-  const animationIdRef = useRef(null); // Store animation ID
-  const controlsRef = useRef(null); // To store OrbitControls
+  const [audioLoaded, setAudioLoaded] = useState(false);
+  const rendererRef = useRef(null);
+  const playerRef = useRef(null);
+  const animationIdRef = useRef(null);
+  const controlsRef = useRef(null);
   let particles, analyser;
 
-  // Initialize Tone.js player and analyser
   useEffect(() => {
     playerRef.current = new Tone.Player({
-      // Ensure correct URL from the public folder
-      url: process.env.PUBLIC_URL + "/assets/sounds/tada.mp3",
+      url: "/assets/sounds/tada.mp3",
       autostart: false,
-      onload: () => {
-        setAudioLoaded(true); // Set audio as loaded when the buffer is ready
-      },
+      onload: () => setAudioLoaded(true),
     }).toDestination();
 
-    analyser = new Tone.Analyser("fft", 256); // Using FFT to get frequency data
+    analyser = new Tone.Analyser("fft", 256);
     playerRef.current.connect(analyser);
 
     return () => {
       if (playerRef.current) {
-        playerRef.current.dispose(); // Clean up player when component unmounts
+        playerRef.current.dispose();
       }
     };
   }, []);
 
   const handlePlay = async () => {
     if (!toneStarted) {
-      await Tone.start(); // Ensure Tone.js is started (required in browser)
+      await Tone.start();
       setToneStarted(true);
     }
-
-    // Only start playing if the audio is loaded
-    if (isPlaying && audioLoaded && playerRef.current) {
-      playerRef.current.start(); // Start playback
-    } else if (!isPlaying && playerRef.current) {
-      playerRef.current.stop(); // Stop playback
+    if (audioLoaded && playerRef.current) {
+      isPlaying ? playerRef.current.start() : playerRef.current.stop();
     }
   };
 
   useEffect(() => {
     handlePlay();
-  }, [isPlaying, audioLoaded]); // Trigger handlePlay when play state changes
+  }, [isPlaying, audioLoaded]);
 
-  // Set up Three.js scene
   useEffect(() => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setSize(150, 150); // Updated size
+    renderer.setSize(150, 150);
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setClearColor(0x000000, 0); // Set background color to black
+    renderer.setClearColor(0x000000, 0);
     mountRef.current.appendChild(renderer.domElement);
     rendererRef.current = renderer;
 
-    // Create particle system
     const particleCount = 500;
     const geometry = new THREE.BufferGeometry();
-    const positions = new Float32Array(particleCount * 4);
-    const sphericalRadius = 5.5; // Set a spherical radius
+    const positions = new Float32Array(particleCount * 3);
+    const sphericalRadius = 5.5;
 
     for (let i = 0; i < particleCount; i++) {
-      // Generate random positions within a sphere
-      const phi = Math.random() * Math.PI * 3;
-      const theta = Math.acos(Math.random() * 3 - 1);
+      const phi = Math.random() * Math.PI * 2;
+      const theta = Math.acos(Math.random() * 2 - 1);
 
       positions[i * 3] = sphericalRadius * Math.sin(theta) * Math.cos(phi);
       positions[i * 3 + 1] = sphericalRadius * Math.sin(theta) * Math.sin(phi);
@@ -392,62 +380,35 @@ const ThreeJSVisualizer = () => {
     }
 
     geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
-    const material = new THREE.PointsMaterial({
-      color: 0xcd5ff8, // Color updated to #cd5ff8
-      size: 0.2,
-      opacity: 1,
-    });
-
+    const material = new THREE.PointsMaterial({ color: 0xcd5ff8, size: 0.2 });
     particles = new THREE.Points(geometry, material);
     scene.add(particles);
 
-    // Camera and controls
-    camera.position.z = 10; // Move the camera back for better viewing of the sphere
+    camera.position.z = 10;
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableZoom = false;
-    controls.autoRotate = true; // Rotation starts by default
-    controlsRef.current = controls; // Store controls in ref for later access
+    controls.autoRotate = true;
+    controlsRef.current = controls;
 
-    // Animation loop
     const animate = () => {
-      if (analyser && isPlaying) {
-        const frequencyData = analyser.getValue(); // Get frequency data from Tone.js
-        const positions = particles.geometry.attributes.position.array;
-
-        // Update particle positions based on frequency data
-        for (let i = 0; i < particleCount; i++) {
-          const audioFactor =
-            Math.abs(frequencyData[i % frequencyData.length]) || 0; // Default to 0 if invalid
-          if (!isNaN(audioFactor)) {
-            positions[i * 3] += Math.sin(audioFactor) * 0.02; // Bump particles slightly
-            positions[i * 3 + 1] += Math.sin(audioFactor) * 0.02;
-            positions[i * 3 + 2] += Math.cos(audioFactor) * 0.02;
-          }
-        }
-
-        particles.geometry.attributes.position.needsUpdate = true; // Update positions
-      }
-
-      controls.update(); // Update OrbitControls
+      controls.update();
       renderer.render(scene, camera);
       animationIdRef.current = requestAnimationFrame(animate);
     };
 
     animate();
 
-    // Clean up
     return () => {
-      cancelAnimationFrame(animationIdRef.current); // Cancel animation loop
+      cancelAnimationFrame(animationIdRef.current);
       if (rendererRef.current) {
-        rendererRef.current.dispose(); // Clean up renderer
+        rendererRef.current.dispose();
+        rendererRef.current = null;
+      }
+      if (controlsRef.current) {
+        controlsRef.current.dispose();
       }
     };
-  }, []); // Note: This runs only once
-
-  // Toggle play/pause
-  const togglePlay = () => {
-    setIsPlaying(!isPlaying);
-  };
+  }, []);
 
   return (
     <div
@@ -463,7 +424,7 @@ const ThreeJSVisualizer = () => {
       }}
     >
       <button
-        onClick={togglePlay}
+        onClick={() => setIsPlaying(!isPlaying)}
         disabled={!audioLoaded} // Disable button until audio is loaded
         style={{
           position: "absolute", // Make the button positioned inside the parent div
@@ -475,7 +436,7 @@ const ThreeJSVisualizer = () => {
             ? isPlaying
               ? "#cd5ff8"
               : "#333"
-            : "#ccc", // Adjust color if not loaded
+            : "#ccc",
           color: "white",
           border: "none",
           borderRadius: "5px",
