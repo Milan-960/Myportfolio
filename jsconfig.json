@@ -7,8 +7,7 @@
       "hooks/*": ["./hooks/*"],
       "Pages/*": ["./Pages/*"],
       "layouts/*": ["./layouts/*"]
-    },
-    "types": ["vite-plugin-svgr/client"]
+    }
   },
   "include": ["src"]
 }
