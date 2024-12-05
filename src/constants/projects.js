@@ -5,6 +5,7 @@ import moonlightMovies from "../assets/moonlight-movies.png";
 import muzesAi from "../assets/Muzes.png";
 import devBookmark from "../assets/devBookmark.png";
 import IMPC from "../assets/IMPC.png";
+import WIND_TURBINE from "../assets/wind-turbine.png";
 
 // Centralize image imports
 const PROJECT_IMAGES = {
@@ -12,6 +13,7 @@ const PROJECT_IMAGES = {
   muzesAi,
   devBookmark,
   IMPC,
+  WIND_TURBINE,
 };
 
 export const useProjectsTable = () => {
@@ -37,6 +39,29 @@ export const useProjectsTable = () => {
         "#prisma",
         "#Lucide",
         "#cloudflare",
+      ],
+    },
+    {
+      id: "Wind turbine solutions",
+      title: "Wind turbine solutions",
+      description:
+        "The Wind Turbine Planner is a React-based application designed to help plan maintenance activities for wind turbines by leveraging real-time wind data. The application fetches and displays wind speed, direction, and other weather-related metrics for the next two days.",
+      image: {
+        src: PROJECT_IMAGES.WIND_TURBINE,
+        placeholderSrc: PROJECT_IMAGES.WIND_TURBINE,
+      },
+      links: {
+        site: "https://wind-turbine-solutions.vercel.app",
+        repo: "https://github.com/Milan-960/Wind-turbine-solutions",
+      },
+      technologies: [
+        "#reactjs",
+        "#typescript",
+        "#vite",
+        "#leaflet-map",
+        "#jest",
+        "#weatherapi",
+        "#react-chartjs-2",
       ],
     },
     {
