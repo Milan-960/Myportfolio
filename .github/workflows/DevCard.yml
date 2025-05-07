@@ -1,14 +1,11 @@
 # This is a basic workflow to help you get started with Actions
-
-name: DevCard
-
 on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - master
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *" # Every day at midnight UTC
 
 jobs:
   devcard:
@@ -19,5 +16,5 @@ jobs:
       - name: devcard
         uses: dailydotdev/action-devcard@3.0.0
         with:
-          user_id: ${{ secrets.DEVCARD_ID }}
-          commit_message: "chore: update ${filename}"
+          user_id: ${{ secrets.USER_ID }}
+          commit_message: "chore: update devcard.png"
