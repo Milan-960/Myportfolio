@@ -55,7 +55,7 @@ const MainSection = () => {
           <a href="https://app.daily.dev/Milan960">
             <img
               align="right"
-              src="https://api.daily.dev/devcards/c4f077510dac4feb951df9312724d6ab.png?r=19v"
+              src="https://api.daily.dev/devcards/v2/J3gh5NGe0fDu9j4UzeIl6.png?"
               width="360"
               alt="Milan Sachani's Dev Card"
             />
