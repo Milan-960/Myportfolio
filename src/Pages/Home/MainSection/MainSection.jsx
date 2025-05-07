@@ -52,7 +52,7 @@ const MainSection = () => {
         className={ms.homeMainIcon}
       >
         <div className={ms.homeMainIcon}>
-          <a href="https://app.daily.dev/Milan960">
+          <a href="https://app.daily.dev/milan960">
             <img
               align="right"
               src="https://api.daily.dev/devcards/v2/J3gh5NGe0fDu9j4UzeIl6.png?"
