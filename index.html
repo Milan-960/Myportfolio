@@ -126,5 +126,16 @@
         });
       }
     </script>
+
+    <script type="speculationrules">
+      {
+        "prerender": [
+          { "where": { "href_matches": "/*" }, "eagerness": "moderate" }
+        ],
+        "prefetch": [
+          { "where": { "href_matches": "/*" }, "eagerness": "moderate" }
+        ]
+      }
+    </script>
   </body>
 </html>
